@@ -2,6 +2,7 @@
 #include <QApplication>
 
 //TAYLOR PACZKOWSKI
+//Oscar
 
 int main(int argc, char *argv[])
 {
