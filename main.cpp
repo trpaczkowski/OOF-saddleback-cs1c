@@ -1,8 +1,8 @@
 #include "mainwindow.h"
 #include <QApplication>
 
-//TAYLOR PACZKOWSKI
-//Oscar
+//TAYLOR PACZKOWSKI reporting on OOF
+//OSCAR LOPEZ reporting on OOF
 
 int main(int argc, char *argv[])
 {
