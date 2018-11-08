@@ -15,9 +15,19 @@ to use our respective files
   git checkout (your Wrk file)
 		it is your first name all lowercase e.g. taylorWrk
 
+*when committing for the first time, it will ask for a user and email. use the command
+provided in the prompt to add this.
+
+*when pushing for the first time it will prompt you to sign in to github
+
 how to add to a file
   git status - everything changed will be red
   git add *
   git status - everything changed will be green now
   git commit -m "some message" (must insert message or comp will freak out)
   git push
+
+to open a file
+  type the file name e.g. main.cpp
+
+*if you forget what files are called or what is in the project just use "dir"
