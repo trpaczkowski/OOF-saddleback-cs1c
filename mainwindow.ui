@@ -6,26 +6,41 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>400</width>
-    <height>300</height>
+    <width>642</width>
+    <height>388</height>
    </rect>
   </property>
   <property name="windowTitle">
    <string>MainWindow</string>
   </property>
   <widget class="QWidget" name="centralWidget">
-   <widget class="QPushButton" name="pushButton">
+   <widget class="QTabWidget" name="tabWidget">
     <property name="geometry">
      <rect>
-      <x>30</x>
-      <y>40</y>
-      <width>75</width>
-      <height>23</height>
+      <x>0</x>
+      <y>0</y>
+      <width>221</width>
+      <height>351</height>
      </rect>
     </property>
-    <property name="text">
-     <string>PushButton</string>
+    <property name="currentIndex">
+     <number>2</number>
     </property>
+    <widget class="QWidget" name="Tab_Modify">
+     <attribute name="title">
+      <string>Modify</string>
+     </attribute>
+    </widget>
+    <widget class="QWidget" name="Tab_Shape">
+     <attribute name="title">
+      <string>Add Shape</string>
+     </attribute>
+    </widget>
+    <widget class="QWidget" name="Tab_Tables">
+     <attribute name="title">
+      <string>Shape Tables</string>
+     </attribute>
+    </widget>
    </widget>
   </widget>
   <widget class="QMenuBar" name="menuBar">
@@ -33,10 +48,36 @@
     <rect>
      <x>0</x>
      <y>0</y>
-     <width>400</width>
+     <width>642</width>
      <height>21</height>
     </rect>
    </property>
+   <widget class="QMenu" name="menuFile">
+    <property name="title">
+     <string>File</string>
+    </property>
+    <addaction name="actionQuit"/>
+   </widget>
+   <widget class="QMenu" name="menuAdmin">
+    <property name="title">
+     <string>Admin</string>
+    </property>
+    <addaction name="actionLogin"/>
+   </widget>
+   <widget class="QMenu" name="menuHelp">
+    <property name="title">
+     <string>Help</string>
+    </property>
+   </widget>
+   <widget class="QMenu" name="menuContact">
+    <property name="title">
+     <string>Contact</string>
+    </property>
+   </widget>
+   <addaction name="menuFile"/>
+   <addaction name="menuAdmin"/>
+   <addaction name="menuHelp"/>
+   <addaction name="menuContact"/>
   </widget>
   <widget class="QToolBar" name="mainToolBar">
    <attribute name="toolBarArea">
@@ -47,6 +88,16 @@
    </attribute>
   </widget>
   <widget class="QStatusBar" name="statusBar"/>
+  <action name="actionQuit">
+   <property name="text">
+    <string>Quit</string>
+   </property>
+  </action>
+  <action name="actionLogin">
+   <property name="text">
+    <string>Login</string>
+   </property>
+  </action>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
  <resources/>

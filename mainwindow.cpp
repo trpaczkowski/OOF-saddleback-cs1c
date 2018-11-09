@@ -12,3 +12,9 @@ MainWindow::~MainWindow()
 {
     delete ui;
 }
+
+void MainWindow::on_actionLogin_triggered()
+{
+    uiLogin = new AdminLogin(this);
+    uiLogin->show();
+}
