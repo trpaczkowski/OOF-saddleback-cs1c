@@ -148,7 +148,6 @@
     </property>
    </widget>
    <zorder>graphicsView</zorder>
-   <zorder>horizontalSpacer</zorder>
    <zorder>tabWidget</zorder>
   </widget>
   <widget class="QMenuBar" name="menuBar">
@@ -209,7 +208,7 @@
   </action>
   <action name="actionEnable_Disable_Privledges">
    <property name="text">
-    <string>Enable/Disable Privileges</string>
+    <string>Enable Actions</string>
    </property>
   </action>
  </widget>

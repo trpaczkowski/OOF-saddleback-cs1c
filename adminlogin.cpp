@@ -19,12 +19,12 @@ void AdminLogin::on_buttonBox_accepted()
     QString password = ui->lineEdit_pass->text();
     if(username == "admin" && password == "pass000")
     {
-        QMessageBox::information(this, "Admin Login", "Administrator priviledges added");
+        QMessageBox::information(this, "Admin Login", "Administrator priviledges added. To use \"Modify\", user must click on \"Enable Actions\" in dropdown to use admin actions.");
         adminPrivA = true;
     }
     else
     {
-        QMessageBox::information(this, "Admin Login", "Wrong password and/or username.");
+        QMessageBox::critical(this, "Admin Login", "Wrong password and/or username.");
     }
 }
 

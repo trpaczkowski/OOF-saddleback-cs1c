@@ -39,4 +39,13 @@ void MainWindow::on_actionEnable_Disable_Privledges_triggered()
 
     ui->Tab_Modify->setEnabled(adminPrivW);
 
+    if( ui->Tab_Modify->isEnabled())
+    {
+        QMessageBox::information(this, "Admin Actions", "Admin actions enabled. Check the \"Modify Tab\" for actions.");
+    }
+    else
+    {
+        QMessageBox::critical(this, "Admin Actions", "Not allowed to enable! Must login to admin.");
+    }
+
 }
