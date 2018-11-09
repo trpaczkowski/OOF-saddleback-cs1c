@@ -13,6 +13,7 @@ class AdminLogin : public QDialog
 
 public:
     explicit AdminLogin(QWidget *parent = 0);
+    bool GetAdminPriv(); //Get admin privledge
     ~AdminLogin();
 
 private slots:
@@ -22,6 +23,7 @@ private slots:
 
 private:
     Ui::AdminLogin *ui;
+    bool adminPrivA {false};
 };
 
 #endif // ADMINLOGIN_H

@@ -17,10 +17,10 @@ void AdminLogin::on_buttonBox_accepted()
 {
     QString username = ui->lineEdit_user->text();
     QString password = ui->lineEdit_pass->text();
-
     if(username == "admin" && password == "pass000")
     {
         QMessageBox::information(this, "Admin Login", "Administrator priviledges added");
+        adminPrivA = true;
     }
     else
     {
@@ -28,9 +28,12 @@ void AdminLogin::on_buttonBox_accepted()
     }
 }
 
-
-
 void AdminLogin::on_buttonBox_rejected()
 {
     QMessageBox::information(this, "Admin Login", "End");
+}
+
+bool AdminLogin::GetAdminPriv()
+{
+    return adminPrivA;
 }

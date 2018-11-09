@@ -42,7 +42,7 @@
     <string>Administrator Login</string>
    </property>
   </widget>
-  <widget class="QWidget" name="">
+  <widget class="QWidget" name="layoutWidget">
    <property name="geometry">
     <rect>
      <x>70</x>
@@ -76,7 +76,11 @@
        </widget>
       </item>
       <item>
-       <widget class="QLineEdit" name="lineEdit_pass"/>
+       <widget class="QLineEdit" name="lineEdit_pass">
+        <property name="echoMode">
+         <enum>QLineEdit::Password</enum>
+        </property>
+       </widget>
       </item>
      </layout>
     </item>
