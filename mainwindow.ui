@@ -39,29 +39,11 @@
      <string notr="true"/>
     </property>
     <property name="currentIndex">
-     <number>2</number>
+     <number>0</number>
     </property>
     <property name="tabBarAutoHide">
      <bool>false</bool>
     </property>
-    <widget class="QWidget" name="Tab_Shape">
-     <attribute name="title">
-      <string>Add Shape</string>
-     </attribute>
-     <widget class="QLabel" name="label_2">
-      <property name="geometry">
-       <rect>
-        <x>90</x>
-        <y>260</y>
-        <width>47</width>
-        <height>13</height>
-       </rect>
-      </property>
-      <property name="text">
-       <string>hi</string>
-      </property>
-     </widget>
-    </widget>
     <widget class="QWidget" name="Tab_Tables">
      <attribute name="title">
       <string>Shape Tables</string>
@@ -77,6 +59,37 @@
       </property>
       <property name="text">
        <string>hakwe</string>
+      </property>
+     </widget>
+     <widget class="QLabel" name="label_userType">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>10</y>
+        <width>91</width>
+        <height>16</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>General User</string>
+      </property>
+     </widget>
+    </widget>
+    <widget class="QWidget" name="Tab_Shape">
+     <attribute name="title">
+      <string>Add Shape</string>
+     </attribute>
+     <widget class="QLabel" name="label_2">
+      <property name="geometry">
+       <rect>
+        <x>90</x>
+        <y>260</y>
+        <width>47</width>
+        <height>13</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>hi</string>
       </property>
      </widget>
     </widget>
