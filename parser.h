@@ -30,8 +30,12 @@
  ***********************************************************************/
  
 class Parser
-{
+{	
 public:
+	
+/******************************************
+ * PUBLIC - PASER CLASS FUNCTIONS         *  
+ ******************************************/
 	
     //DEFAULT CONSTRUCTOR
     Parser() {}
@@ -39,22 +43,25 @@ public:
     //DECONSTRUCTOR & CLOSES INPUT FILE
     ~Parser() {close();}
 
-    //CLOSES INPUT FILE
+    //FUNCTION - CLOSES INPUT FILE
     void close();
 
-    //LOADS INPUT FILE & RETURNS TRUE IF SUCCESSFUL
+    //FUNCTION - LOADS AND PARSES INPUT FILE & RETURNS TRUE IF SUCCESSFUL
     bool loadFile(const std::string& filePath);
 
-    //LOADS INPUT FILE & RETURNS TRUE IF SUCCESSFUL
+    //FUNCTION - LOADS AND PARSES INPUT FILE & RETURNS TRUE IF SUCCESSFUL
     bool parse(Vector<Shape*>& shapeVector);
 
+	
 private:
-
-//PRIVATE - PASER CLASS SHAPEINFO STRUCT 
-
-    //DEFINES SHAPE INFO
+	
+/******************************************
+ * PRIVATE - PASER CLASS SHAPEINFO STRUCT *  
+ ******************************************/
+	
     struct ShapeInfo
     {
+	//FUNCTION - ASSIGNS INTIAL VALUES
         ShapeInfo()
         {
             //BRUSH VARIABLES
@@ -79,6 +86,7 @@ private:
             
         } //END ShapeInfo()
 
+	//FUNCTION - RESETS ALL VALUES BACK TO INITILIZATIONS
         void reset()
         {
             //BRUSH VARIABLES
@@ -116,8 +124,7 @@ private:
             
         } //END void reset()
 
-
-        //DATA MEMBERS DEFINED IN SHAPE INFO STRUCT
+        //VARIABLES DEFINED IN SHAPEINFO STRUCT
         
         QString         brushColor;           // Variable defines brush color
         int             brushStyle;           // Variable defines brush style
@@ -143,9 +150,10 @@ private:
         
     }; //END struct ShapeInfo
 
-
-//PRIVATE - PASER CLASS FUNCTIONS  
-    
+/******************************************
+ * PRIVATE - PARSER CLASS FUNCTIONS       *  
+ ******************************************/
+	
     //FUNCTION - ADDS SHAPE TO SHAPE VECTOR
     void addShape(Vector<Shape*>& shapeVector);
 
@@ -159,13 +167,15 @@ private:
     void setKeyValue(Vector<Shape*>& shapeVector, const std::string& key, const std::string& value,
                      const std::string& line, size_t lineNumber);
 
-
-//PRIVATE - PARSER CLASS DATA MEMBERS   
-    
+/******************************************
+ * PRIVATE - PARSER CLASS VARIABLES       *  
+ ******************************************/
+	
     std::string                 mInputFilePath;  // Variable defines input file path
     std::ifstream               mInputFile;      // Variable defines input file
     std::vector<std::string>    mErrorList;      // Variable defines error list
     ShapeInfo                   mShapeInfo;      // Variable defines shape info
+	
 };
 
 #endif
