@@ -7,18 +7,22 @@ using std::copy;
 template<typename dataType>
 class vector
 {
-    public:
+public:
 
     vector() : size_v{8}, elem(new dataType[8]), reservedSize{8} // default constructor
     {
-        for (int i = 0; i < size_v; ++i)
+        for(int i = 0; i < size_v; ++i)
+        {
             elem[i] = dataType(); // elements are initialized
+        }
     }
 
     vector(int size) : size_v{size}, elem(new dataType[size]), reservedSize{size} // alternate constructor
         {
-            for (int i = 0; i < size_v; ++i)
+            for(int i = 0; i < size_v; ++i)
+            {
                 elem[i] = dataType(); // elements are initialized
+            }
         }
 
     vector(const vector<dataType> &copiedVector) : size_v{copiedVector.size_v}, elem{new dataType[copiedVector.size_v]}, reservedSize{copiedVector.reservedSize} // copy constructor
@@ -66,24 +70,26 @@ class vector
     // initialize each new element with the default value 0.0
     {
         reserve(newsize);
-        for (int i = size_v; i < newsize; ++i)
+        for(int i = size_v; i < newsize; ++i)
         {
             elem[i] = 0; // initialize new elements
         }
+        
         size_v = newsize;
     }
 
     void push_back(dataType d)
     // increase vector size by one; initialize the new element with d
     {
-        if (reservedSize == 0)
+        if(reservedSize == 0)
         {
             reserve(8);         // start with space for 8 elements
         }
-        else if (size_v == reservedSize)
+        else if(size_v == reservedSize)
         {
             reserve(2 * reservedSize); // get more space
         }
+        
         elem[size_v] = d;       // add d at end
         ++size_v;               // increase the size (size_v is the number of elements)
     }
@@ -97,7 +103,7 @@ class vector
 
         dataType* p = new dataType[newalloc]; // allocate new space
 
-        for( int i = 0; i < size_v; ++i) // copy old elements
+        for(int i = 0; i < size_v; ++i) // copy old elements
         {
             p[i] = elem[i];
         }
@@ -112,47 +118,53 @@ class vector
 
     iterator begin() // points to first element
     {
-        if (size_v == 0)
+        if(size_v == 0)
         {
             return nullptr;
         }
+        
         return &elem[0];
     }
 
     const_iterator begin() const
     {
-        if (size_v == 0)
+        if(size_v == 0)
         {
             return nullptr;
         }
+        
         return &elem[0];
     }
 
     iterator end() // points to one beyond the last element
     {
-        if (size_v == 0)
+        if(size_v == 0)
         {
             return nullptr;
         }
+        
         return &elem[size_v];
     }
 
     const_iterator end() const
     {
-        if (size_v == 0)
+        if(size_v == 0)
         {
             return nullptr;
         }
+        
         return &elem[size_v];
     }
 
     iterator insert(iterator p, const dataType &val) // insert a new element val before p
     {
         int index = p - begin();
-        if (size() == capacity())
+        
+        if(size() == capacity())
         {
             reserve(size() == 0 ? 8: 2*size());// make sure we have space
         }
+        
         ++size_v;
         iterator pp = begin() + index; // the place to put value
 
@@ -169,20 +181,26 @@ class vector
 
     iterator erase(iterator p) // remove element pointed to by p
     {
-        if (p == end())
+        if(p == end())
+        {
             return p;
+        }
+        
         for (iterator pos = p + 1; pos != end(); ++pos)
+        {
             *(pos - 1) = *pos; // copy element one position to the left
-        //delete (end() - 1);
+        }
+        
+        delete (end() - 1);
         --size_v;
         return p;
     }
 
-    private:
+private:
 
-    int       size_v;   // the size
-    dataType* elem; // pointer to the elements (or 0)
-    int       reservedSize ;    // number of elements plus number of free slots
+    int       size_v;        // Variable for vector size
+    dataType* elem;          // Pointer variable to the elements (or 0)
+    int       reservedSize;  // Variable for number of elements plus number of free slots
 
 };
 
