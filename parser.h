@@ -163,7 +163,7 @@ private:
     //FUNCTION - SETS THE VALUE OF AN INTEGER TO A STRING, IF THE STRING IS AN INTEGER
     bool setInteger(int& dest, const std::string& source) const;
 
-    //FUNCTION - SETS A PART OF SHAPE INFO
+    //FUNCTION - SETS A PART OF SHAPEINFO
     void setKeyValue(Vector<Shape*>& shapeVector, const std::string& key, const std::string& value,
                      const std::string& line, size_t lineNumber);
 
