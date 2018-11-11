@@ -32,11 +32,11 @@
 class Parser
 {
 public:
-
-	  //DEFAULT CONSTRUCTOR
+	
+    //DEFAULT CONSTRUCTOR
     Parser() {}
 	
-	  //DECONSTRUCTOR & CLOSES INPUT FILE
+    //DECONSTRUCTOR & CLOSES INPUT FILE
     ~Parser() {close();}
 
     //CLOSES INPUT FILE
