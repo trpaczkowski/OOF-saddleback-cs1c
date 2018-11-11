@@ -13,7 +13,7 @@
 #include <QString>
 #include "vector.h"
 #include "shape.h"
-//#include "string_util.h"
+#include "string_util.h"
 
  using namespace shape::Shape;
  
