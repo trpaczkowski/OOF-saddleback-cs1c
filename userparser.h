@@ -1,25 +1,3 @@
-/*
- *  2D Graphics Modeler
- *  July 2018
- *
- *  David Epstein <DavidE92@live.com>
- *  Greg Graffius <ggraffius0@saddleback.edu>
- *  Justis Ketcham <justis.ketcham@gmail.com>
- *  Brett Saiki <bsaiki0@saddleback.edu>
- *
- *  Descr:   Final project for CS1C at Saddleback College (Summer 2018)
- *  Teacher: John Kath
- *
- *  Draws shapes using QPainter. Shapes can be loaded from a file, added
- *  to a vector, manipulated and later saved. A login is required to access
- *  the program.
- *
- **/
-/*
-    File: userparser.h
-    Parses a file to add users to a users list
- */
-
 #ifndef USERPARSER_H
 #define USERPARSER_H
 
@@ -29,41 +7,47 @@
 #include <QString>
 #include "custom_vector.h"
 
-/** Object that stores a users information */
+/***********************************************************************
+ *  File: userparser.h
+ *  Description: Parses a file to add users to a users list.
+ ***********************************************************************/
+
+/***********************************************************************
+ *  Parses a file that contains shape information and converts them into 
+ *  shapes to be used by the program.
+ ***********************************************************************/
+
+//STRUCT - STORES THE USERS INFORMATION
 struct User
 {
-	/** Stores username */
-    QString mUsername;
-	/** Stores password */
-    QString mPassword;
-	/** Stores privileges */
-    bool mIsAdmin;
+    QString mUsername;  // Variable stores username
+    QString mPassword;  // Variable stores password
+    bool    mIsAdmin;   // Variable stores priviledges
 };
 
-/** Parses a file that contains shape information and converts them into shapes
- * to be used by the program.
- */
 class UserParser
 {
 public:
-	/** Default constructor. */
+	
+    //DEFAULT CONSTRUCTOR
     UserParser() {}
 	
-	/** Destructor. Closes the file. */
+    //DECONSTRUCTOR & CLOSES INPUT FILE
     ~UserParser() { close(); }
 
-    /** Closes the input file if it is open. */
+    //FUNCTION - CLOSES INPUT FILE
     void close();
 
-    /** Loads an input file. */
+    //FUNCTION - LOADS AND PARSES INPUT FILE & RETURNS TRUE IF SUCCESSFUL
     bool loadFile(const std::string& filePath);
 
-    /** Parses the input file. */
+    //FUNCTION - LOADS AND PARSES INPUT FILE & RETURNS TRUE IF SUCCESSFUL
     bool parse(Vector<User>& userVector);
 
 private:
-    std::string                 mInputFilePath;
-    std::ifstream               mInputFile;
+	
+    std::string   mInputFilePath;  // Variable defines input file path
+    std::ifstream mInputFile;      // Variable defines input file
 };
 
-#endif // USERSPARSER_H
+#endif
