@@ -5,6 +5,8 @@
 #include <QPainter>
 #include "vector.h"
 
+//HELLo
+
 class Shape : public QPainter
 {
     public:
