@@ -340,3 +340,8 @@ Qt::BrushStyle MainWindow::getBrushStyle()
     default: {return Qt::NoBrush;}
     }
 }
+
+void MainWindow::on_actionhi_triggered()
+{
+
+}

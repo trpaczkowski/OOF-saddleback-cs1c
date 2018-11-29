@@ -1934,6 +1934,7 @@
     <property name="title">
      <string>Contact us</string>
     </property>
+    <addaction name="actionhi"/>
    </widget>
    <addaction name="menuFile"/>
    <addaction name="menuAdmin"/>
@@ -1962,6 +1963,11 @@
   <action name="actionEnable_Disable_Privledges">
    <property name="text">
     <string>Enable Actions</string>
+   </property>
+  </action>
+  <action name="actionhi">
+   <property name="text">
+    <string>hi</string>
    </property>
   </action>
  </widget>
