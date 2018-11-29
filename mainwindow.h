@@ -3,6 +3,9 @@
 
 #include <QMainWindow>
 #include "adminlogin.h"
+#include "canvas.h"
+#include <QMessageBox>
+
 namespace Ui {
 class MainWindow;
 }
@@ -16,6 +19,21 @@ public:
     void SetAdminPriv(bool adminIn); //changes admin priv
     ~MainWindow();
 
+    //Pen properties
+    Qt::GlobalColor getPenColor();
+
+    int getPenWidth();
+
+    Qt::PenStyle getPenStyle();
+
+    Qt::PenCapStyle getPenCapStyle();
+
+    Qt::PenJoinStyle getPenJoinStyle();
+
+    Qt::GlobalColor getBrushColor();
+
+    Qt::BrushStyle getBrushStyle();
+
 private slots:
     void on_actionLogin_triggered();
 
@@ -23,10 +41,15 @@ private slots:
 
     void on_actionEnable_Disable_Privledges_triggered();
 
+    void on_pushButton_clicked();
+
 private:
     Ui::MainWindow *ui;
     AdminLogin *uiLogin;
     bool adminPrivW{false};
+    Canvas *canvasUi;
+
+
 };
 
 #endif // MAINWINDOW_H
