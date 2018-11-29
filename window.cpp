@@ -1,4 +1,3 @@
-
 #include "renderarea.h"
 #include "window.h"
 #include "Shape.h"
