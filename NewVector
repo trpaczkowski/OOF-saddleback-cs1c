@@ -1,0 +1,162 @@
+#ifndef VECTOR_H_
+#define VECTOR_H_
+
+#include <iomanip>
+#include <iostream>
+using namespace std;
+
+
+template <class qType>
+class vector
+{
+public:
+	vector(int maxSize);            // constructor
+	~vector();                      // destructor
+
+	void 	enqueue(qType someType);    // add data to the queue
+	qType 	dequeue();                  // delete data from the queue
+
+	qType 	front();                    // front of the queue
+	int 	size();                         // size of queue
+	bool 	isEmpty();                  // check if its empty
+	bool 	isFull();                   // check if its full
+	void 	print(ostream& os);         // print method
+
+private:
+	int capacity;                       // size
+	int increment;                      // +1
+	qType* theQueue;                    // the queue
+};
+
+
+// constructor
+template <class qType>
+vector<qType>::vector(int maxSize)
+{
+	capacity = maxSize;
+	increment = 0;
+
+	if ( capacity < 1 )
+	{
+		cerr << maxSize << "is an invalid size, setting size to 10"
+			   << endl;
+		capacity = 10;
+	}
+
+	theQueue = new qType[capacity] ;	  // allocate memory
+
+}
+
+// destructor
+template <class qType>
+vector<qType>::~vector()
+{
+}
+
+// add data to the queue
+template <class qType>
+void vector<qType>::enqueue(qType someType)
+{
+	if(!isFull())
+	{
+		theQueue[increment++] = someType;
+	}
+	else
+	{
+		cout << "The Queue is FULL\n";
+	}
+}
+
+// remove data from the queue
+template <class qType>
+qType vector<qType>::dequeue()
+{
+	qType dequeued;
+	if(!isEmpty())
+	{
+		dequeued = theQueue[0];
+
+		for(int index = 0; index <= capacity - 2; index++)
+		{
+			theQueue[index] = theQueue[index+1];
+		}
+
+		increment--;
+
+	}
+	else
+	{
+		cout << "The Queue is EMPTY\n";
+	}
+	return dequeued;
+}
+
+// check the data at the front
+template <class qType>
+qType vector<qType>::front()
+{
+
+	return theQueue[0];
+}
+
+// size of the queue
+template <class qType>
+int vector<qType>::size()
+{
+	return increment;
+}
+
+// check if its empty
+template <class qType>
+bool vector<qType>::isEmpty()
+{
+	return increment == 0;
+}
+
+// check if its full
+template <class qType>
+bool vector<qType>::isFull()
+{
+	return (increment == capacity);
+}
+
+// print the queue data
+template <class qType>
+void vector<qType>::print(ostream& os)
+{
+	int index;
+	for(index = 0; index < increment; index++)
+	{
+		os << "\t" << theQueue[index] << endl;
+	}
+}
+
+// check if its empty or not
+template <class qType>
+void testEmpty(vector<qType>& someQueue)
+{
+	if(someQueue.isEmpty())
+	{
+		cout << "Integer Queue is Empty\n";
+	}
+	else
+	{
+		cout << "Integer Queue is Not Empty\n";
+	}
+}
+
+// check if the queue is full or not
+template <class qType>
+void testFull(vector<qType>& someQueue)
+{
+	if(someQueue.isFull())
+	{
+		cout << "Integer Queue is Full\n";
+	}
+	else
+	{
+		cout << "Integer Queue is Not Full\n";
+	}
+}
+
+#endif /* VECTOR_H_ */
