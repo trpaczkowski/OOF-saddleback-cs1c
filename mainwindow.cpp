@@ -343,5 +343,6 @@ Qt::BrushStyle MainWindow::getBrushStyle()
 
 void MainWindow::on_actionhi_triggered()
 {
-
+    uiContact = new contactwindow(this);
+    uiContact->show();
 }

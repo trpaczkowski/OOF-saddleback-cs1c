@@ -17,6 +17,7 @@ public:
 
 private:
     Ui::contactwindow *ui;
+    contactwindow *uiContact;
 };
 
 #endif // CONTACTWINDOW_H

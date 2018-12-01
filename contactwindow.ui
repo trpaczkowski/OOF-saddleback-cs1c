@@ -6,9 +6,20 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>666</width>
-    <height>390</height>
+    <width>583</width>
+    <height>296</height>
    </rect>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>16777215</width>
+    <height>16777215</height>
+   </size>
+  </property>
+  <property name="font">
+   <font>
+    <pointsize>8</pointsize>
+   </font>
   </property>
   <property name="windowTitle">
    <string>Dialog</string>
@@ -35,21 +46,26 @@
   <widget class="QLabel" name="teamName">
    <property name="geometry">
     <rect>
-     <x>10</x>
-     <y>190</y>
-     <width>161</width>
+     <x>0</x>
+     <y>170</y>
+     <width>201</width>
      <height>21</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <pointsize>18</pointsize>
+    </font>
+   </property>
    <property name="text">
-    <string>OOF - Object Oriented Friends</string>
+    <string>Object Oriented Friends</string>
    </property>
   </widget>
   <widget class="QLabel" name="taylor">
    <property name="geometry">
     <rect>
-     <x>230</x>
-     <y>270</y>
+     <x>440</x>
+     <y>160</y>
      <width>121</width>
      <height>16</height>
     </rect>
@@ -61,14 +77,170 @@
   <widget class="QLabel" name="taylor_email">
    <property name="geometry">
     <rect>
-     <x>230</x>
-     <y>290</y>
+     <x>440</x>
+     <y>180</y>
      <width>151</width>
      <height>16</height>
     </rect>
    </property>
    <property name="text">
     <string>tpaczkowski0@saddleback.edu</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="jeff">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>20</y>
+     <width>61</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Jeffery Adams</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="jess_email">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>40</y>
+     <width>111</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>jadams62@saddleback.edu</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="travis">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>160</y>
+     <width>71</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Travis Nguyen</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="travis_email">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>180</y>
+     <width>111</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>tnguyen603@saddleback.edu</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="caroline">
+   <property name="geometry">
+    <rect>
+     <x>370</x>
+     <y>230</y>
+     <width>61</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Caroline Ta</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="caroline_email">
+   <property name="geometry">
+    <rect>
+     <x>350</x>
+     <y>250</y>
+     <width>81</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>tta242saddleback.edu</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="utkarsh">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>90</y>
+     <width>51</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Utkarsh Karki</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="utkarsh_email">
+   <property name="geometry">
+    <rect>
+     <x>230</x>
+     <y>110</y>
+     <width>111</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>ukarki0@saddleback.edu</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="oscar">
+   <property name="geometry">
+    <rect>
+     <x>440</x>
+     <y>90</y>
+     <width>61</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Oscar Lopez</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="oscar_email">
+   <property name="geometry">
+    <rect>
+     <x>440</x>
+     <y>110</y>
+     <width>101</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>olopez23@saddleback.edu</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="isaac">
+   <property name="geometry">
+    <rect>
+     <x>440</x>
+     <y>20</y>
+     <width>61</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>Isaac Estrada</string>
+   </property>
+  </widget>
+  <widget class="QLabel" name="isaac_email">
+   <property name="geometry">
+    <rect>
+     <x>440</x>
+     <y>40</y>
+     <width>101</width>
+     <height>16</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string>iestrada5@saddleback.edu</string>
    </property>
   </widget>
  </widget>

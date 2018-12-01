@@ -4,6 +4,7 @@
 #include <QMainWindow>
 #include "adminlogin.h"
 #include "canvas.h"
+#include "contactwindow.h"
 #include <QMessageBox>
 
 namespace Ui {
@@ -50,7 +51,7 @@ private:
     AdminLogin *uiLogin;
     bool adminPrivW{false};
     Canvas *canvasUi;
-
+    contactwindow *uiContact;
 
 };
 
