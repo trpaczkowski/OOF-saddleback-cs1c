@@ -38,7 +38,6 @@
       <width>250</width>
       <height>0</height>
      </size>
-<<<<<<< HEAD
     </property>
     <property name="maximumSize">
      <size>
@@ -46,24 +45,11 @@
       <height>16777215</height>
      </size>
     </property>
-=======
-    </property>
-    <property name="maximumSize">
-     <size>
-      <width>1000</width>
-      <height>16777215</height>
-     </size>
-    </property>
->>>>>>> f10f7fc401ffd2c2bc22c0dc688ad62b4db56600
     <property name="styleSheet">
      <string notr="true"/>
     </property>
     <property name="currentIndex">
-<<<<<<< HEAD
      <number>1</number>
-=======
-     <number>0</number>
->>>>>>> f10f7fc401ffd2c2bc22c0dc688ad62b4db56600
     </property>
     <property name="tabBarAutoHide">
      <bool>false</bool>
@@ -1470,16 +1456,11 @@
          <string>Text: </string>
         </property>
        </widget>
-<<<<<<< HEAD
        <widget class="QLabel" name="label_71">
-=======
-       <widget class="QWidget" name="">
->>>>>>> f10f7fc401ffd2c2bc22c0dc688ad62b4db56600
         <property name="geometry">
          <rect>
           <x>250</x>
           <y>30</y>
-<<<<<<< HEAD
           <width>91</width>
           <height>16</height>
          </rect>
@@ -1489,31 +1470,10 @@
         </property>
        </widget>
        <widget class="QLabel" name="label_72">
-=======
-          <width>161</width>
-          <height>22</height>
-         </rect>
-        </property>
-        <layout class="QHBoxLayout" name="horizontalLayout_56">
-         <item>
-          <widget class="QLabel" name="label_71">
-           <property name="text">
-            <string>Text Color: </string>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QComboBox" name="comboBox_textColor"/>
-         </item>
-        </layout>
-       </widget>
-       <widget class="QWidget" name="">
->>>>>>> f10f7fc401ffd2c2bc22c0dc688ad62b4db56600
         <property name="geometry">
          <rect>
           <x>250</x>
           <y>60</y>
-<<<<<<< HEAD
           <width>101</width>
           <height>16</height>
          </rect>
@@ -1523,31 +1483,10 @@
         </property>
        </widget>
        <widget class="QLabel" name="label_73">
-=======
-          <width>161</width>
-          <height>22</height>
-         </rect>
-        </property>
-        <layout class="QHBoxLayout" name="horizontalLayout_57">
-         <item>
-          <widget class="QLabel" name="label_72">
-           <property name="text">
-            <string>Text Alignment:  </string>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QComboBox" name="comboBox_textAignment"/>
-         </item>
-        </layout>
-       </widget>
-       <widget class="QWidget" name="">
->>>>>>> f10f7fc401ffd2c2bc22c0dc688ad62b4db56600
         <property name="geometry">
          <rect>
           <x>250</x>
           <y>90</y>
-<<<<<<< HEAD
           <width>101</width>
           <height>16</height>
          </rect>
@@ -1594,90 +1533,6 @@
         <property name="text">
          <string>Text Font Weight: </string>
         </property>
-=======
-          <width>161</width>
-          <height>22</height>
-         </rect>
-        </property>
-        <layout class="QHBoxLayout" name="horizontalLayout_58">
-         <item>
-          <widget class="QLabel" name="label_73">
-           <property name="text">
-            <string>Text Point Size: </string>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QComboBox" name="comboBox_textPointSize"/>
-         </item>
-        </layout>
-       </widget>
-       <widget class="QWidget" name="">
-        <property name="geometry">
-         <rect>
-          <x>440</x>
-          <y>30</y>
-          <width>171</width>
-          <height>22</height>
-         </rect>
-        </property>
-        <layout class="QHBoxLayout" name="horizontalLayout_59">
-         <item>
-          <widget class="QLabel" name="label_75">
-           <property name="text">
-            <string>Text Font Style: </string>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QComboBox" name="comboBox_textFontStyle"/>
-         </item>
-        </layout>
-       </widget>
-       <widget class="QWidget" name="">
-        <property name="geometry">
-         <rect>
-          <x>440</x>
-          <y>60</y>
-          <width>168</width>
-          <height>22</height>
-         </rect>
-        </property>
-        <layout class="QHBoxLayout" name="horizontalLayout_60">
-         <item>
-          <widget class="QLabel" name="label_76">
-           <property name="text">
-            <string>Text Font Weight: </string>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QComboBox" name="comboBox_textFontWeight"/>
-         </item>
-        </layout>
-       </widget>
-       <widget class="QWidget" name="">
-        <property name="geometry">
-         <rect>
-          <x>250</x>
-          <y>120</y>
-          <width>161</width>
-          <height>22</height>
-         </rect>
-        </property>
-        <layout class="QHBoxLayout" name="horizontalLayout_61">
-         <item>
-          <widget class="QLabel" name="label_74">
-           <property name="text">
-            <string>Text Font Family: </string>
-           </property>
-          </widget>
-         </item>
-         <item>
-          <widget class="QComboBox" name="comboBox_TextFontFamily"/>
-         </item>
-        </layout>
->>>>>>> f10f7fc401ffd2c2bc22c0dc688ad62b4db56600
        </widget>
       </widget>
      </widget>
@@ -2079,10 +1934,7 @@
     <property name="title">
      <string>Contact us</string>
     </property>
-<<<<<<< HEAD
     <addaction name="actionhi"/>
-=======
->>>>>>> f10f7fc401ffd2c2bc22c0dc688ad62b4db56600
    </widget>
    <addaction name="menuFile"/>
    <addaction name="menuAdmin"/>
@@ -2113,14 +1965,11 @@
     <string>Enable Actions</string>
    </property>
   </action>
-<<<<<<< HEAD
   <action name="actionhi">
    <property name="text">
     <string>hi</string>
    </property>
   </action>
-=======
->>>>>>> f10f7fc401ffd2c2bc22c0dc688ad62b4db56600
  </widget>
  <layoutdefault spacing="6" margin="11"/>
  <customwidgets>

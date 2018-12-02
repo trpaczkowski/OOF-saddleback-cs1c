@@ -1,29 +1,16 @@
 #ifndef SHAPE_H
 #define SHAPE_H
 
-<<<<<<< HEAD
 #include <QApplication>
 #include <QPainter>
 #include "vector.h"
 
-=======
-//#include <QApplication>
-#include <QPainter>
-#include "vector.h"
-
-using namespace VecSTD;
-
->>>>>>> f10f7fc401ffd2c2bc22c0dc688ad62b4db56600
 //HELLo
 
 class Shape : public QPainter
 {
     public:
-<<<<<<< HEAD
 
-=======
-        QPainter painter;
->>>>>>> f10f7fc401ffd2c2bc22c0dc688ad62b4db56600
         enum class ShapeType {NoShape, Line, Polyline, Polygon, Rectangle, Ellipse, Circle , Text};
 
         ShapeType getShape() const {return shapeType;}
@@ -60,13 +47,6 @@ class Shape : public QPainter
          * @param y
          */
 
-<<<<<<< HEAD
-=======
-        virtual void draw()=0;
-
-        virtual void draw(QPaintDevice *device)= 0;
-
->>>>>>> f10f7fc401ffd2c2bc22c0dc688ad62b4db56600
         virtual void move(const int x, const int y) = 0;
         /**
          * @brief Calculates the perimeter.
@@ -101,27 +81,7 @@ class Line : public Shape
 
         void setPoints(const QPoint& begin, const QPoint& end);
 
-<<<<<<< HEAD
         void draw(const int x, const int y)  override;
-=======
-        void draw(/*const int x, const int y*/)  override;
-
-//        virtual void draw() override
-//        {
-//            QPoint first(10,100);
-//            QPoint sec(100,200);
-//            drawLine(first,sec);
-//        }
-
-        void draw(const int x, const int y) override;
-
-        virtual void draw(QPaintDevice *device)
-        {
-            painter.begin(device);
-            painter.drawLine(begin,end);
-            painter.end();
-        }
->>>>>>> f10f7fc401ffd2c2bc22c0dc688ad62b4db56600
 
         void move(const int x, const int y) override;
 
@@ -152,14 +112,6 @@ class Polyline : public Shape
 
         void draw(const int x, const int y)  override;
 
-<<<<<<< HEAD
-=======
-        virtual void draw()
-        {
-
-        }
-
->>>>>>> f10f7fc401ffd2c2bc22c0dc688ad62b4db56600
         void move(const int x, const int y) override;
 
         void remove() override;
@@ -186,14 +138,6 @@ class Polygon : public Shape
 
         void draw(const int x, const int y)  override;
 
-<<<<<<< HEAD
-=======
-        virtual void draw()
-        {
-
-        }
-
->>>>>>> f10f7fc401ffd2c2bc22c0dc688ad62b4db56600
         void move(const int x, const int y) override;
 
         void remove() override;
@@ -222,14 +166,6 @@ class Rectangle : public Shape
 
         void draw(const int x, const int y)  override;
 
-<<<<<<< HEAD
-=======
-        virtual void draw()
-        {
-
-        }
-
->>>>>>> f10f7fc401ffd2c2bc22c0dc688ad62b4db56600
         double perimeter() override;
 
         double area() override;
@@ -263,14 +199,6 @@ class Ellipse : public Shape
 
         void draw(const int x, const int y)  override;
 
-<<<<<<< HEAD
-=======
-        virtual void draw()
-        {
-
-        }
-
->>>>>>> f10f7fc401ffd2c2bc22c0dc688ad62b4db56600
         double perimeter() override;
 
         double area() override;
@@ -291,7 +219,6 @@ class Ellipse : public Shape
 
 };
 
-<<<<<<< HEAD
 class Circle : public Shape
 {
     public:
@@ -324,8 +251,5 @@ class Circle : public Shape
         double radius;
 
 };
-=======
-
->>>>>>> f10f7fc401ffd2c2bc22c0dc688ad62b4db56600
 
 #endif // SHAPE_H

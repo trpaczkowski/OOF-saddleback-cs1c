@@ -67,12 +67,7 @@ QMessageBox::critical(this, "Admin Actions", QString::number(ui->tabWidget_addSh
 
         case 0:
         {
-<<<<<<< HEAD
 QMessageBox::critical(this, "Admin Actions", QString::number(canvasUi->rando()) + "hi");
-=======
-
-QMessageBox::critical(this, "Admin Actions", QString::number(canvasUi.getSizing()) + "hi1");
->>>>>>> f10f7fc401ffd2c2bc22c0dc688ad62b4db56600
             //Line
             Line *addLine = new Line(this, 0);
 QMessageBox::critical(this, "Admin Actions", QString::number(ui->tabWidget_addShape->currentIndex()) + "hi2");
@@ -85,32 +80,16 @@ QMessageBox::critical(this, "Admin Actions", QString::number(ui->tabWidget_addSh
             QPoint secondCoordinate(ui->spinBox_line_secondX->value(), ui->spinBox_line_secondY->value());
             addLine->setPoints(firstCoordinate, secondCoordinate);
 QMessageBox::critical(this, "Admin Actions", QString::number(ui->tabWidget_addShape->currentIndex()) + "hi4");
-<<<<<<< HEAD
 //ISSUE            canvasUi->shapeList.push_back(addLine);
 QMessageBox::critical(this, "Admin Actions", QString::number(ui->tabWidget_addShape->currentIndex()) + "hi5");
             break;
          }
 
-=======
-    canvasUi.shapeAdd(addLine);
-    QMessageBox::critical(this, "Admin Actions", QString::number(canvasUi.getpoint(0)) + "hi4.5");
-   ui->widget->shapeAdd(addLine);
-QMessageBox::critical(this, "Admin Actions", QString::number(canvasUi.getSizing()) + "hi5");
-QMessageBox::critical(this, "Admin Actions", QString::number(ui->widget->getSizing()) + "hi5");
-
-            break;
-         }
-/*
->>>>>>> f10f7fc401ffd2c2bc22c0dc688ad62b4db56600
         //Polyline
         case 1:
         {
             Polyline *addPolyLine = new Polyline();
-<<<<<<< HEAD
             addPolyLine->setId(canvasUi->shapeList.size() + 1);
-=======
-            //addPolyLine->setId(canvasUi->shapeList.size() + 1);
->>>>>>> f10f7fc401ffd2c2bc22c0dc688ad62b4db56600
             addPolyLine->setPen(getPenColor(), getPenWidth(), getPenStyle(), getPenCapStyle(), getPenJoinStyle());
             addPolyLine->setBrush(getBrushColor(), getBrushStyle());
 
@@ -143,11 +122,7 @@ QMessageBox::critical(this, "Admin Actions", QString::number(ui->widget->getSizi
                 }
             }
 
-<<<<<<< HEAD
             canvasUi->shapeList.push_back(addPolyLine);
-=======
-            //canvasUi->shapeList.push_back(addPolyLine);
->>>>>>> f10f7fc401ffd2c2bc22c0dc688ad62b4db56600
             break;
         }
 
@@ -155,11 +130,7 @@ QMessageBox::critical(this, "Admin Actions", QString::number(ui->widget->getSizi
         case 2:
         {
             Polygon *addPolygon = new Polygon();
-<<<<<<< HEAD
             addPolygon->setId(canvasUi->shapeList.size() + 1);
-=======
-            //addPolygon->setId(canvasUi->shapeList.size() + 1);
->>>>>>> f10f7fc401ffd2c2bc22c0dc688ad62b4db56600
             addPolygon->setPen(getPenColor(), getPenWidth(), getPenStyle(), getPenCapStyle(), getPenJoinStyle());
             addPolygon->setBrush(getBrushColor(), getBrushStyle());
 
@@ -200,11 +171,7 @@ QMessageBox::critical(this, "Admin Actions", QString::number(ui->widget->getSizi
             }
 
 
-<<<<<<< HEAD
             canvasUi->shapeList.push_back(addPolygon);
-=======
-            //canvasUi->shapeList.push_back(addPolygon);
->>>>>>> f10f7fc401ffd2c2bc22c0dc688ad62b4db56600
             break;
         }
 
@@ -212,11 +179,7 @@ QMessageBox::critical(this, "Admin Actions", QString::number(ui->widget->getSizi
         case 3:
         {
             Rectangle *addRect = new Rectangle();
-<<<<<<< HEAD
             addRect->setId(canvasUi->shapeList.size() + 1);
-=======
-            //addRect->setId(canvasUi->shapeList.size() + 1);
->>>>>>> f10f7fc401ffd2c2bc22c0dc688ad62b4db56600
             addRect->setPen(getPenColor(), getPenWidth(), getPenStyle(), getPenCapStyle(), getPenJoinStyle());
             addRect->setBrush(getBrushColor(), getBrushStyle());
 
@@ -226,11 +189,7 @@ QMessageBox::critical(this, "Admin Actions", QString::number(ui->widget->getSizi
             addRect->setDimensions(ui->doubleSpinBox_rect_width->value(), ui->doubleSpinBox_rect_length->value());
             addRect->setPosition(center);
 
-<<<<<<< HEAD
             canvasUi->shapeList.push_back(addRect);
-=======
-            //canvasUi->shapeList.push_back(addRect);
->>>>>>> f10f7fc401ffd2c2bc22c0dc688ad62b4db56600
             break;
         }
 
@@ -238,11 +197,7 @@ QMessageBox::critical(this, "Admin Actions", QString::number(ui->widget->getSizi
         case 4:
         {
             Ellipse *addEllipse = new Ellipse();
-<<<<<<< HEAD
             addEllipse->setId(canvasUi->shapeList.size() + 1);
-=======
-            //addEllipse->setId(canvasUi->shapeList.size() + 1);
->>>>>>> f10f7fc401ffd2c2bc22c0dc688ad62b4db56600
             addEllipse->setPen(getPenColor(), getPenWidth(), getPenStyle(), getPenCapStyle(), getPenJoinStyle());
             addEllipse->setBrush(getBrushColor(), getBrushStyle());
 
@@ -251,11 +206,7 @@ QMessageBox::critical(this, "Admin Actions", QString::number(ui->widget->getSizi
             addEllipse->setPosition(center);
             addEllipse->setDimensions(ui->doubleSpinBox_ellipse_axisX->value(), ui->doubleSpinBox_ellipse_axisY->value());
 
-<<<<<<< HEAD
             canvasUi->shapeList.push_back(addEllipse);
-=======
-            //canvasUi->shapeList.push_back(addEllipse);
->>>>>>> f10f7fc401ffd2c2bc22c0dc688ad62b4db56600
             break;
         }
 
@@ -265,16 +216,9 @@ QMessageBox::critical(this, "Admin Actions", QString::number(ui->widget->getSizi
 
 //            break;
 //        }
-<<<<<<< HEAD
 
     }//End Switch
 
-=======
-*/
-    }//End Switch
-
-
->>>>>>> f10f7fc401ffd2c2bc22c0dc688ad62b4db56600
 }
 
 //Pen properties
@@ -396,12 +340,9 @@ Qt::BrushStyle MainWindow::getBrushStyle()
     default: {return Qt::NoBrush;}
     }
 }
-<<<<<<< HEAD
 
 void MainWindow::on_actionhi_triggered()
 {
     uiContact = new contactwindow(this);
     uiContact->show();
 }
-=======
->>>>>>> f10f7fc401ffd2c2bc22c0dc688ad62b4db56600
