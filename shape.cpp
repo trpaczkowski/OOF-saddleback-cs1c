@@ -63,11 +63,13 @@ void Line::setPoints(const QPoint &begin, const QPoint &end)
 
 }
 
-void Line::draw(const int x, const int y)
+<<<<<<< HEAD
+=======
+void Line::draw(/*const int x, const int y*/)
 {
     save();
 
-    translate(x,y);
+    //translate(x,y);
 
     drawLine(begin, end);
 
@@ -75,6 +77,27 @@ void Line::draw(const int x, const int y)
 
 }
 
+>>>>>>> f10f7fc401ffd2c2bc22c0dc688ad62b4db56600
+void Line::draw(const int x, const int y)
+{
+    save();
+
+<<<<<<< HEAD
+    translate(x,y);
+=======
+    //translate(x,y);
+>>>>>>> f10f7fc401ffd2c2bc22c0dc688ad62b4db56600
+
+    drawLine(begin, end);
+
+    restore();
+
+}
+
+<<<<<<< HEAD
+=======
+
+>>>>>>> f10f7fc401ffd2c2bc22c0dc688ad62b4db56600
 void Line::move(const int x, const int y)
 {
     save();
@@ -481,6 +504,7 @@ void Ellipse::remove()
 
 }
 
+<<<<<<< HEAD
 /*************************************************************************
 
 Circle Methods
@@ -542,3 +566,6 @@ void Circle::setDimensions(double radius)
     this->radius = radius;
 
 }
+=======
+
+>>>>>>> f10f7fc401ffd2c2bc22c0dc688ad62b4db56600
