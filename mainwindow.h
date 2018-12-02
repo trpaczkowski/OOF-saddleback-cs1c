@@ -2,6 +2,8 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include "adminlogin.h"
+#include "canvas.h"
 
 namespace Ui {
 class MainWindow;
@@ -13,10 +15,39 @@ class MainWindow : public QMainWindow
 
 public:
     explicit MainWindow(QWidget *parent = 0);
+    void SetAdminPriv(bool adminIn); //changes admin priv
     ~MainWindow();
+
+    //Pen properties
+    Qt::GlobalColor getPenColor();
+
+    int getPenWidth();
+
+    Qt::PenStyle getPenStyle();
+
+    Qt::PenCapStyle getPenCapStyle();
+
+    Qt::PenJoinStyle getPenJoinStyle();
+
+    Qt::GlobalColor getBrushColor();
+
+    Qt::BrushStyle getBrushStyle();
+
+private slots:
+    void on_actionLogin_triggered();
+
+    void on_actionQuit_triggered();
+
+    void on_actionEnable_Disable_Privledges_triggered();
+
+    void on_pushButton_clicked();
 
 private:
     Ui::MainWindow *ui;
+    AdminLogin *uiLogin;
+    bool adminPrivW{false};
+    Canvas canvasUi;
+
 };
 
 #endif // MAINWINDOW_H
