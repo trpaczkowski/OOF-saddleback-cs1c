@@ -29,6 +29,15 @@ class Canvas:public QWidget
             return shapeList.size();
         }
 
+        vector<Shape *> copyVector ()
+        {
+            vector <Shape *> temp;
+
+            temp = shapeList;
+
+            return temp;
+        }
+
 //        int getpoint(int index)
 //        {
 //            QPoint first;

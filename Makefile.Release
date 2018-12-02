@@ -234,25 +234,15 @@ release/moc_mainwindow.cpp: ../../../../Qt/5.11.2/mingw53_32/include/QtWidgets/Q
 		../../../../Qt/5.11.2/mingw53_32/include/QtWidgets/QDialog \
 		../../../../Qt/5.11.2/mingw53_32/include/QtWidgets/qdialog.h \
 		canvas.h \
+		shape.h \
 		../../../../Qt/5.11.2/mingw53_32/include/QtGui/QPainter \
 		../../../../Qt/5.11.2/mingw53_32/include/QtGui/qpainter.h \
 		../../../../Qt/5.11.2/mingw53_32/include/QtGui/qtextoption.h \
 		../../../../Qt/5.11.2/mingw53_32/include/QtGui/qpen.h \
-		../../../../Qt/5.11.2/mingw53_32/include/QtWidgets/QWidget \
-		../../../../Qt/5.11.2/mingw53_32/include/QtGui/QPen \
-		../../../../Qt/5.11.2/mingw53_32/include/QtGui/QBrush \
-		shape.h \
-		../../../../Qt/5.11.2/mingw53_32/include/QtWidgets/QApplication \
-		../../../../Qt/5.11.2/mingw53_32/include/QtWidgets/qapplication.h \
-		../../../../Qt/5.11.2/mingw53_32/include/QtCore/qcoreapplication.h \
-		../../../../Qt/5.11.2/mingw53_32/include/QtCore/qeventloop.h \
-		../../../../Qt/5.11.2/mingw53_32/include/QtWidgets/qdesktopwidget.h \
-		../../../../Qt/5.11.2/mingw53_32/include/QtGui/qguiapplication.h \
-		../../../../Qt/5.11.2/mingw53_32/include/QtGui/qinputmethod.h \
 		vector.h \
-		contactwindow.h \
 		../../../../Qt/5.11.2/mingw53_32/include/QtWidgets/QMessageBox \
 		../../../../Qt/5.11.2/mingw53_32/include/QtWidgets/qmessagebox.h \
+		contactwindow.h \
 		mainwindow.h \
 		release/moc_predefs.h \
 		../../../../Qt/5.11.2/mingw53_32/bin/moc.exe
@@ -486,6 +476,7 @@ compiler_uic_clean:
 ui_mainwindow.h: mainwindow.ui \
 		../../../../Qt/5.11.2/mingw53_32/bin/uic.exe \
 		canvas.h \
+		shape.h \
 		../../../../Qt/5.11.2/mingw53_32/include/QtGui/QPainter \
 		../../../../Qt/5.11.2/mingw53_32/include/QtGui/qpainter.h \
 		../../../../Qt/5.11.2/mingw53_32/include/QtGui/qtguiglobal.h \
@@ -571,10 +562,13 @@ ui_mainwindow.h: mainwindow.ui \
 		../../../../Qt/5.11.2/mingw53_32/include/QtGui/qfontinfo.h \
 		../../../../Qt/5.11.2/mingw53_32/include/QtGui/qfont.h \
 		../../../../Qt/5.11.2/mingw53_32/include/QtGui/qfontmetrics.h \
-		../../../../Qt/5.11.2/mingw53_32/include/QtWidgets/QWidget \
-		../../../../Qt/5.11.2/mingw53_32/include/QtWidgets/qwidget.h \
+		vector.h \
+		../../../../Qt/5.11.2/mingw53_32/include/QtWidgets/QMessageBox \
+		../../../../Qt/5.11.2/mingw53_32/include/QtWidgets/qmessagebox.h \
 		../../../../Qt/5.11.2/mingw53_32/include/QtWidgets/qtwidgetsglobal.h \
 		../../../../Qt/5.11.2/mingw53_32/include/QtWidgets/qtwidgets-config.h \
+		../../../../Qt/5.11.2/mingw53_32/include/QtWidgets/qdialog.h \
+		../../../../Qt/5.11.2/mingw53_32/include/QtWidgets/qwidget.h \
 		../../../../Qt/5.11.2/mingw53_32/include/QtGui/qpalette.h \
 		../../../../Qt/5.11.2/mingw53_32/include/QtWidgets/qsizepolicy.h \
 		../../../../Qt/5.11.2/mingw53_32/include/QtGui/qcursor.h \
@@ -592,18 +586,7 @@ ui_mainwindow.h: mainwindow.ui \
 		../../../../Qt/5.11.2/mingw53_32/include/QtCore/qfile.h \
 		../../../../Qt/5.11.2/mingw53_32/include/QtCore/qfiledevice.h \
 		../../../../Qt/5.11.2/mingw53_32/include/QtGui/qvector2d.h \
-		../../../../Qt/5.11.2/mingw53_32/include/QtGui/qtouchdevice.h \
-		../../../../Qt/5.11.2/mingw53_32/include/QtGui/QPen \
-		../../../../Qt/5.11.2/mingw53_32/include/QtGui/QBrush \
-		shape.h \
-		../../../../Qt/5.11.2/mingw53_32/include/QtWidgets/QApplication \
-		../../../../Qt/5.11.2/mingw53_32/include/QtWidgets/qapplication.h \
-		../../../../Qt/5.11.2/mingw53_32/include/QtCore/qcoreapplication.h \
-		../../../../Qt/5.11.2/mingw53_32/include/QtCore/qeventloop.h \
-		../../../../Qt/5.11.2/mingw53_32/include/QtWidgets/qdesktopwidget.h \
-		../../../../Qt/5.11.2/mingw53_32/include/QtGui/qguiapplication.h \
-		../../../../Qt/5.11.2/mingw53_32/include/QtGui/qinputmethod.h \
-		vector.h
+		../../../../Qt/5.11.2/mingw53_32/include/QtGui/qtouchdevice.h
 	C:\Qt\5.11.2\mingw53_32\bin\uic.exe mainwindow.ui -o ui_mainwindow.h
 
 ui_adminlogin.h: adminlogin.ui \
@@ -737,25 +720,22 @@ release/main.o: main.cpp mainwindow.h \
 		../../../../Qt/5.11.2/mingw53_32/include/QtWidgets/QDialog \
 		../../../../Qt/5.11.2/mingw53_32/include/QtWidgets/qdialog.h \
 		canvas.h \
+		shape.h \
 		../../../../Qt/5.11.2/mingw53_32/include/QtGui/QPainter \
 		../../../../Qt/5.11.2/mingw53_32/include/QtGui/qpainter.h \
 		../../../../Qt/5.11.2/mingw53_32/include/QtGui/qtextoption.h \
 		../../../../Qt/5.11.2/mingw53_32/include/QtGui/qpen.h \
-		../../../../Qt/5.11.2/mingw53_32/include/QtWidgets/QWidget \
-		../../../../Qt/5.11.2/mingw53_32/include/QtGui/QPen \
-		../../../../Qt/5.11.2/mingw53_32/include/QtGui/QBrush \
-		shape.h \
+		vector.h \
+		../../../../Qt/5.11.2/mingw53_32/include/QtWidgets/QMessageBox \
+		../../../../Qt/5.11.2/mingw53_32/include/QtWidgets/qmessagebox.h \
+		contactwindow.h \
 		../../../../Qt/5.11.2/mingw53_32/include/QtWidgets/QApplication \
 		../../../../Qt/5.11.2/mingw53_32/include/QtWidgets/qapplication.h \
 		../../../../Qt/5.11.2/mingw53_32/include/QtCore/qcoreapplication.h \
 		../../../../Qt/5.11.2/mingw53_32/include/QtCore/qeventloop.h \
 		../../../../Qt/5.11.2/mingw53_32/include/QtWidgets/qdesktopwidget.h \
 		../../../../Qt/5.11.2/mingw53_32/include/QtGui/qguiapplication.h \
-		../../../../Qt/5.11.2/mingw53_32/include/QtGui/qinputmethod.h \
-		vector.h \
-		contactwindow.h \
-		../../../../Qt/5.11.2/mingw53_32/include/QtWidgets/QMessageBox \
-		../../../../Qt/5.11.2/mingw53_32/include/QtWidgets/qmessagebox.h
+		../../../../Qt/5.11.2/mingw53_32/include/QtGui/qinputmethod.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\main.o main.cpp
 
 release/mainwindow.o: mainwindow.cpp mainwindow.h \
@@ -869,14 +849,20 @@ release/mainwindow.o: mainwindow.cpp mainwindow.h \
 		../../../../Qt/5.11.2/mingw53_32/include/QtWidgets/QDialog \
 		../../../../Qt/5.11.2/mingw53_32/include/QtWidgets/qdialog.h \
 		canvas.h \
+		shape.h \
 		../../../../Qt/5.11.2/mingw53_32/include/QtGui/QPainter \
 		../../../../Qt/5.11.2/mingw53_32/include/QtGui/qpainter.h \
 		../../../../Qt/5.11.2/mingw53_32/include/QtGui/qtextoption.h \
 		../../../../Qt/5.11.2/mingw53_32/include/QtGui/qpen.h \
-		../../../../Qt/5.11.2/mingw53_32/include/QtWidgets/QWidget \
-		../../../../Qt/5.11.2/mingw53_32/include/QtGui/QPen \
-		../../../../Qt/5.11.2/mingw53_32/include/QtGui/QBrush \
-		shape.h \
+		vector.h \
+		../../../../Qt/5.11.2/mingw53_32/include/QtWidgets/QMessageBox \
+		../../../../Qt/5.11.2/mingw53_32/include/QtWidgets/qmessagebox.h \
+		contactwindow.h \
+		ui_mainwindow.h \
+		../../../../Qt/5.11.2/mingw53_32/include/QtCore/QVariant \
+		../../../../Qt/5.11.2/mingw53_32/include/QtWidgets/QAction \
+		../../../../Qt/5.11.2/mingw53_32/include/QtWidgets/qaction.h \
+		../../../../Qt/5.11.2/mingw53_32/include/QtWidgets/qactiongroup.h \
 		../../../../Qt/5.11.2/mingw53_32/include/QtWidgets/QApplication \
 		../../../../Qt/5.11.2/mingw53_32/include/QtWidgets/qapplication.h \
 		../../../../Qt/5.11.2/mingw53_32/include/QtCore/qcoreapplication.h \
@@ -884,15 +870,6 @@ release/mainwindow.o: mainwindow.cpp mainwindow.h \
 		../../../../Qt/5.11.2/mingw53_32/include/QtWidgets/qdesktopwidget.h \
 		../../../../Qt/5.11.2/mingw53_32/include/QtGui/qguiapplication.h \
 		../../../../Qt/5.11.2/mingw53_32/include/QtGui/qinputmethod.h \
-		vector.h \
-		contactwindow.h \
-		../../../../Qt/5.11.2/mingw53_32/include/QtWidgets/QMessageBox \
-		../../../../Qt/5.11.2/mingw53_32/include/QtWidgets/qmessagebox.h \
-		ui_mainwindow.h \
-		../../../../Qt/5.11.2/mingw53_32/include/QtCore/QVariant \
-		../../../../Qt/5.11.2/mingw53_32/include/QtWidgets/QAction \
-		../../../../Qt/5.11.2/mingw53_32/include/QtWidgets/qaction.h \
-		../../../../Qt/5.11.2/mingw53_32/include/QtWidgets/qactiongroup.h \
 		../../../../Qt/5.11.2/mingw53_32/include/QtWidgets/QComboBox \
 		../../../../Qt/5.11.2/mingw53_32/include/QtWidgets/qcombobox.h \
 		../../../../Qt/5.11.2/mingw53_32/include/QtWidgets/qabstractitemdelegate.h \
@@ -936,7 +913,8 @@ release/mainwindow.o: mainwindow.cpp mainwindow.h \
 		../../../../Qt/5.11.2/mingw53_32/include/QtGui/qtextformat.h \
 		../../../../Qt/5.11.2/mingw53_32/include/QtWidgets/QToolBar \
 		../../../../Qt/5.11.2/mingw53_32/include/QtWidgets/qtoolbar.h \
-		../../../../Qt/5.11.2/mingw53_32/include/QtWidgets/QVBoxLayout
+		../../../../Qt/5.11.2/mingw53_32/include/QtWidgets/QVBoxLayout \
+		../../../../Qt/5.11.2/mingw53_32/include/QtWidgets/QWidget
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\mainwindow.o mainwindow.cpp
 
 release/adminlogin.o: adminlogin.cpp adminlogin.h \
@@ -1076,9 +1054,8 @@ release/adminlogin.o: adminlogin.cpp adminlogin.h \
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\adminlogin.o adminlogin.cpp
 
 release/shape.o: shape.cpp shape.h \
-		../../../../Qt/5.11.2/mingw53_32/include/QtWidgets/QApplication \
-		../../../../Qt/5.11.2/mingw53_32/include/QtWidgets/qapplication.h \
-		../../../../Qt/5.11.2/mingw53_32/include/QtWidgets/qtwidgetsglobal.h \
+		../../../../Qt/5.11.2/mingw53_32/include/QtGui/QPainter \
+		../../../../Qt/5.11.2/mingw53_32/include/QtGui/qpainter.h \
 		../../../../Qt/5.11.2/mingw53_32/include/QtGui/qtguiglobal.h \
 		../../../../Qt/5.11.2/mingw53_32/include/QtCore/qglobal.h \
 		../../../../Qt/5.11.2/mingw53_32/include/QtCore/qconfig-bootstrapped.h \
@@ -1102,99 +1079,73 @@ release/shape.o: shape.cpp shape.h \
 		../../../../Qt/5.11.2/mingw53_32/include/QtCore/qnumeric.h \
 		../../../../Qt/5.11.2/mingw53_32/include/QtCore/qversiontagging.h \
 		../../../../Qt/5.11.2/mingw53_32/include/QtGui/qtgui-config.h \
-		../../../../Qt/5.11.2/mingw53_32/include/QtWidgets/qtwidgets-config.h \
-		../../../../Qt/5.11.2/mingw53_32/include/QtCore/qcoreapplication.h \
+		../../../../Qt/5.11.2/mingw53_32/include/QtCore/qnamespace.h \
+		../../../../Qt/5.11.2/mingw53_32/include/QtCore/qrect.h \
+		../../../../Qt/5.11.2/mingw53_32/include/QtCore/qmargins.h \
+		../../../../Qt/5.11.2/mingw53_32/include/QtCore/qsize.h \
+		../../../../Qt/5.11.2/mingw53_32/include/QtCore/qpoint.h \
+		../../../../Qt/5.11.2/mingw53_32/include/QtCore/qscopedpointer.h \
+		../../../../Qt/5.11.2/mingw53_32/include/QtGui/qpixmap.h \
+		../../../../Qt/5.11.2/mingw53_32/include/QtGui/qpaintdevice.h \
+		../../../../Qt/5.11.2/mingw53_32/include/QtGui/qwindowdefs.h \
+		../../../../Qt/5.11.2/mingw53_32/include/QtCore/qobjectdefs.h \
+		../../../../Qt/5.11.2/mingw53_32/include/QtCore/qobjectdefs_impl.h \
+		../../../../Qt/5.11.2/mingw53_32/include/QtGui/qwindowdefs_win.h \
+		../../../../Qt/5.11.2/mingw53_32/include/QtGui/qcolor.h \
+		../../../../Qt/5.11.2/mingw53_32/include/QtGui/qrgb.h \
+		../../../../Qt/5.11.2/mingw53_32/include/QtCore/qstringlist.h \
+		../../../../Qt/5.11.2/mingw53_32/include/QtCore/qlist.h \
+		../../../../Qt/5.11.2/mingw53_32/include/QtCore/qalgorithms.h \
+		../../../../Qt/5.11.2/mingw53_32/include/QtCore/qiterator.h \
+		../../../../Qt/5.11.2/mingw53_32/include/QtCore/qrefcount.h \
+		../../../../Qt/5.11.2/mingw53_32/include/QtCore/qarraydata.h \
+		../../../../Qt/5.11.2/mingw53_32/include/QtCore/qhashfunctions.h \
 		../../../../Qt/5.11.2/mingw53_32/include/QtCore/qstring.h \
 		../../../../Qt/5.11.2/mingw53_32/include/QtCore/qchar.h \
 		../../../../Qt/5.11.2/mingw53_32/include/QtCore/qbytearray.h \
-		../../../../Qt/5.11.2/mingw53_32/include/QtCore/qrefcount.h \
-		../../../../Qt/5.11.2/mingw53_32/include/QtCore/qnamespace.h \
-		../../../../Qt/5.11.2/mingw53_32/include/QtCore/qarraydata.h \
 		../../../../Qt/5.11.2/mingw53_32/include/QtCore/qstringliteral.h \
 		../../../../Qt/5.11.2/mingw53_32/include/QtCore/qstringalgorithms.h \
 		../../../../Qt/5.11.2/mingw53_32/include/QtCore/qstringview.h \
 		../../../../Qt/5.11.2/mingw53_32/include/QtCore/qstringbuilder.h \
-		../../../../Qt/5.11.2/mingw53_32/include/QtCore/qobject.h \
-		../../../../Qt/5.11.2/mingw53_32/include/QtCore/qobjectdefs.h \
-		../../../../Qt/5.11.2/mingw53_32/include/QtCore/qobjectdefs_impl.h \
-		../../../../Qt/5.11.2/mingw53_32/include/QtCore/qlist.h \
-		../../../../Qt/5.11.2/mingw53_32/include/QtCore/qalgorithms.h \
-		../../../../Qt/5.11.2/mingw53_32/include/QtCore/qiterator.h \
-		../../../../Qt/5.11.2/mingw53_32/include/QtCore/qhashfunctions.h \
 		../../../../Qt/5.11.2/mingw53_32/include/QtCore/qpair.h \
 		../../../../Qt/5.11.2/mingw53_32/include/QtCore/qbytearraylist.h \
-		../../../../Qt/5.11.2/mingw53_32/include/QtCore/qstringlist.h \
 		../../../../Qt/5.11.2/mingw53_32/include/QtCore/qregexp.h \
 		../../../../Qt/5.11.2/mingw53_32/include/QtCore/qstringmatcher.h \
-		../../../../Qt/5.11.2/mingw53_32/include/QtCore/qcoreevent.h \
-		../../../../Qt/5.11.2/mingw53_32/include/QtCore/qscopedpointer.h \
-		../../../../Qt/5.11.2/mingw53_32/include/QtCore/qmetatype.h \
-		../../../../Qt/5.11.2/mingw53_32/include/QtCore/qvarlengtharray.h \
-		../../../../Qt/5.11.2/mingw53_32/include/QtCore/qcontainerfwd.h \
-		../../../../Qt/5.11.2/mingw53_32/include/QtCore/qobject_impl.h \
-		../../../../Qt/5.11.2/mingw53_32/include/QtCore/qeventloop.h \
-		../../../../Qt/5.11.2/mingw53_32/include/QtGui/qwindowdefs.h \
-		../../../../Qt/5.11.2/mingw53_32/include/QtGui/qwindowdefs_win.h \
-		../../../../Qt/5.11.2/mingw53_32/include/QtCore/qpoint.h \
-		../../../../Qt/5.11.2/mingw53_32/include/QtCore/qsize.h \
-		../../../../Qt/5.11.2/mingw53_32/include/QtGui/qcursor.h \
-		../../../../Qt/5.11.2/mingw53_32/include/QtWidgets/qdesktopwidget.h \
-		../../../../Qt/5.11.2/mingw53_32/include/QtWidgets/qwidget.h \
-		../../../../Qt/5.11.2/mingw53_32/include/QtCore/qmargins.h \
-		../../../../Qt/5.11.2/mingw53_32/include/QtGui/qpaintdevice.h \
-		../../../../Qt/5.11.2/mingw53_32/include/QtCore/qrect.h \
-		../../../../Qt/5.11.2/mingw53_32/include/QtGui/qpalette.h \
-		../../../../Qt/5.11.2/mingw53_32/include/QtGui/qcolor.h \
-		../../../../Qt/5.11.2/mingw53_32/include/QtGui/qrgb.h \
 		../../../../Qt/5.11.2/mingw53_32/include/QtGui/qrgba64.h \
-		../../../../Qt/5.11.2/mingw53_32/include/QtGui/qbrush.h \
-		../../../../Qt/5.11.2/mingw53_32/include/QtCore/qvector.h \
-		../../../../Qt/5.11.2/mingw53_32/include/QtGui/qmatrix.h \
-		../../../../Qt/5.11.2/mingw53_32/include/QtGui/qpolygon.h \
-		../../../../Qt/5.11.2/mingw53_32/include/QtGui/qregion.h \
-		../../../../Qt/5.11.2/mingw53_32/include/QtCore/qdatastream.h \
-		../../../../Qt/5.11.2/mingw53_32/include/QtCore/qiodevice.h \
-		../../../../Qt/5.11.2/mingw53_32/include/QtCore/qline.h \
-		../../../../Qt/5.11.2/mingw53_32/include/QtGui/qtransform.h \
-		../../../../Qt/5.11.2/mingw53_32/include/QtGui/qpainterpath.h \
-		../../../../Qt/5.11.2/mingw53_32/include/QtGui/qimage.h \
-		../../../../Qt/5.11.2/mingw53_32/include/QtGui/qpixelformat.h \
-		../../../../Qt/5.11.2/mingw53_32/include/QtGui/qpixmap.h \
 		../../../../Qt/5.11.2/mingw53_32/include/QtCore/qsharedpointer.h \
 		../../../../Qt/5.11.2/mingw53_32/include/QtCore/qshareddata.h \
 		../../../../Qt/5.11.2/mingw53_32/include/QtCore/qhash.h \
 		../../../../Qt/5.11.2/mingw53_32/include/QtCore/qsharedpointer_impl.h \
-		../../../../Qt/5.11.2/mingw53_32/include/QtGui/qfont.h \
-		../../../../Qt/5.11.2/mingw53_32/include/QtGui/qfontmetrics.h \
-		../../../../Qt/5.11.2/mingw53_32/include/QtGui/qfontinfo.h \
-		../../../../Qt/5.11.2/mingw53_32/include/QtWidgets/qsizepolicy.h \
-		../../../../Qt/5.11.2/mingw53_32/include/QtGui/qkeysequence.h \
-		../../../../Qt/5.11.2/mingw53_32/include/QtGui/qevent.h \
-		../../../../Qt/5.11.2/mingw53_32/include/QtCore/qvariant.h \
-		../../../../Qt/5.11.2/mingw53_32/include/QtCore/qmap.h \
-		../../../../Qt/5.11.2/mingw53_32/include/QtCore/qdebug.h \
-		../../../../Qt/5.11.2/mingw53_32/include/QtCore/qtextstream.h \
-		../../../../Qt/5.11.2/mingw53_32/include/QtCore/qlocale.h \
-		../../../../Qt/5.11.2/mingw53_32/include/QtCore/qset.h \
-		../../../../Qt/5.11.2/mingw53_32/include/QtCore/qcontiguouscache.h \
-		../../../../Qt/5.11.2/mingw53_32/include/QtCore/qurl.h \
-		../../../../Qt/5.11.2/mingw53_32/include/QtCore/qurlquery.h \
-		../../../../Qt/5.11.2/mingw53_32/include/QtCore/qfile.h \
-		../../../../Qt/5.11.2/mingw53_32/include/QtCore/qfiledevice.h \
-		../../../../Qt/5.11.2/mingw53_32/include/QtGui/qvector2d.h \
-		../../../../Qt/5.11.2/mingw53_32/include/QtGui/qtouchdevice.h \
-		../../../../Qt/5.11.2/mingw53_32/include/QtGui/qguiapplication.h \
-		../../../../Qt/5.11.2/mingw53_32/include/QtGui/qinputmethod.h \
-		../../../../Qt/5.11.2/mingw53_32/include/QtGui/QPainter \
-		../../../../Qt/5.11.2/mingw53_32/include/QtGui/qpainter.h \
+		../../../../Qt/5.11.2/mingw53_32/include/QtCore/qobject.h \
+		../../../../Qt/5.11.2/mingw53_32/include/QtCore/qcoreevent.h \
+		../../../../Qt/5.11.2/mingw53_32/include/QtCore/qmetatype.h \
+		../../../../Qt/5.11.2/mingw53_32/include/QtCore/qvarlengtharray.h \
+		../../../../Qt/5.11.2/mingw53_32/include/QtCore/qcontainerfwd.h \
+		../../../../Qt/5.11.2/mingw53_32/include/QtCore/qobject_impl.h \
+		../../../../Qt/5.11.2/mingw53_32/include/QtGui/qimage.h \
+		../../../../Qt/5.11.2/mingw53_32/include/QtGui/qpixelformat.h \
+		../../../../Qt/5.11.2/mingw53_32/include/QtGui/qtransform.h \
+		../../../../Qt/5.11.2/mingw53_32/include/QtGui/qmatrix.h \
+		../../../../Qt/5.11.2/mingw53_32/include/QtGui/qpolygon.h \
+		../../../../Qt/5.11.2/mingw53_32/include/QtCore/qvector.h \
+		../../../../Qt/5.11.2/mingw53_32/include/QtGui/qregion.h \
+		../../../../Qt/5.11.2/mingw53_32/include/QtCore/qdatastream.h \
+		../../../../Qt/5.11.2/mingw53_32/include/QtCore/qiodevice.h \
+		../../../../Qt/5.11.2/mingw53_32/include/QtCore/qline.h \
+		../../../../Qt/5.11.2/mingw53_32/include/QtGui/qpainterpath.h \
 		../../../../Qt/5.11.2/mingw53_32/include/QtGui/qtextoption.h \
 		../../../../Qt/5.11.2/mingw53_32/include/QtGui/qpen.h \
+		../../../../Qt/5.11.2/mingw53_32/include/QtGui/qbrush.h \
+		../../../../Qt/5.11.2/mingw53_32/include/QtGui/qfontinfo.h \
+		../../../../Qt/5.11.2/mingw53_32/include/QtGui/qfont.h \
+		../../../../Qt/5.11.2/mingw53_32/include/QtGui/qfontmetrics.h \
 		vector.h \
 		../../../../Qt/5.11.2/mingw53_32/include/QtCore/QtMath \
 		../../../../Qt/5.11.2/mingw53_32/include/QtCore/qmath.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\shape.o shape.cpp
 
 release/canvas.o: canvas.cpp canvas.h \
+		shape.h \
 		../../../../Qt/5.11.2/mingw53_32/include/QtGui/QPainter \
 		../../../../Qt/5.11.2/mingw53_32/include/QtGui/qpainter.h \
 		../../../../Qt/5.11.2/mingw53_32/include/QtGui/qtguiglobal.h \
@@ -1280,10 +1231,13 @@ release/canvas.o: canvas.cpp canvas.h \
 		../../../../Qt/5.11.2/mingw53_32/include/QtGui/qfontinfo.h \
 		../../../../Qt/5.11.2/mingw53_32/include/QtGui/qfont.h \
 		../../../../Qt/5.11.2/mingw53_32/include/QtGui/qfontmetrics.h \
-		../../../../Qt/5.11.2/mingw53_32/include/QtWidgets/QWidget \
-		../../../../Qt/5.11.2/mingw53_32/include/QtWidgets/qwidget.h \
+		vector.h \
+		../../../../Qt/5.11.2/mingw53_32/include/QtWidgets/QMessageBox \
+		../../../../Qt/5.11.2/mingw53_32/include/QtWidgets/qmessagebox.h \
 		../../../../Qt/5.11.2/mingw53_32/include/QtWidgets/qtwidgetsglobal.h \
 		../../../../Qt/5.11.2/mingw53_32/include/QtWidgets/qtwidgets-config.h \
+		../../../../Qt/5.11.2/mingw53_32/include/QtWidgets/qdialog.h \
+		../../../../Qt/5.11.2/mingw53_32/include/QtWidgets/qwidget.h \
 		../../../../Qt/5.11.2/mingw53_32/include/QtGui/qpalette.h \
 		../../../../Qt/5.11.2/mingw53_32/include/QtWidgets/qsizepolicy.h \
 		../../../../Qt/5.11.2/mingw53_32/include/QtGui/qcursor.h \
@@ -1301,18 +1255,7 @@ release/canvas.o: canvas.cpp canvas.h \
 		../../../../Qt/5.11.2/mingw53_32/include/QtCore/qfile.h \
 		../../../../Qt/5.11.2/mingw53_32/include/QtCore/qfiledevice.h \
 		../../../../Qt/5.11.2/mingw53_32/include/QtGui/qvector2d.h \
-		../../../../Qt/5.11.2/mingw53_32/include/QtGui/qtouchdevice.h \
-		../../../../Qt/5.11.2/mingw53_32/include/QtGui/QPen \
-		../../../../Qt/5.11.2/mingw53_32/include/QtGui/QBrush \
-		shape.h \
-		../../../../Qt/5.11.2/mingw53_32/include/QtWidgets/QApplication \
-		../../../../Qt/5.11.2/mingw53_32/include/QtWidgets/qapplication.h \
-		../../../../Qt/5.11.2/mingw53_32/include/QtCore/qcoreapplication.h \
-		../../../../Qt/5.11.2/mingw53_32/include/QtCore/qeventloop.h \
-		../../../../Qt/5.11.2/mingw53_32/include/QtWidgets/qdesktopwidget.h \
-		../../../../Qt/5.11.2/mingw53_32/include/QtGui/qguiapplication.h \
-		../../../../Qt/5.11.2/mingw53_32/include/QtGui/qinputmethod.h \
-		vector.h
+		../../../../Qt/5.11.2/mingw53_32/include/QtGui/qtouchdevice.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\canvas.o canvas.cpp
 
 release/contactwindow.o: contactwindow.cpp contactwindow.h \
@@ -1431,11 +1374,7 @@ release/contactwindow.o: contactwindow.cpp contactwindow.h \
 		../../../../Qt/5.11.2/mingw53_32/include/QtGui/qinputmethod.h \
 		../../../../Qt/5.11.2/mingw53_32/include/QtWidgets/QLabel \
 		../../../../Qt/5.11.2/mingw53_32/include/QtWidgets/qlabel.h \
-		../../../../Qt/5.11.2/mingw53_32/include/QtWidgets/qframe.h \
-		../../../../Qt/5.11.2/mingw53_32/include/QtWidgets/QPushButton \
-		../../../../Qt/5.11.2/mingw53_32/include/QtWidgets/qpushbutton.h \
-		../../../../Qt/5.11.2/mingw53_32/include/QtWidgets/qabstractbutton.h \
-		../../../../Qt/5.11.2/mingw53_32/include/QtGui/qicon.h
+		../../../../Qt/5.11.2/mingw53_32/include/QtWidgets/qframe.h
 	$(CXX) -c $(CXXFLAGS) $(INCPATH) -o release\contactwindow.o contactwindow.cpp
 
 release/moc_mainwindow.o: release/moc_mainwindow.cpp 

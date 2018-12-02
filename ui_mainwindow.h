@@ -12,6 +12,7 @@
 #include <QtCore/QVariant>
 #include <QtWidgets/QAction>
 #include <QtWidgets/QApplication>
+#include <QtWidgets/QCheckBox>
 #include <QtWidgets/QComboBox>
 #include <QtWidgets/QDoubleSpinBox>
 #include <QtWidgets/QFrame>
@@ -38,7 +39,7 @@ public:
     QAction *actionQuit;
     QAction *actionLogin;
     QAction *actionEnable_Disable_Privledges;
-    QAction *actionhi;
+    QAction *actionContact_List;
     QWidget *centralWidget;
     Canvas *widget;
     QTabWidget *tabWidget;
@@ -248,16 +249,43 @@ public:
     QWidget *tab_text;
     QTextEdit *textEdit;
     QLabel *label_70;
+    QWidget *layoutWidget5;
+    QHBoxLayout *horizontalLayout_56;
     QLabel *label_71;
+    QComboBox *comboBox_textColor;
+    QWidget *layoutWidget6;
+    QHBoxLayout *horizontalLayout_57;
     QLabel *label_72;
+    QComboBox *comboBox_textAignment;
+    QWidget *layoutWidget7;
+    QHBoxLayout *horizontalLayout_58;
     QLabel *label_73;
-    QLabel *label_74;
+    QSpinBox *spinBox_text_point_size;
+    QWidget *layoutWidget8;
+    QHBoxLayout *horizontalLayout_59;
     QLabel *label_75;
+    QComboBox *comboBox_textFontStyle;
+    QWidget *layoutWidget9;
+    QHBoxLayout *horizontalLayout_60;
     QLabel *label_76;
+    QComboBox *comboBox_textFontWeight;
+    QWidget *layoutWidget10;
+    QHBoxLayout *horizontalLayout_61;
+    QCheckBox *checkBox_bold;
+    QCheckBox *checkBox_italic;
+    QWidget *layoutWidget_2;
+    QVBoxLayout *verticalLayout_22;
+    QLabel *label_77;
+    QHBoxLayout *horizontalLayout_62;
+    QLabel *label_78;
+    QSpinBox *spinBox_text_X;
+    QHBoxLayout *horizontalLayout_63;
+    QLabel *label_79;
+    QSpinBox *spinBox_text_Y;
     QPushButton *pushButton;
     QWidget *tab_setProperties;
     QLabel *label_52;
-    QWidget *layoutWidget5;
+    QWidget *layoutWidget11;
     QHBoxLayout *horizontalLayout_46;
     QHBoxLayout *horizontalLayout_42;
     QLabel *label_56;
@@ -274,7 +302,7 @@ public:
     QHBoxLayout *horizontalLayout_39;
     QLabel *label_53;
     QComboBox *comboBox_setPenColor;
-    QWidget *layoutWidget6;
+    QWidget *layoutWidget12;
     QHBoxLayout *horizontalLayout_47;
     QHBoxLayout *horizontalLayout_43;
     QLabel *label_57;
@@ -287,7 +315,8 @@ public:
     QFrame *line_18;
     QLabel *label_59;
     QComboBox *comboBox_setBrushStyle;
-    QWidget *Tab_Modify;
+    QWidget *Tab_Move;
+    QWidget *tab_delete;
     QMenuBar *menuBar;
     QMenu *menuFile;
     QMenu *menuAdmin;
@@ -307,13 +336,13 @@ public:
         actionLogin->setObjectName(QStringLiteral("actionLogin"));
         actionEnable_Disable_Privledges = new QAction(MainWindow);
         actionEnable_Disable_Privledges->setObjectName(QStringLiteral("actionEnable_Disable_Privledges"));
-        actionhi = new QAction(MainWindow);
-        actionhi->setObjectName(QStringLiteral("actionhi"));
+        actionContact_List = new QAction(MainWindow);
+        actionContact_List->setObjectName(QStringLiteral("actionContact_List"));
         centralWidget = new QWidget(MainWindow);
         centralWidget->setObjectName(QStringLiteral("centralWidget"));
         widget = new Canvas(centralWidget);
         widget->setObjectName(QStringLiteral("widget"));
-        widget->setGeometry(QRect(10, 10, 1000, 500));
+        widget->setGeometry(QRect(-120, 0, 1000, 500));
         tabWidget = new QTabWidget(centralWidget);
         tabWidget->setObjectName(QStringLiteral("tabWidget"));
         tabWidget->setGeometry(QRect(10, 520, 991, 241));
@@ -340,7 +369,7 @@ public:
         tab_Line->setObjectName(QStringLiteral("tab_Line"));
         layoutWidget = new QWidget(tab_Line);
         layoutWidget->setObjectName(QStringLiteral("layoutWidget"));
-        layoutWidget->setGeometry(QRect(260, 10, 379, 84));
+        layoutWidget->setGeometry(QRect(260, 10, 466, 84));
         horizontalLayout_18 = new QHBoxLayout(layoutWidget);
         horizontalLayout_18->setSpacing(6);
         horizontalLayout_18->setContentsMargins(11, 11, 11, 11);
@@ -1472,24 +1501,162 @@ public:
         label_70 = new QLabel(tab_text);
         label_70->setObjectName(QStringLiteral("label_70"));
         label_70->setGeometry(QRect(10, 10, 59, 16));
-        label_71 = new QLabel(tab_text);
+        layoutWidget5 = new QWidget(tab_text);
+        layoutWidget5->setObjectName(QStringLiteral("layoutWidget5"));
+        layoutWidget5->setGeometry(QRect(510, 90, 167, 32));
+        horizontalLayout_56 = new QHBoxLayout(layoutWidget5);
+        horizontalLayout_56->setSpacing(6);
+        horizontalLayout_56->setContentsMargins(11, 11, 11, 11);
+        horizontalLayout_56->setObjectName(QStringLiteral("horizontalLayout_56"));
+        horizontalLayout_56->setContentsMargins(0, 0, 0, 0);
+        label_71 = new QLabel(layoutWidget5);
         label_71->setObjectName(QStringLiteral("label_71"));
-        label_71->setGeometry(QRect(250, 30, 91, 16));
-        label_72 = new QLabel(tab_text);
+
+        horizontalLayout_56->addWidget(label_71);
+
+        comboBox_textColor = new QComboBox(layoutWidget5);
+        comboBox_textColor->setObjectName(QStringLiteral("comboBox_textColor"));
+
+        horizontalLayout_56->addWidget(comboBox_textColor);
+
+        layoutWidget6 = new QWidget(tab_text);
+        layoutWidget6->setObjectName(QStringLiteral("layoutWidget6"));
+        layoutWidget6->setGeometry(QRect(250, 130, 200, 32));
+        horizontalLayout_57 = new QHBoxLayout(layoutWidget6);
+        horizontalLayout_57->setSpacing(6);
+        horizontalLayout_57->setContentsMargins(11, 11, 11, 11);
+        horizontalLayout_57->setObjectName(QStringLiteral("horizontalLayout_57"));
+        horizontalLayout_57->setContentsMargins(0, 0, 0, 0);
+        label_72 = new QLabel(layoutWidget6);
         label_72->setObjectName(QStringLiteral("label_72"));
-        label_72->setGeometry(QRect(250, 60, 101, 16));
-        label_73 = new QLabel(tab_text);
+
+        horizontalLayout_57->addWidget(label_72);
+
+        comboBox_textAignment = new QComboBox(layoutWidget6);
+        comboBox_textAignment->setObjectName(QStringLiteral("comboBox_textAignment"));
+
+        horizontalLayout_57->addWidget(comboBox_textAignment);
+
+        layoutWidget7 = new QWidget(tab_text);
+        layoutWidget7->setObjectName(QStringLiteral("layoutWidget7"));
+        layoutWidget7->setGeometry(QRect(250, 90, 211, 32));
+        horizontalLayout_58 = new QHBoxLayout(layoutWidget7);
+        horizontalLayout_58->setSpacing(6);
+        horizontalLayout_58->setContentsMargins(11, 11, 11, 11);
+        horizontalLayout_58->setObjectName(QStringLiteral("horizontalLayout_58"));
+        horizontalLayout_58->setContentsMargins(0, 0, 0, 0);
+        label_73 = new QLabel(layoutWidget7);
         label_73->setObjectName(QStringLiteral("label_73"));
-        label_73->setGeometry(QRect(250, 90, 101, 16));
-        label_74 = new QLabel(tab_text);
-        label_74->setObjectName(QStringLiteral("label_74"));
-        label_74->setGeometry(QRect(240, 120, 121, 16));
-        label_75 = new QLabel(tab_text);
+
+        horizontalLayout_58->addWidget(label_73);
+
+        spinBox_text_point_size = new QSpinBox(layoutWidget7);
+        spinBox_text_point_size->setObjectName(QStringLiteral("spinBox_text_point_size"));
+
+        horizontalLayout_58->addWidget(spinBox_text_point_size);
+
+        layoutWidget8 = new QWidget(tab_text);
+        layoutWidget8->setObjectName(QStringLiteral("layoutWidget8"));
+        layoutWidget8->setGeometry(QRect(510, 0, 271, 38));
+        horizontalLayout_59 = new QHBoxLayout(layoutWidget8);
+        horizontalLayout_59->setSpacing(6);
+        horizontalLayout_59->setContentsMargins(11, 11, 11, 11);
+        horizontalLayout_59->setObjectName(QStringLiteral("horizontalLayout_59"));
+        horizontalLayout_59->setContentsMargins(0, 0, 0, 0);
+        label_75 = new QLabel(layoutWidget8);
         label_75->setObjectName(QStringLiteral("label_75"));
-        label_75->setGeometry(QRect(430, 40, 101, 16));
-        label_76 = new QLabel(tab_text);
+
+        horizontalLayout_59->addWidget(label_75);
+
+        comboBox_textFontStyle = new QComboBox(layoutWidget8);
+        comboBox_textFontStyle->addItem(QString());
+        comboBox_textFontStyle->setObjectName(QStringLiteral("comboBox_textFontStyle"));
+
+        horizontalLayout_59->addWidget(comboBox_textFontStyle);
+
+        layoutWidget9 = new QWidget(tab_text);
+        layoutWidget9->setObjectName(QStringLiteral("layoutWidget9"));
+        layoutWidget9->setGeometry(QRect(510, 50, 208, 32));
+        horizontalLayout_60 = new QHBoxLayout(layoutWidget9);
+        horizontalLayout_60->setSpacing(6);
+        horizontalLayout_60->setContentsMargins(11, 11, 11, 11);
+        horizontalLayout_60->setObjectName(QStringLiteral("horizontalLayout_60"));
+        horizontalLayout_60->setContentsMargins(0, 0, 0, 0);
+        label_76 = new QLabel(layoutWidget9);
         label_76->setObjectName(QStringLiteral("label_76"));
-        label_76->setGeometry(QRect(430, 80, 121, 16));
+
+        horizontalLayout_60->addWidget(label_76);
+
+        comboBox_textFontWeight = new QComboBox(layoutWidget9);
+        comboBox_textFontWeight->setObjectName(QStringLiteral("comboBox_textFontWeight"));
+
+        horizontalLayout_60->addWidget(comboBox_textFontWeight);
+
+        layoutWidget10 = new QWidget(tab_text);
+        layoutWidget10->setObjectName(QStringLiteral("layoutWidget10"));
+        layoutWidget10->setGeometry(QRect(510, 130, 201, 31));
+        horizontalLayout_61 = new QHBoxLayout(layoutWidget10);
+        horizontalLayout_61->setSpacing(6);
+        horizontalLayout_61->setContentsMargins(11, 11, 11, 11);
+        horizontalLayout_61->setObjectName(QStringLiteral("horizontalLayout_61"));
+        horizontalLayout_61->setContentsMargins(0, 0, 0, 0);
+        checkBox_bold = new QCheckBox(layoutWidget10);
+        checkBox_bold->setObjectName(QStringLiteral("checkBox_bold"));
+
+        horizontalLayout_61->addWidget(checkBox_bold);
+
+        checkBox_italic = new QCheckBox(layoutWidget10);
+        checkBox_italic->setObjectName(QStringLiteral("checkBox_italic"));
+
+        horizontalLayout_61->addWidget(checkBox_italic);
+
+        layoutWidget_2 = new QWidget(tab_text);
+        layoutWidget_2->setObjectName(QStringLiteral("layoutWidget_2"));
+        layoutWidget_2->setGeometry(QRect(250, 0, 144, 82));
+        verticalLayout_22 = new QVBoxLayout(layoutWidget_2);
+        verticalLayout_22->setSpacing(6);
+        verticalLayout_22->setContentsMargins(11, 11, 11, 11);
+        verticalLayout_22->setObjectName(QStringLiteral("verticalLayout_22"));
+        verticalLayout_22->setContentsMargins(0, 0, 0, 0);
+        label_77 = new QLabel(layoutWidget_2);
+        label_77->setObjectName(QStringLiteral("label_77"));
+
+        verticalLayout_22->addWidget(label_77);
+
+        horizontalLayout_62 = new QHBoxLayout();
+        horizontalLayout_62->setSpacing(6);
+        horizontalLayout_62->setObjectName(QStringLiteral("horizontalLayout_62"));
+        label_78 = new QLabel(layoutWidget_2);
+        label_78->setObjectName(QStringLiteral("label_78"));
+
+        horizontalLayout_62->addWidget(label_78);
+
+        spinBox_text_X = new QSpinBox(layoutWidget_2);
+        spinBox_text_X->setObjectName(QStringLiteral("spinBox_text_X"));
+        spinBox_text_X->setMaximum(1000);
+
+        horizontalLayout_62->addWidget(spinBox_text_X);
+
+
+        verticalLayout_22->addLayout(horizontalLayout_62);
+
+        horizontalLayout_63 = new QHBoxLayout();
+        horizontalLayout_63->setSpacing(6);
+        horizontalLayout_63->setObjectName(QStringLiteral("horizontalLayout_63"));
+        label_79 = new QLabel(layoutWidget_2);
+        label_79->setObjectName(QStringLiteral("label_79"));
+
+        horizontalLayout_63->addWidget(label_79);
+
+        spinBox_text_Y = new QSpinBox(layoutWidget_2);
+        spinBox_text_Y->setObjectName(QStringLiteral("spinBox_text_Y"));
+        spinBox_text_Y->setMaximum(500);
+
+        horizontalLayout_63->addWidget(spinBox_text_Y);
+
+
+        verticalLayout_22->addLayout(horizontalLayout_63);
+
         tabWidget_addShape->addTab(tab_text, QString());
         pushButton = new QPushButton(Tab_Shape);
         pushButton->setObjectName(QStringLiteral("pushButton"));
@@ -1500,10 +1667,10 @@ public:
         label_52 = new QLabel(tab_setProperties);
         label_52->setObjectName(QStringLiteral("label_52"));
         label_52->setGeometry(QRect(420, 20, 231, 16));
-        layoutWidget5 = new QWidget(tab_setProperties);
-        layoutWidget5->setObjectName(QStringLiteral("layoutWidget5"));
-        layoutWidget5->setGeometry(QRect(90, 50, 801, 34));
-        horizontalLayout_46 = new QHBoxLayout(layoutWidget5);
+        layoutWidget11 = new QWidget(tab_setProperties);
+        layoutWidget11->setObjectName(QStringLiteral("layoutWidget11"));
+        layoutWidget11->setGeometry(QRect(90, 50, 801, 34));
+        horizontalLayout_46 = new QHBoxLayout(layoutWidget11);
         horizontalLayout_46->setSpacing(6);
         horizontalLayout_46->setContentsMargins(11, 11, 11, 11);
         horizontalLayout_46->setObjectName(QStringLiteral("horizontalLayout_46"));
@@ -1511,13 +1678,13 @@ public:
         horizontalLayout_42 = new QHBoxLayout();
         horizontalLayout_42->setSpacing(6);
         horizontalLayout_42->setObjectName(QStringLiteral("horizontalLayout_42"));
-        label_56 = new QLabel(layoutWidget5);
+        label_56 = new QLabel(layoutWidget11);
         label_56->setObjectName(QStringLiteral("label_56"));
         label_56->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
 
         horizontalLayout_42->addWidget(label_56);
 
-        comboBox_setPenCapStyle = new QComboBox(layoutWidget5);
+        comboBox_setPenCapStyle = new QComboBox(layoutWidget11);
         comboBox_setPenCapStyle->addItem(QString());
         comboBox_setPenCapStyle->addItem(QString());
         comboBox_setPenCapStyle->addItem(QString());
@@ -1528,7 +1695,7 @@ public:
 
         horizontalLayout_46->addLayout(horizontalLayout_42);
 
-        line_14 = new QFrame(layoutWidget5);
+        line_14 = new QFrame(layoutWidget11);
         line_14->setObjectName(QStringLiteral("line_14"));
         line_14->setFrameShape(QFrame::VLine);
         line_14->setFrameShadow(QFrame::Sunken);
@@ -1538,13 +1705,13 @@ public:
         horizontalLayout_41 = new QHBoxLayout();
         horizontalLayout_41->setSpacing(6);
         horizontalLayout_41->setObjectName(QStringLiteral("horizontalLayout_41"));
-        label_55 = new QLabel(layoutWidget5);
+        label_55 = new QLabel(layoutWidget11);
         label_55->setObjectName(QStringLiteral("label_55"));
         label_55->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
 
         horizontalLayout_41->addWidget(label_55);
 
-        comboBox_setPenStyle = new QComboBox(layoutWidget5);
+        comboBox_setPenStyle = new QComboBox(layoutWidget11);
         comboBox_setPenStyle->addItem(QString());
         comboBox_setPenStyle->addItem(QString());
         comboBox_setPenStyle->addItem(QString());
@@ -1557,7 +1724,7 @@ public:
 
         horizontalLayout_46->addLayout(horizontalLayout_41);
 
-        line_15 = new QFrame(layoutWidget5);
+        line_15 = new QFrame(layoutWidget11);
         line_15->setObjectName(QStringLiteral("line_15"));
         line_15->setFrameShape(QFrame::VLine);
         line_15->setFrameShadow(QFrame::Sunken);
@@ -1567,13 +1734,13 @@ public:
         horizontalLayout_40 = new QHBoxLayout();
         horizontalLayout_40->setSpacing(6);
         horizontalLayout_40->setObjectName(QStringLiteral("horizontalLayout_40"));
-        label_54 = new QLabel(layoutWidget5);
+        label_54 = new QLabel(layoutWidget11);
         label_54->setObjectName(QStringLiteral("label_54"));
         label_54->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
 
         horizontalLayout_40->addWidget(label_54);
 
-        comboBox_setPenWidth = new QComboBox(layoutWidget5);
+        comboBox_setPenWidth = new QComboBox(layoutWidget11);
         comboBox_setPenWidth->addItem(QString());
         comboBox_setPenWidth->addItem(QString());
         comboBox_setPenWidth->addItem(QString());
@@ -1584,7 +1751,7 @@ public:
 
         horizontalLayout_46->addLayout(horizontalLayout_40);
 
-        line_16 = new QFrame(layoutWidget5);
+        line_16 = new QFrame(layoutWidget11);
         line_16->setObjectName(QStringLiteral("line_16"));
         line_16->setFrameShape(QFrame::VLine);
         line_16->setFrameShadow(QFrame::Sunken);
@@ -1594,13 +1761,13 @@ public:
         horizontalLayout_39 = new QHBoxLayout();
         horizontalLayout_39->setSpacing(6);
         horizontalLayout_39->setObjectName(QStringLiteral("horizontalLayout_39"));
-        label_53 = new QLabel(layoutWidget5);
+        label_53 = new QLabel(layoutWidget11);
         label_53->setObjectName(QStringLiteral("label_53"));
         label_53->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
 
         horizontalLayout_39->addWidget(label_53);
 
-        comboBox_setPenColor = new QComboBox(layoutWidget5);
+        comboBox_setPenColor = new QComboBox(layoutWidget11);
         comboBox_setPenColor->addItem(QString());
         comboBox_setPenColor->addItem(QString());
         comboBox_setPenColor->addItem(QString());
@@ -1614,10 +1781,10 @@ public:
 
         horizontalLayout_46->addLayout(horizontalLayout_39);
 
-        layoutWidget6 = new QWidget(tab_setProperties);
-        layoutWidget6->setObjectName(QStringLiteral("layoutWidget6"));
-        layoutWidget6->setGeometry(QRect(220, 110, 602, 34));
-        horizontalLayout_47 = new QHBoxLayout(layoutWidget6);
+        layoutWidget12 = new QWidget(tab_setProperties);
+        layoutWidget12->setObjectName(QStringLiteral("layoutWidget12"));
+        layoutWidget12->setGeometry(QRect(220, 110, 602, 34));
+        horizontalLayout_47 = new QHBoxLayout(layoutWidget12);
         horizontalLayout_47->setSpacing(6);
         horizontalLayout_47->setContentsMargins(11, 11, 11, 11);
         horizontalLayout_47->setObjectName(QStringLiteral("horizontalLayout_47"));
@@ -1625,13 +1792,13 @@ public:
         horizontalLayout_43 = new QHBoxLayout();
         horizontalLayout_43->setSpacing(6);
         horizontalLayout_43->setObjectName(QStringLiteral("horizontalLayout_43"));
-        label_57 = new QLabel(layoutWidget6);
+        label_57 = new QLabel(layoutWidget12);
         label_57->setObjectName(QStringLiteral("label_57"));
         label_57->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
 
         horizontalLayout_43->addWidget(label_57);
 
-        comboBox_setPenJoinStyle = new QComboBox(layoutWidget6);
+        comboBox_setPenJoinStyle = new QComboBox(layoutWidget12);
         comboBox_setPenJoinStyle->addItem(QString());
         comboBox_setPenJoinStyle->addItem(QString());
         comboBox_setPenJoinStyle->addItem(QString());
@@ -1642,7 +1809,7 @@ public:
 
         horizontalLayout_47->addLayout(horizontalLayout_43);
 
-        line_17 = new QFrame(layoutWidget6);
+        line_17 = new QFrame(layoutWidget12);
         line_17->setObjectName(QStringLiteral("line_17"));
         line_17->setFrameShape(QFrame::VLine);
         line_17->setFrameShadow(QFrame::Sunken);
@@ -1652,13 +1819,13 @@ public:
         horizontalLayout_44 = new QHBoxLayout();
         horizontalLayout_44->setSpacing(6);
         horizontalLayout_44->setObjectName(QStringLiteral("horizontalLayout_44"));
-        label_58 = new QLabel(layoutWidget6);
+        label_58 = new QLabel(layoutWidget12);
         label_58->setObjectName(QStringLiteral("label_58"));
         label_58->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
 
         horizontalLayout_44->addWidget(label_58);
 
-        comboBox_setBrushColor = new QComboBox(layoutWidget6);
+        comboBox_setBrushColor = new QComboBox(layoutWidget12);
         comboBox_setBrushColor->addItem(QString());
         comboBox_setBrushColor->addItem(QString());
         comboBox_setBrushColor->addItem(QString());
@@ -1675,20 +1842,20 @@ public:
         horizontalLayout_45 = new QHBoxLayout();
         horizontalLayout_45->setSpacing(6);
         horizontalLayout_45->setObjectName(QStringLiteral("horizontalLayout_45"));
-        line_18 = new QFrame(layoutWidget6);
+        line_18 = new QFrame(layoutWidget12);
         line_18->setObjectName(QStringLiteral("line_18"));
         line_18->setFrameShape(QFrame::VLine);
         line_18->setFrameShadow(QFrame::Sunken);
 
         horizontalLayout_45->addWidget(line_18);
 
-        label_59 = new QLabel(layoutWidget6);
+        label_59 = new QLabel(layoutWidget12);
         label_59->setObjectName(QStringLiteral("label_59"));
         label_59->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
 
         horizontalLayout_45->addWidget(label_59);
 
-        comboBox_setBrushStyle = new QComboBox(layoutWidget6);
+        comboBox_setBrushStyle = new QComboBox(layoutWidget12);
         comboBox_setBrushStyle->addItem(QString());
         comboBox_setBrushStyle->addItem(QString());
         comboBox_setBrushStyle->setObjectName(QStringLiteral("comboBox_setBrushStyle"));
@@ -1699,14 +1866,17 @@ public:
         horizontalLayout_47->addLayout(horizontalLayout_45);
 
         tabWidget->addTab(tab_setProperties, QString());
-        Tab_Modify = new QWidget();
-        Tab_Modify->setObjectName(QStringLiteral("Tab_Modify"));
-        Tab_Modify->setEnabled(true);
-        tabWidget->addTab(Tab_Modify, QString());
+        Tab_Move = new QWidget();
+        Tab_Move->setObjectName(QStringLiteral("Tab_Move"));
+        Tab_Move->setEnabled(true);
+        tabWidget->addTab(Tab_Move, QString());
+        tab_delete = new QWidget();
+        tab_delete->setObjectName(QStringLiteral("tab_delete"));
+        tabWidget->addTab(tab_delete, QString());
         MainWindow->setCentralWidget(centralWidget);
         menuBar = new QMenuBar(MainWindow);
         menuBar->setObjectName(QStringLiteral("menuBar"));
-        menuBar->setGeometry(QRect(0, 0, 1019, 21));
+        menuBar->setGeometry(QRect(0, 0, 1019, 17));
         menuFile = new QMenu(menuBar);
         menuFile->setObjectName(QStringLiteral("menuFile"));
         menuAdmin = new QMenu(menuBar);
@@ -1730,12 +1900,12 @@ public:
         menuFile->addAction(actionQuit);
         menuAdmin->addAction(actionLogin);
         menuAdmin->addAction(actionEnable_Disable_Privledges);
-        menuContact->addAction(actionhi);
+        menuContact->addAction(actionContact_List);
 
         retranslateUi(MainWindow);
 
         tabWidget->setCurrentIndex(1);
-        tabWidget_addShape->setCurrentIndex(0);
+        tabWidget_addShape->setCurrentIndex(2);
 
 
         QMetaObject::connectSlotsByName(MainWindow);
@@ -1747,7 +1917,7 @@ public:
         actionQuit->setText(QApplication::translate("MainWindow", "Quit", nullptr));
         actionLogin->setText(QApplication::translate("MainWindow", "Login", nullptr));
         actionEnable_Disable_Privledges->setText(QApplication::translate("MainWindow", "Enable Actions", nullptr));
-        actionhi->setText(QApplication::translate("MainWindow", "hi", nullptr));
+        actionContact_List->setText(QApplication::translate("MainWindow", "Contact List", nullptr));
         label_3->setText(QApplication::translate("MainWindow", "hakwe", nullptr));
         label_userType->setText(QApplication::translate("MainWindow", "General User", nullptr));
         tabWidget->setTabText(tabWidget->indexOf(Tab_Tables), QApplication::translate("MainWindow", "Shape Tables", nullptr));
@@ -1820,9 +1990,15 @@ public:
         label_71->setText(QApplication::translate("MainWindow", "Text Color: ", nullptr));
         label_72->setText(QApplication::translate("MainWindow", "Text Alignment:  ", nullptr));
         label_73->setText(QApplication::translate("MainWindow", "Text Point Size: ", nullptr));
-        label_74->setText(QApplication::translate("MainWindow", "Text Font Family: ", nullptr));
         label_75->setText(QApplication::translate("MainWindow", "Text Font Style: ", nullptr));
+        comboBox_textFontStyle->setItemText(0, QApplication::translate("MainWindow", "Times", nullptr));
+
         label_76->setText(QApplication::translate("MainWindow", "Text Font Weight: ", nullptr));
+        checkBox_bold->setText(QApplication::translate("MainWindow", "Bold", nullptr));
+        checkBox_italic->setText(QApplication::translate("MainWindow", "Italic", nullptr));
+        label_77->setText(QApplication::translate("MainWindow", "Coordinate Values", nullptr));
+        label_78->setText(QApplication::translate("MainWindow", "x - value:", nullptr));
+        label_79->setText(QApplication::translate("MainWindow", "y - value:", nullptr));
         tabWidget_addShape->setTabText(tabWidget_addShape->indexOf(tab_text), QApplication::translate("MainWindow", "Text", nullptr));
         pushButton->setText(QApplication::translate("MainWindow", "Add Shape", nullptr));
         tabWidget->setTabText(tabWidget->indexOf(Tab_Shape), QApplication::translate("MainWindow", "Add Shape", nullptr));
@@ -1870,7 +2046,8 @@ public:
         comboBox_setBrushStyle->setItemText(1, QApplication::translate("MainWindow", "Solid Brush", nullptr));
 
         tabWidget->setTabText(tabWidget->indexOf(tab_setProperties), QApplication::translate("MainWindow", "Properties", nullptr));
-        tabWidget->setTabText(tabWidget->indexOf(Tab_Modify), QApplication::translate("MainWindow", "Modify", nullptr));
+        tabWidget->setTabText(tabWidget->indexOf(Tab_Move), QApplication::translate("MainWindow", "Move", nullptr));
+        tabWidget->setTabText(tabWidget->indexOf(tab_delete), QApplication::translate("MainWindow", "Delete Shape", nullptr));
         menuFile->setTitle(QApplication::translate("MainWindow", "File", nullptr));
         menuAdmin->setTitle(QApplication::translate("MainWindow", "Admin", nullptr));
         menuHelp->setTitle(QApplication::translate("MainWindow", "Help", nullptr));

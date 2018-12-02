@@ -56,16 +56,18 @@ public:
         contactwindow->setModal(false);
         logo = new QLabel(contactwindow);
         logo->setObjectName(QStringLiteral("logo"));
-        logo->setGeometry(QRect(60, 20, 171, 181));
+        logo->setGeometry(QRect(80, 20, 171, 181));
         logo->setPixmap(QPixmap(QString::fromUtf8("oof logo.jpg")));
         logo->setScaledContents(true);
         teamName = new QLabel(contactwindow);
         teamName->setObjectName(QStringLiteral("teamName"));
         teamName->setEnabled(true);
-        teamName->setGeometry(QRect(20, 180, 300, 30));
+        teamName->setGeometry(QRect(50, 220, 300, 30));
         teamName->setMinimumSize(QSize(100, 30));
         QFont font1;
-        font1.setPointSize(12);
+        font1.setPointSize(10);
+        font1.setBold(true);
+        font1.setWeight(75);
         teamName->setFont(font1);
         teamName->setFrameShape(QFrame::NoFrame);
         taylor = new QLabel(contactwindow);
@@ -118,7 +120,7 @@ public:
 
     void retranslateUi(QDialog *contactwindow)
     {
-        contactwindow->setWindowTitle(QApplication::translate("contactwindow", "Dialog", nullptr));
+        contactwindow->setWindowTitle(QApplication::translate("contactwindow", "Contact Page", nullptr));
         logo->setText(QString());
         teamName->setText(QApplication::translate("contactwindow", "Object Oriented Friends", nullptr));
         taylor->setText(QApplication::translate("contactwindow", "Taylor Paczkowski", nullptr));

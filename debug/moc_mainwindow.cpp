@@ -22,7 +22,7 @@ QT_WARNING_PUSH
 QT_WARNING_DISABLE_DEPRECATED
 struct qt_meta_stringdata_MainWindow_t {
     QByteArrayData data[7];
-    char stringdata0[150];
+    char stringdata0[160];
 };
 #define QT_MOC_LITERAL(idx, ofs, len) \
     Q_STATIC_BYTE_ARRAY_DATA_HEADER_INITIALIZER_WITH_OFFSET(len, \
@@ -37,13 +37,14 @@ QT_MOC_LITERAL(2, 36, 0), // ""
 QT_MOC_LITERAL(3, 37, 23), // "on_actionQuit_triggered"
 QT_MOC_LITERAL(4, 61, 44), // "on_actionEnable_Disable_Privl..."
 QT_MOC_LITERAL(5, 106, 21), // "on_pushButton_clicked"
-QT_MOC_LITERAL(6, 128, 21) // "on_actionhi_triggered"
+QT_MOC_LITERAL(6, 128, 31) // "on_actionContact_List_triggered"
 
     },
     "MainWindow\0on_actionLogin_triggered\0"
     "\0on_actionQuit_triggered\0"
     "on_actionEnable_Disable_Privledges_triggered\0"
-    "on_pushButton_clicked\0on_actionhi_triggered"
+    "on_pushButton_clicked\0"
+    "on_actionContact_List_triggered"
 };
 #undef QT_MOC_LITERAL
 
@@ -87,7 +88,7 @@ void MainWindow::qt_static_metacall(QObject *_o, QMetaObject::Call _c, int _id, 
         case 1: _t->on_actionQuit_triggered(); break;
         case 2: _t->on_actionEnable_Disable_Privledges_triggered(); break;
         case 3: _t->on_pushButton_clicked(); break;
-        case 4: _t->on_actionhi_triggered(); break;
+        case 4: _t->on_actionContact_List_triggered(); break;
         default: ;
         }
     }

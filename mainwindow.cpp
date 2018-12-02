@@ -8,7 +8,7 @@ MainWindow::MainWindow(QWidget *parent) :
 {
     ui->setupUi(this);
 
-    ui->Tab_Modify->setEnabled(false);
+    ui->Tab_Move->setEnabled(false);
     ui->Tab_Shape->setEnabled(true);
     ui->tab_setProperties->setEnabled(false);
 }
@@ -40,11 +40,11 @@ void MainWindow::on_actionEnable_Disable_Privledges_triggered()
     //Gets new admin privledges
     SetAdminPriv(uiLogin->GetAdminPriv());
 
-    ui->Tab_Modify->setEnabled(adminPrivW);
+    ui->Tab_Move->setEnabled(adminPrivW);
     ui->Tab_Shape->setEnabled(adminPrivW);
     ui->tab_setProperties->setEnabled(adminPrivW);
 
-    if( ui->Tab_Modify->isEnabled())
+    if( ui->Tab_Move->isEnabled())
     {
         QMessageBox::information(this, "Admin Actions", "Admin actions enabled. Check the \"Modify Tab\" for actions.");
         ui->label_userType->setText("Admin user");
@@ -350,4 +350,16 @@ Qt::BrushStyle MainWindow::getBrushStyle()
         break;}
     default: {return Qt::NoBrush;}
     }
+}
+
+void MainWindow::on_actionContact_List_triggered()
+{
+    uiContact = new contactwindow(this);
+    uiContact->show();
+}
+
+void MainWindow::on_pushButton_2_clicked()
+{
+    vector <Shape *> copy;
+    copy = copyVector();
 }
