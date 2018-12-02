@@ -70,6 +70,7 @@ class Shape : public QPainter
         int shape_ID;
         ShapeType shapeType;
 
+
 };
 
 class Line : public Shape

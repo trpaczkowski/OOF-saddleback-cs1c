@@ -160,8 +160,19 @@
      </size>
     </property>
    </widget>
+   <widget class="canvas" name="widget" native="true">
+    <property name="geometry">
+     <rect>
+      <x>380</x>
+      <y>60</y>
+      <width>120</width>
+      <height>80</height>
+     </rect>
+    </property>
+   </widget>
    <zorder>graphicsView</zorder>
    <zorder>tabWidget</zorder>
+   <zorder>widget</zorder>
   </widget>
   <widget class="QMenuBar" name="menuBar">
    <property name="geometry">
@@ -226,6 +237,14 @@
   </action>
  </widget>
  <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>canvas</class>
+   <extends>QWidget</extends>
+   <header>canvas.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
  <resources/>
  <connections/>
 </ui>
