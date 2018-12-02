@@ -1,16 +1,18 @@
 #ifndef SHAPE_H
 #define SHAPE_H
 
-#include <QApplication>
+//#include <QApplication>
 #include <QPainter>
 #include "vector.h"
+
+using namespace VecSTD;
 
 //HELLo
 
 class Shape : public QPainter
 {
     public:
-
+        QPainter painter;
         enum class ShapeType {NoShape, Line, Polyline, Polygon, Rectangle, Ellipse, Circle , Text};
 
         ShapeType getShape() const {return shapeType;}
@@ -47,6 +49,10 @@ class Shape : public QPainter
          * @param y
          */
 
+        virtual void draw() =0;
+
+        virtual void draw(QPaintDevice *device)= 0;
+
         virtual void move(const int x, const int y) = 0;
         /**
          * @brief Calculates the perimeter.
@@ -70,7 +76,6 @@ class Shape : public QPainter
         int shape_ID;
         ShapeType shapeType;
 
-
 };
 
 class Line : public Shape
@@ -82,7 +87,19 @@ class Line : public Shape
 
         void setPoints(const QPoint& begin, const QPoint& end);
 
-        void draw(const int x, const int y)  override;
+        void draw(const int x, const int y) override;
+
+        void draw() override
+        {
+
+        }
+
+        virtual void draw(QPaintDevice *device) override
+        {
+            painter.begin(device);
+            painter.drawLine(begin,end);
+            painter.end();
+        }
 
         void move(const int x, const int y) override;
 
@@ -111,7 +128,25 @@ class Polyline : public Shape
 
         void addPoint(const QPointF& point);
 
+        void addNumPoints(int numIn){ numPoints = numIn;}
+
         void draw(const int x, const int y)  override;
+
+        virtual void draw()
+        {
+
+        }
+
+        virtual void draw(QPaintDevice *device) override
+        {
+            painter.begin(device);
+            for(int i = 0; i < numPoints; i++)
+            {
+                polyLinePointsAr[i] = points[i];
+            }
+            painter.drawPolyline(polyLinePointsAr, numPoints);
+            painter.end();
+        }
 
         void move(const int x, const int y) override;
 
@@ -125,6 +160,8 @@ class Polyline : public Shape
 
     private:
         vector<QPointF> points;
+        int numPoints;
+        QPointF polyLinePointsAr[6];
 
 };
 
@@ -137,7 +174,25 @@ class Polygon : public Shape
 
         void addPoint(const QPointF& point);
 
+        void addNumPoints(int numIn){ numPoints = numIn;}
+
         void draw(const int x, const int y)  override;
+
+        virtual void draw()
+        {
+
+        }
+
+        virtual void draw(QPaintDevice *device) override
+        {
+            painter.begin(device);
+            for(int i = 0; i < numPoints; i++)
+            {
+                polygonPointsAr[i] = points[i];
+            }
+            painter.drawPolygon(polygonPointsAr, numPoints);
+            painter.end();
+        }
 
         void move(const int x, const int y) override;
 
@@ -151,6 +206,8 @@ class Polygon : public Shape
 
     private:
         vector<QPointF> points;
+        int numPoints;
+        QPointF polygonPointsAr[8];
 
 };
 
@@ -166,6 +223,18 @@ class Rectangle : public Shape
         void setDimensions(int width, int height);
 
         void draw(const int x, const int y)  override;
+
+        virtual void draw() override
+        {
+
+        }
+
+        void draw(QPaintDevice* device) override
+        {
+            painter.begin(device);
+            painter.drawRect(position.x(),position.y(), width,height);
+            painter.end();
+        }
 
         double perimeter() override;
 
@@ -200,6 +269,18 @@ class Ellipse : public Shape
 
         void draw(const int x, const int y)  override;
 
+        virtual void draw()
+        {
+
+        }
+
+        void draw(QPaintDevice *device)
+        {
+            painter.begin(device);
+            painter.drawEllipse(position.x(), position.y(),width,height);
+            painter.end();
+        }
+
         double perimeter() override;
 
         double area() override;
@@ -220,37 +301,6 @@ class Ellipse : public Shape
 
 };
 
-class Circle : public Shape
-{
-    public:
-        Circle(QPaintDevice* device = nullptr, int id = -1) : Shape(device, id, ShapeType::Circle) {}
 
-        ~Circle() override {}
-
-        void setPosition(const QPointF& point) {position = point;}
-
-        void setRadius(double radius) {this->radius = radius;}
-
-        void setDimensions(double radius);
-
-        void draw(const int x, const int y)  override;
-
-        double perimeter() override;
-
-        double area() override;
-
-        void move(const int x, const int y) override;
-
-        void remove() override;
-
-        QPointF& getPosition() {return position;}
-
-        double getRadius() {return radius;}
-
-    private:
-        QPointF position;
-        double radius;
-
-};
 
 #endif // SHAPE_H
