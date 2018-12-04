@@ -34,43 +34,25 @@ class Shape : public QPainter
         void defaultStyle();
 
         virtual ~Shape() {}
-        /**
-         * @brief Draws and renders the shape in the rendering area.
-         * @param x
-         * @param y
-         */
-
+        
+        //Draws and renders the shape in the rendering area.
         virtual void draw(const int x, const int y) = 0;
-        /**
-         * @brief Moves the shape to the specified coordinates.
-         * @param x
-         * @param y
-         */
-
+        
+        //Moves the shape to the specified coordinates.
         virtual void move(const int x, const int y) = 0;
-        /**
-         * @brief Calculates the perimeter.
-         * @return the perimeter
-         */
-
+        
+        //Calculates the perimeter.
         virtual double perimeter() = 0;
-        /**
-         * @brief Calculates the area.
-         * @return the area
-         */
-
+        
+        //Calculates the area.
         virtual double area() = 0;
-        /**
-         * @brief deletes the shape from the render screen
-         */
-
+        
+        //Deletes the shape from the render screen
         virtual void remove() = 0;
 
     private:
-        int shape_ID;
+        int       shape_ID;
         ShapeType shapeType;
-
-
 };
 
 class Line : public Shape
