@@ -1,7 +1,7 @@
 /********************************************************************************
 ** Form generated from reading UI file 'mainwindow.ui'
 **
-** Created by: Qt User Interface Compiler version 5.12.0
+** Created by: Qt User Interface Compiler version 5.11.1
 **
 ** WARNING! All changes made in this file will be lost when recompiling UI file!
 ********************************************************************************/
@@ -360,71 +360,71 @@ public:
     void setupUi(QMainWindow *MainWindow)
     {
         if (MainWindow->objectName().isEmpty())
-            MainWindow->setObjectName(QString::fromUtf8("MainWindow"));
+            MainWindow->setObjectName(QStringLiteral("MainWindow"));
         MainWindow->resize(1019, 840);
         actionQuit = new QAction(MainWindow);
-        actionQuit->setObjectName(QString::fromUtf8("actionQuit"));
+        actionQuit->setObjectName(QStringLiteral("actionQuit"));
         actionLogin = new QAction(MainWindow);
-        actionLogin->setObjectName(QString::fromUtf8("actionLogin"));
+        actionLogin->setObjectName(QStringLiteral("actionLogin"));
         actionEnable_Disable_Privledges = new QAction(MainWindow);
-        actionEnable_Disable_Privledges->setObjectName(QString::fromUtf8("actionEnable_Disable_Privledges"));
+        actionEnable_Disable_Privledges->setObjectName(QStringLiteral("actionEnable_Disable_Privledges"));
         actionContact_Info = new QAction(MainWindow);
-        actionContact_Info->setObjectName(QString::fromUtf8("actionContact_Info"));
+        actionContact_Info->setObjectName(QStringLiteral("actionContact_Info"));
         centralWidget = new QWidget(MainWindow);
-        centralWidget->setObjectName(QString::fromUtf8("centralWidget"));
+        centralWidget->setObjectName(QStringLiteral("centralWidget"));
         widget = new Canvas(centralWidget);
-        widget->setObjectName(QString::fromUtf8("widget"));
+        widget->setObjectName(QStringLiteral("widget"));
         widget->setGeometry(QRect(10, 10, 1000, 500));
         tabWidget = new QTabWidget(centralWidget);
-        tabWidget->setObjectName(QString::fromUtf8("tabWidget"));
+        tabWidget->setObjectName(QStringLiteral("tabWidget"));
         tabWidget->setGeometry(QRect(10, 520, 991, 241));
         tabWidget->setMinimumSize(QSize(250, 0));
         tabWidget->setMaximumSize(QSize(1000, 16777215));
-        tabWidget->setStyleSheet(QString::fromUtf8(""));
+        tabWidget->setStyleSheet(QStringLiteral(""));
         tabWidget->setTabBarAutoHide(false);
         Tab_Tables = new QWidget();
-        Tab_Tables->setObjectName(QString::fromUtf8("Tab_Tables"));
+        Tab_Tables->setObjectName(QStringLiteral("Tab_Tables"));
         label_3 = new QLabel(Tab_Tables);
-        label_3->setObjectName(QString::fromUtf8("label_3"));
+        label_3->setObjectName(QStringLiteral("label_3"));
         label_3->setGeometry(QRect(110, 210, 47, 13));
         label_userType = new QLabel(Tab_Tables);
-        label_userType->setObjectName(QString::fromUtf8("label_userType"));
+        label_userType->setObjectName(QStringLiteral("label_userType"));
         label_userType->setGeometry(QRect(10, 10, 91, 16));
         tabWidget->addTab(Tab_Tables, QString());
         Tab_Shape = new QWidget();
-        Tab_Shape->setObjectName(QString::fromUtf8("Tab_Shape"));
+        Tab_Shape->setObjectName(QStringLiteral("Tab_Shape"));
         Tab_Shape->setEnabled(true);
         tabWidget_addShape = new QTabWidget(Tab_Shape);
-        tabWidget_addShape->setObjectName(QString::fromUtf8("tabWidget_addShape"));
+        tabWidget_addShape->setObjectName(QStringLiteral("tabWidget_addShape"));
         tabWidget_addShape->setGeometry(QRect(10, 10, 841, 201));
         tab_Line = new QWidget();
-        tab_Line->setObjectName(QString::fromUtf8("tab_Line"));
+        tab_Line->setObjectName(QStringLiteral("tab_Line"));
         layoutWidget = new QWidget(tab_Line);
-        layoutWidget->setObjectName(QString::fromUtf8("layoutWidget"));
+        layoutWidget->setObjectName(QStringLiteral("layoutWidget"));
         layoutWidget->setGeometry(QRect(260, 10, 466, 84));
         horizontalLayout_18 = new QHBoxLayout(layoutWidget);
         horizontalLayout_18->setSpacing(6);
         horizontalLayout_18->setContentsMargins(11, 11, 11, 11);
-        horizontalLayout_18->setObjectName(QString::fromUtf8("horizontalLayout_18"));
+        horizontalLayout_18->setObjectName(QStringLiteral("horizontalLayout_18"));
         horizontalLayout_18->setContentsMargins(0, 0, 0, 0);
         verticalLayout_2 = new QVBoxLayout();
         verticalLayout_2->setSpacing(6);
-        verticalLayout_2->setObjectName(QString::fromUtf8("verticalLayout_2"));
+        verticalLayout_2->setObjectName(QStringLiteral("verticalLayout_2"));
         label = new QLabel(layoutWidget);
-        label->setObjectName(QString::fromUtf8("label"));
+        label->setObjectName(QStringLiteral("label"));
 
         verticalLayout_2->addWidget(label);
 
         horizontalLayout = new QHBoxLayout();
         horizontalLayout->setSpacing(6);
-        horizontalLayout->setObjectName(QString::fromUtf8("horizontalLayout"));
+        horizontalLayout->setObjectName(QStringLiteral("horizontalLayout"));
         label_4 = new QLabel(layoutWidget);
-        label_4->setObjectName(QString::fromUtf8("label_4"));
+        label_4->setObjectName(QStringLiteral("label_4"));
 
         horizontalLayout->addWidget(label_4);
 
         spinBox_line_firstX = new QSpinBox(layoutWidget);
-        spinBox_line_firstX->setObjectName(QString::fromUtf8("spinBox_line_firstX"));
+        spinBox_line_firstX->setObjectName(QStringLiteral("spinBox_line_firstX"));
         spinBox_line_firstX->setMaximum(1000);
 
         horizontalLayout->addWidget(spinBox_line_firstX);
@@ -434,14 +434,14 @@ public:
 
         horizontalLayout_2 = new QHBoxLayout();
         horizontalLayout_2->setSpacing(6);
-        horizontalLayout_2->setObjectName(QString::fromUtf8("horizontalLayout_2"));
+        horizontalLayout_2->setObjectName(QStringLiteral("horizontalLayout_2"));
         label_5 = new QLabel(layoutWidget);
-        label_5->setObjectName(QString::fromUtf8("label_5"));
+        label_5->setObjectName(QStringLiteral("label_5"));
 
         horizontalLayout_2->addWidget(label_5);
 
         spinBox_line_firstY = new QSpinBox(layoutWidget);
-        spinBox_line_firstY->setObjectName(QString::fromUtf8("spinBox_line_firstY"));
+        spinBox_line_firstY->setObjectName(QStringLiteral("spinBox_line_firstY"));
         spinBox_line_firstY->setMaximum(500);
 
         horizontalLayout_2->addWidget(spinBox_line_firstY);
@@ -453,7 +453,7 @@ public:
         horizontalLayout_18->addLayout(verticalLayout_2);
 
         line_6 = new QFrame(layoutWidget);
-        line_6->setObjectName(QString::fromUtf8("line_6"));
+        line_6->setObjectName(QStringLiteral("line_6"));
         line_6->setFrameShape(QFrame::VLine);
         line_6->setFrameShadow(QFrame::Sunken);
 
@@ -461,22 +461,22 @@ public:
 
         verticalLayout = new QVBoxLayout();
         verticalLayout->setSpacing(6);
-        verticalLayout->setObjectName(QString::fromUtf8("verticalLayout"));
+        verticalLayout->setObjectName(QStringLiteral("verticalLayout"));
         label_2 = new QLabel(layoutWidget);
-        label_2->setObjectName(QString::fromUtf8("label_2"));
+        label_2->setObjectName(QStringLiteral("label_2"));
 
         verticalLayout->addWidget(label_2);
 
         horizontalLayout_3 = new QHBoxLayout();
         horizontalLayout_3->setSpacing(6);
-        horizontalLayout_3->setObjectName(QString::fromUtf8("horizontalLayout_3"));
+        horizontalLayout_3->setObjectName(QStringLiteral("horizontalLayout_3"));
         label_6 = new QLabel(layoutWidget);
-        label_6->setObjectName(QString::fromUtf8("label_6"));
+        label_6->setObjectName(QStringLiteral("label_6"));
 
         horizontalLayout_3->addWidget(label_6);
 
         spinBox_line_secondX = new QSpinBox(layoutWidget);
-        spinBox_line_secondX->setObjectName(QString::fromUtf8("spinBox_line_secondX"));
+        spinBox_line_secondX->setObjectName(QStringLiteral("spinBox_line_secondX"));
         spinBox_line_secondX->setMaximum(1000);
 
         horizontalLayout_3->addWidget(spinBox_line_secondX);
@@ -486,14 +486,14 @@ public:
 
         horizontalLayout_4 = new QHBoxLayout();
         horizontalLayout_4->setSpacing(6);
-        horizontalLayout_4->setObjectName(QString::fromUtf8("horizontalLayout_4"));
+        horizontalLayout_4->setObjectName(QStringLiteral("horizontalLayout_4"));
         label_7 = new QLabel(layoutWidget);
-        label_7->setObjectName(QString::fromUtf8("label_7"));
+        label_7->setObjectName(QStringLiteral("label_7"));
 
         horizontalLayout_4->addWidget(label_7);
 
         spinBox_line_secondY = new QSpinBox(layoutWidget);
-        spinBox_line_secondY->setObjectName(QString::fromUtf8("spinBox_line_secondY"));
+        spinBox_line_secondY->setObjectName(QStringLiteral("spinBox_line_secondY"));
         spinBox_line_secondY->setMaximum(500);
 
         horizontalLayout_4->addWidget(spinBox_line_secondY);
@@ -506,35 +506,35 @@ public:
 
         tabWidget_addShape->addTab(tab_Line, QString());
         tab_Polyline = new QWidget();
-        tab_Polyline->setObjectName(QString::fromUtf8("tab_Polyline"));
+        tab_Polyline->setObjectName(QStringLiteral("tab_Polyline"));
         layoutWidget1 = new QWidget(tab_Polyline);
-        layoutWidget1->setObjectName(QString::fromUtf8("layoutWidget1"));
+        layoutWidget1->setObjectName(QStringLiteral("layoutWidget1"));
         layoutWidget1->setGeometry(QRect(0, 10, 821, 84));
         horizontalLayout_17 = new QHBoxLayout(layoutWidget1);
         horizontalLayout_17->setSpacing(2);
         horizontalLayout_17->setContentsMargins(11, 11, 11, 11);
-        horizontalLayout_17->setObjectName(QString::fromUtf8("horizontalLayout_17"));
+        horizontalLayout_17->setObjectName(QStringLiteral("horizontalLayout_17"));
         horizontalLayout_17->setContentsMargins(0, 0, 0, 0);
         verticalLayout_3 = new QVBoxLayout();
         verticalLayout_3->setSpacing(6);
-        verticalLayout_3->setObjectName(QString::fromUtf8("verticalLayout_3"));
+        verticalLayout_3->setObjectName(QStringLiteral("verticalLayout_3"));
         label_8 = new QLabel(layoutWidget1);
-        label_8->setObjectName(QString::fromUtf8("label_8"));
+        label_8->setObjectName(QStringLiteral("label_8"));
 
         verticalLayout_3->addWidget(label_8);
 
         horizontalLayout_5 = new QHBoxLayout();
         horizontalLayout_5->setSpacing(6);
-        horizontalLayout_5->setObjectName(QString::fromUtf8("horizontalLayout_5"));
+        horizontalLayout_5->setObjectName(QStringLiteral("horizontalLayout_5"));
         label_9 = new QLabel(layoutWidget1);
-        label_9->setObjectName(QString::fromUtf8("label_9"));
+        label_9->setObjectName(QStringLiteral("label_9"));
 
         horizontalLayout_5->addWidget(label_9);
 
         doubleSpinBox_polyline_firstX = new QDoubleSpinBox(layoutWidget1);
-        doubleSpinBox_polyline_firstX->setObjectName(QString::fromUtf8("doubleSpinBox_polyline_firstX"));
+        doubleSpinBox_polyline_firstX->setObjectName(QStringLiteral("doubleSpinBox_polyline_firstX"));
         doubleSpinBox_polyline_firstX->setDecimals(1);
-        doubleSpinBox_polyline_firstX->setMaximum(1000.000000000000000);
+        doubleSpinBox_polyline_firstX->setMaximum(1000);
 
         horizontalLayout_5->addWidget(doubleSpinBox_polyline_firstX);
 
@@ -543,16 +543,16 @@ public:
 
         horizontalLayout_6 = new QHBoxLayout();
         horizontalLayout_6->setSpacing(6);
-        horizontalLayout_6->setObjectName(QString::fromUtf8("horizontalLayout_6"));
+        horizontalLayout_6->setObjectName(QStringLiteral("horizontalLayout_6"));
         label_10 = new QLabel(layoutWidget1);
-        label_10->setObjectName(QString::fromUtf8("label_10"));
+        label_10->setObjectName(QStringLiteral("label_10"));
 
         horizontalLayout_6->addWidget(label_10);
 
         doubleSpinBox_polyline_firstY = new QDoubleSpinBox(layoutWidget1);
-        doubleSpinBox_polyline_firstY->setObjectName(QString::fromUtf8("doubleSpinBox_polyline_firstY"));
+        doubleSpinBox_polyline_firstY->setObjectName(QStringLiteral("doubleSpinBox_polyline_firstY"));
         doubleSpinBox_polyline_firstY->setDecimals(1);
-        doubleSpinBox_polyline_firstY->setMaximum(500.000000000000000);
+        doubleSpinBox_polyline_firstY->setMaximum(500);
 
         horizontalLayout_6->addWidget(doubleSpinBox_polyline_firstY);
 
@@ -563,7 +563,7 @@ public:
         horizontalLayout_17->addLayout(verticalLayout_3);
 
         line = new QFrame(layoutWidget1);
-        line->setObjectName(QString::fromUtf8("line"));
+        line->setObjectName(QStringLiteral("line"));
         line->setMaximumSize(QSize(16777215, 16777215));
         line->setFrameShape(QFrame::VLine);
         line->setFrameShadow(QFrame::Sunken);
@@ -572,24 +572,24 @@ public:
 
         verticalLayout_4 = new QVBoxLayout();
         verticalLayout_4->setSpacing(6);
-        verticalLayout_4->setObjectName(QString::fromUtf8("verticalLayout_4"));
+        verticalLayout_4->setObjectName(QStringLiteral("verticalLayout_4"));
         label_11 = new QLabel(layoutWidget1);
-        label_11->setObjectName(QString::fromUtf8("label_11"));
+        label_11->setObjectName(QStringLiteral("label_11"));
 
         verticalLayout_4->addWidget(label_11);
 
         horizontalLayout_7 = new QHBoxLayout();
         horizontalLayout_7->setSpacing(6);
-        horizontalLayout_7->setObjectName(QString::fromUtf8("horizontalLayout_7"));
+        horizontalLayout_7->setObjectName(QStringLiteral("horizontalLayout_7"));
         label_12 = new QLabel(layoutWidget1);
-        label_12->setObjectName(QString::fromUtf8("label_12"));
+        label_12->setObjectName(QStringLiteral("label_12"));
 
         horizontalLayout_7->addWidget(label_12);
 
         doubleSpinBox_polyline_secondX = new QDoubleSpinBox(layoutWidget1);
-        doubleSpinBox_polyline_secondX->setObjectName(QString::fromUtf8("doubleSpinBox_polyline_secondX"));
+        doubleSpinBox_polyline_secondX->setObjectName(QStringLiteral("doubleSpinBox_polyline_secondX"));
         doubleSpinBox_polyline_secondX->setDecimals(1);
-        doubleSpinBox_polyline_secondX->setMaximum(1000.000000000000000);
+        doubleSpinBox_polyline_secondX->setMaximum(1000);
 
         horizontalLayout_7->addWidget(doubleSpinBox_polyline_secondX);
 
@@ -598,16 +598,16 @@ public:
 
         horizontalLayout_8 = new QHBoxLayout();
         horizontalLayout_8->setSpacing(6);
-        horizontalLayout_8->setObjectName(QString::fromUtf8("horizontalLayout_8"));
+        horizontalLayout_8->setObjectName(QStringLiteral("horizontalLayout_8"));
         label_13 = new QLabel(layoutWidget1);
-        label_13->setObjectName(QString::fromUtf8("label_13"));
+        label_13->setObjectName(QStringLiteral("label_13"));
 
         horizontalLayout_8->addWidget(label_13);
 
         doubleSpinBox_polyline_secondY = new QDoubleSpinBox(layoutWidget1);
-        doubleSpinBox_polyline_secondY->setObjectName(QString::fromUtf8("doubleSpinBox_polyline_secondY"));
+        doubleSpinBox_polyline_secondY->setObjectName(QStringLiteral("doubleSpinBox_polyline_secondY"));
         doubleSpinBox_polyline_secondY->setDecimals(1);
-        doubleSpinBox_polyline_secondY->setMaximum(500.000000000000000);
+        doubleSpinBox_polyline_secondY->setMaximum(500);
 
         horizontalLayout_8->addWidget(doubleSpinBox_polyline_secondY);
 
@@ -618,7 +618,7 @@ public:
         horizontalLayout_17->addLayout(verticalLayout_4);
 
         line_2 = new QFrame(layoutWidget1);
-        line_2->setObjectName(QString::fromUtf8("line_2"));
+        line_2->setObjectName(QStringLiteral("line_2"));
         line_2->setFrameShape(QFrame::VLine);
         line_2->setFrameShadow(QFrame::Sunken);
 
@@ -626,24 +626,24 @@ public:
 
         verticalLayout_5 = new QVBoxLayout();
         verticalLayout_5->setSpacing(6);
-        verticalLayout_5->setObjectName(QString::fromUtf8("verticalLayout_5"));
+        verticalLayout_5->setObjectName(QStringLiteral("verticalLayout_5"));
         label_14 = new QLabel(layoutWidget1);
-        label_14->setObjectName(QString::fromUtf8("label_14"));
+        label_14->setObjectName(QStringLiteral("label_14"));
 
         verticalLayout_5->addWidget(label_14);
 
         horizontalLayout_9 = new QHBoxLayout();
         horizontalLayout_9->setSpacing(6);
-        horizontalLayout_9->setObjectName(QString::fromUtf8("horizontalLayout_9"));
+        horizontalLayout_9->setObjectName(QStringLiteral("horizontalLayout_9"));
         label_15 = new QLabel(layoutWidget1);
-        label_15->setObjectName(QString::fromUtf8("label_15"));
+        label_15->setObjectName(QStringLiteral("label_15"));
 
         horizontalLayout_9->addWidget(label_15);
 
         doubleSpinBox_polyline_thirdX = new QDoubleSpinBox(layoutWidget1);
-        doubleSpinBox_polyline_thirdX->setObjectName(QString::fromUtf8("doubleSpinBox_polyline_thirdX"));
+        doubleSpinBox_polyline_thirdX->setObjectName(QStringLiteral("doubleSpinBox_polyline_thirdX"));
         doubleSpinBox_polyline_thirdX->setDecimals(1);
-        doubleSpinBox_polyline_thirdX->setMaximum(1000.000000000000000);
+        doubleSpinBox_polyline_thirdX->setMaximum(1000);
 
         horizontalLayout_9->addWidget(doubleSpinBox_polyline_thirdX);
 
@@ -652,16 +652,16 @@ public:
 
         horizontalLayout_10 = new QHBoxLayout();
         horizontalLayout_10->setSpacing(6);
-        horizontalLayout_10->setObjectName(QString::fromUtf8("horizontalLayout_10"));
+        horizontalLayout_10->setObjectName(QStringLiteral("horizontalLayout_10"));
         label_16 = new QLabel(layoutWidget1);
-        label_16->setObjectName(QString::fromUtf8("label_16"));
+        label_16->setObjectName(QStringLiteral("label_16"));
 
         horizontalLayout_10->addWidget(label_16);
 
         doubleSpinBox_polyline_thirdY = new QDoubleSpinBox(layoutWidget1);
-        doubleSpinBox_polyline_thirdY->setObjectName(QString::fromUtf8("doubleSpinBox_polyline_thirdY"));
+        doubleSpinBox_polyline_thirdY->setObjectName(QStringLiteral("doubleSpinBox_polyline_thirdY"));
         doubleSpinBox_polyline_thirdY->setDecimals(1);
-        doubleSpinBox_polyline_thirdY->setMaximum(500.000000000000000);
+        doubleSpinBox_polyline_thirdY->setMaximum(500);
 
         horizontalLayout_10->addWidget(doubleSpinBox_polyline_thirdY);
 
@@ -672,7 +672,7 @@ public:
         horizontalLayout_17->addLayout(verticalLayout_5);
 
         line_3 = new QFrame(layoutWidget1);
-        line_3->setObjectName(QString::fromUtf8("line_3"));
+        line_3->setObjectName(QStringLiteral("line_3"));
         line_3->setFrameShape(QFrame::VLine);
         line_3->setFrameShadow(QFrame::Sunken);
 
@@ -680,24 +680,24 @@ public:
 
         verticalLayout_6 = new QVBoxLayout();
         verticalLayout_6->setSpacing(6);
-        verticalLayout_6->setObjectName(QString::fromUtf8("verticalLayout_6"));
+        verticalLayout_6->setObjectName(QStringLiteral("verticalLayout_6"));
         label_17 = new QLabel(layoutWidget1);
-        label_17->setObjectName(QString::fromUtf8("label_17"));
+        label_17->setObjectName(QStringLiteral("label_17"));
 
         verticalLayout_6->addWidget(label_17);
 
         horizontalLayout_11 = new QHBoxLayout();
         horizontalLayout_11->setSpacing(6);
-        horizontalLayout_11->setObjectName(QString::fromUtf8("horizontalLayout_11"));
+        horizontalLayout_11->setObjectName(QStringLiteral("horizontalLayout_11"));
         label_18 = new QLabel(layoutWidget1);
-        label_18->setObjectName(QString::fromUtf8("label_18"));
+        label_18->setObjectName(QStringLiteral("label_18"));
 
         horizontalLayout_11->addWidget(label_18);
 
         doubleSpinBox_polyline_fourthX = new QDoubleSpinBox(layoutWidget1);
-        doubleSpinBox_polyline_fourthX->setObjectName(QString::fromUtf8("doubleSpinBox_polyline_fourthX"));
+        doubleSpinBox_polyline_fourthX->setObjectName(QStringLiteral("doubleSpinBox_polyline_fourthX"));
         doubleSpinBox_polyline_fourthX->setDecimals(1);
-        doubleSpinBox_polyline_fourthX->setMaximum(1000.000000000000000);
+        doubleSpinBox_polyline_fourthX->setMaximum(1000);
 
         horizontalLayout_11->addWidget(doubleSpinBox_polyline_fourthX);
 
@@ -706,16 +706,16 @@ public:
 
         horizontalLayout_12 = new QHBoxLayout();
         horizontalLayout_12->setSpacing(6);
-        horizontalLayout_12->setObjectName(QString::fromUtf8("horizontalLayout_12"));
+        horizontalLayout_12->setObjectName(QStringLiteral("horizontalLayout_12"));
         label_19 = new QLabel(layoutWidget1);
-        label_19->setObjectName(QString::fromUtf8("label_19"));
+        label_19->setObjectName(QStringLiteral("label_19"));
 
         horizontalLayout_12->addWidget(label_19);
 
         doubleSpinBox_polyline_fourthY = new QDoubleSpinBox(layoutWidget1);
-        doubleSpinBox_polyline_fourthY->setObjectName(QString::fromUtf8("doubleSpinBox_polyline_fourthY"));
+        doubleSpinBox_polyline_fourthY->setObjectName(QStringLiteral("doubleSpinBox_polyline_fourthY"));
         doubleSpinBox_polyline_fourthY->setDecimals(1);
-        doubleSpinBox_polyline_fourthY->setMaximum(500.000000000000000);
+        doubleSpinBox_polyline_fourthY->setMaximum(500);
 
         horizontalLayout_12->addWidget(doubleSpinBox_polyline_fourthY);
 
@@ -726,7 +726,7 @@ public:
         horizontalLayout_17->addLayout(verticalLayout_6);
 
         line_4 = new QFrame(layoutWidget1);
-        line_4->setObjectName(QString::fromUtf8("line_4"));
+        line_4->setObjectName(QStringLiteral("line_4"));
         line_4->setFrameShape(QFrame::VLine);
         line_4->setFrameShadow(QFrame::Sunken);
 
@@ -734,24 +734,24 @@ public:
 
         verticalLayout_7 = new QVBoxLayout();
         verticalLayout_7->setSpacing(6);
-        verticalLayout_7->setObjectName(QString::fromUtf8("verticalLayout_7"));
+        verticalLayout_7->setObjectName(QStringLiteral("verticalLayout_7"));
         label_20 = new QLabel(layoutWidget1);
-        label_20->setObjectName(QString::fromUtf8("label_20"));
+        label_20->setObjectName(QStringLiteral("label_20"));
 
         verticalLayout_7->addWidget(label_20);
 
         horizontalLayout_13 = new QHBoxLayout();
         horizontalLayout_13->setSpacing(6);
-        horizontalLayout_13->setObjectName(QString::fromUtf8("horizontalLayout_13"));
+        horizontalLayout_13->setObjectName(QStringLiteral("horizontalLayout_13"));
         label_21 = new QLabel(layoutWidget1);
-        label_21->setObjectName(QString::fromUtf8("label_21"));
+        label_21->setObjectName(QStringLiteral("label_21"));
 
         horizontalLayout_13->addWidget(label_21);
 
         doubleSpinBox_polyline_fifthX = new QDoubleSpinBox(layoutWidget1);
-        doubleSpinBox_polyline_fifthX->setObjectName(QString::fromUtf8("doubleSpinBox_polyline_fifthX"));
+        doubleSpinBox_polyline_fifthX->setObjectName(QStringLiteral("doubleSpinBox_polyline_fifthX"));
         doubleSpinBox_polyline_fifthX->setDecimals(1);
-        doubleSpinBox_polyline_fifthX->setMaximum(1000.000000000000000);
+        doubleSpinBox_polyline_fifthX->setMaximum(1000);
 
         horizontalLayout_13->addWidget(doubleSpinBox_polyline_fifthX);
 
@@ -760,16 +760,16 @@ public:
 
         horizontalLayout_14 = new QHBoxLayout();
         horizontalLayout_14->setSpacing(6);
-        horizontalLayout_14->setObjectName(QString::fromUtf8("horizontalLayout_14"));
+        horizontalLayout_14->setObjectName(QStringLiteral("horizontalLayout_14"));
         label_22 = new QLabel(layoutWidget1);
-        label_22->setObjectName(QString::fromUtf8("label_22"));
+        label_22->setObjectName(QStringLiteral("label_22"));
 
         horizontalLayout_14->addWidget(label_22);
 
         doubleSpinBox_polyline_fifthY = new QDoubleSpinBox(layoutWidget1);
-        doubleSpinBox_polyline_fifthY->setObjectName(QString::fromUtf8("doubleSpinBox_polyline_fifthY"));
+        doubleSpinBox_polyline_fifthY->setObjectName(QStringLiteral("doubleSpinBox_polyline_fifthY"));
         doubleSpinBox_polyline_fifthY->setDecimals(1);
-        doubleSpinBox_polyline_fifthY->setMaximum(500.000000000000000);
+        doubleSpinBox_polyline_fifthY->setMaximum(500);
 
         horizontalLayout_14->addWidget(doubleSpinBox_polyline_fifthY);
 
@@ -780,7 +780,7 @@ public:
         horizontalLayout_17->addLayout(verticalLayout_7);
 
         line_5 = new QFrame(layoutWidget1);
-        line_5->setObjectName(QString::fromUtf8("line_5"));
+        line_5->setObjectName(QStringLiteral("line_5"));
         line_5->setFrameShape(QFrame::VLine);
         line_5->setFrameShadow(QFrame::Sunken);
 
@@ -788,24 +788,24 @@ public:
 
         verticalLayout_8 = new QVBoxLayout();
         verticalLayout_8->setSpacing(6);
-        verticalLayout_8->setObjectName(QString::fromUtf8("verticalLayout_8"));
+        verticalLayout_8->setObjectName(QStringLiteral("verticalLayout_8"));
         label_23 = new QLabel(layoutWidget1);
-        label_23->setObjectName(QString::fromUtf8("label_23"));
+        label_23->setObjectName(QStringLiteral("label_23"));
 
         verticalLayout_8->addWidget(label_23);
 
         horizontalLayout_15 = new QHBoxLayout();
         horizontalLayout_15->setSpacing(6);
-        horizontalLayout_15->setObjectName(QString::fromUtf8("horizontalLayout_15"));
+        horizontalLayout_15->setObjectName(QStringLiteral("horizontalLayout_15"));
         label_24 = new QLabel(layoutWidget1);
-        label_24->setObjectName(QString::fromUtf8("label_24"));
+        label_24->setObjectName(QStringLiteral("label_24"));
 
         horizontalLayout_15->addWidget(label_24);
 
         doubleSpinBox_polyline_sixthX = new QDoubleSpinBox(layoutWidget1);
-        doubleSpinBox_polyline_sixthX->setObjectName(QString::fromUtf8("doubleSpinBox_polyline_sixthX"));
+        doubleSpinBox_polyline_sixthX->setObjectName(QStringLiteral("doubleSpinBox_polyline_sixthX"));
         doubleSpinBox_polyline_sixthX->setDecimals(1);
-        doubleSpinBox_polyline_sixthX->setMaximum(1000.000000000000000);
+        doubleSpinBox_polyline_sixthX->setMaximum(1000);
 
         horizontalLayout_15->addWidget(doubleSpinBox_polyline_sixthX);
 
@@ -814,16 +814,16 @@ public:
 
         horizontalLayout_16 = new QHBoxLayout();
         horizontalLayout_16->setSpacing(6);
-        horizontalLayout_16->setObjectName(QString::fromUtf8("horizontalLayout_16"));
+        horizontalLayout_16->setObjectName(QStringLiteral("horizontalLayout_16"));
         label_25 = new QLabel(layoutWidget1);
-        label_25->setObjectName(QString::fromUtf8("label_25"));
+        label_25->setObjectName(QStringLiteral("label_25"));
 
         horizontalLayout_16->addWidget(label_25);
 
         doubleSpinBox_polyline_sixthY = new QDoubleSpinBox(layoutWidget1);
-        doubleSpinBox_polyline_sixthY->setObjectName(QString::fromUtf8("doubleSpinBox_polyline_sixthY"));
+        doubleSpinBox_polyline_sixthY->setObjectName(QStringLiteral("doubleSpinBox_polyline_sixthY"));
         doubleSpinBox_polyline_sixthY->setDecimals(1);
-        doubleSpinBox_polyline_sixthY->setMaximum(500.000000000000000);
+        doubleSpinBox_polyline_sixthY->setMaximum(500);
 
         horizontalLayout_16->addWidget(doubleSpinBox_polyline_sixthY);
 
@@ -834,20 +834,20 @@ public:
         horizontalLayout_17->addLayout(verticalLayout_8);
 
         layoutWidget2 = new QWidget(tab_Polyline);
-        layoutWidget2->setObjectName(QString::fromUtf8("layoutWidget2"));
+        layoutWidget2->setObjectName(QStringLiteral("layoutWidget2"));
         layoutWidget2->setGeometry(QRect(310, 100, 197, 23));
         horizontalLayout_19 = new QHBoxLayout(layoutWidget2);
         horizontalLayout_19->setSpacing(6);
         horizontalLayout_19->setContentsMargins(11, 11, 11, 11);
-        horizontalLayout_19->setObjectName(QString::fromUtf8("horizontalLayout_19"));
+        horizontalLayout_19->setObjectName(QStringLiteral("horizontalLayout_19"));
         horizontalLayout_19->setContentsMargins(0, 0, 0, 0);
         label_26 = new QLabel(layoutWidget2);
-        label_26->setObjectName(QString::fromUtf8("label_26"));
+        label_26->setObjectName(QStringLiteral("label_26"));
 
         horizontalLayout_19->addWidget(label_26);
 
         spinBox_polyline_pointsAdded = new QSpinBox(layoutWidget2);
-        spinBox_polyline_pointsAdded->setObjectName(QString::fromUtf8("spinBox_polyline_pointsAdded"));
+        spinBox_polyline_pointsAdded->setObjectName(QStringLiteral("spinBox_polyline_pointsAdded"));
         spinBox_polyline_pointsAdded->setMinimum(2);
         spinBox_polyline_pointsAdded->setMaximum(6);
 
@@ -855,58 +855,58 @@ public:
 
         tabWidget_addShape->addTab(tab_Polyline, QString());
         tab_Polygon = new QWidget();
-        tab_Polygon->setObjectName(QString::fromUtf8("tab_Polygon"));
+        tab_Polygon->setObjectName(QStringLiteral("tab_Polygon"));
         layoutWidget_15 = new QWidget(tab_Polygon);
-        layoutWidget_15->setObjectName(QString::fromUtf8("layoutWidget_15"));
+        layoutWidget_15->setObjectName(QStringLiteral("layoutWidget_15"));
         layoutWidget_15->setGeometry(QRect(630, 60, 197, 23));
         horizontalLayout_38 = new QHBoxLayout(layoutWidget_15);
         horizontalLayout_38->setSpacing(6);
         horizontalLayout_38->setContentsMargins(11, 11, 11, 11);
-        horizontalLayout_38->setObjectName(QString::fromUtf8("horizontalLayout_38"));
+        horizontalLayout_38->setObjectName(QStringLiteral("horizontalLayout_38"));
         horizontalLayout_38->setContentsMargins(0, 0, 0, 0);
         label_51 = new QLabel(layoutWidget_15);
-        label_51->setObjectName(QString::fromUtf8("label_51"));
+        label_51->setObjectName(QStringLiteral("label_51"));
 
         horizontalLayout_38->addWidget(label_51);
 
         spinBox_polygon_pointsAdded = new QSpinBox(layoutWidget_15);
-        spinBox_polygon_pointsAdded->setObjectName(QString::fromUtf8("spinBox_polygon_pointsAdded"));
+        spinBox_polygon_pointsAdded->setObjectName(QStringLiteral("spinBox_polygon_pointsAdded"));
         spinBox_polygon_pointsAdded->setMinimum(3);
         spinBox_polygon_pointsAdded->setMaximum(8);
 
         horizontalLayout_38->addWidget(spinBox_polygon_pointsAdded);
 
         layoutWidget3 = new QWidget(tab_Polygon);
-        layoutWidget3->setObjectName(QString::fromUtf8("layoutWidget3"));
+        layoutWidget3->setObjectName(QStringLiteral("layoutWidget3"));
         layoutWidget3->setGeometry(QRect(30, 0, 591, 152));
         verticalLayout_17 = new QVBoxLayout(layoutWidget3);
         verticalLayout_17->setSpacing(1);
         verticalLayout_17->setContentsMargins(11, 11, 11, 11);
-        verticalLayout_17->setObjectName(QString::fromUtf8("verticalLayout_17"));
+        verticalLayout_17->setObjectName(QStringLiteral("verticalLayout_17"));
         verticalLayout_17->setContentsMargins(0, 0, 0, 0);
         horizontalLayout_36 = new QHBoxLayout();
         horizontalLayout_36->setSpacing(6);
-        horizontalLayout_36->setObjectName(QString::fromUtf8("horizontalLayout_36"));
+        horizontalLayout_36->setObjectName(QStringLiteral("horizontalLayout_36"));
         verticalLayout_9 = new QVBoxLayout();
         verticalLayout_9->setSpacing(2);
-        verticalLayout_9->setObjectName(QString::fromUtf8("verticalLayout_9"));
+        verticalLayout_9->setObjectName(QStringLiteral("verticalLayout_9"));
         label_27 = new QLabel(layoutWidget3);
-        label_27->setObjectName(QString::fromUtf8("label_27"));
+        label_27->setObjectName(QStringLiteral("label_27"));
 
         verticalLayout_9->addWidget(label_27);
 
         horizontalLayout_20 = new QHBoxLayout();
         horizontalLayout_20->setSpacing(6);
-        horizontalLayout_20->setObjectName(QString::fromUtf8("horizontalLayout_20"));
+        horizontalLayout_20->setObjectName(QStringLiteral("horizontalLayout_20"));
         label_28 = new QLabel(layoutWidget3);
-        label_28->setObjectName(QString::fromUtf8("label_28"));
+        label_28->setObjectName(QStringLiteral("label_28"));
 
         horizontalLayout_20->addWidget(label_28);
 
         doubleSpinBox_polygon_firstX = new QDoubleSpinBox(layoutWidget3);
-        doubleSpinBox_polygon_firstX->setObjectName(QString::fromUtf8("doubleSpinBox_polygon_firstX"));
+        doubleSpinBox_polygon_firstX->setObjectName(QStringLiteral("doubleSpinBox_polygon_firstX"));
         doubleSpinBox_polygon_firstX->setDecimals(1);
-        doubleSpinBox_polygon_firstX->setMaximum(1000.000000000000000);
+        doubleSpinBox_polygon_firstX->setMaximum(1000);
 
         horizontalLayout_20->addWidget(doubleSpinBox_polygon_firstX);
 
@@ -915,16 +915,16 @@ public:
 
         horizontalLayout_21 = new QHBoxLayout();
         horizontalLayout_21->setSpacing(6);
-        horizontalLayout_21->setObjectName(QString::fromUtf8("horizontalLayout_21"));
+        horizontalLayout_21->setObjectName(QStringLiteral("horizontalLayout_21"));
         label_29 = new QLabel(layoutWidget3);
-        label_29->setObjectName(QString::fromUtf8("label_29"));
+        label_29->setObjectName(QStringLiteral("label_29"));
 
         horizontalLayout_21->addWidget(label_29);
 
         doubleSpinBox_polygon_firstY = new QDoubleSpinBox(layoutWidget3);
-        doubleSpinBox_polygon_firstY->setObjectName(QString::fromUtf8("doubleSpinBox_polygon_firstY"));
+        doubleSpinBox_polygon_firstY->setObjectName(QStringLiteral("doubleSpinBox_polygon_firstY"));
         doubleSpinBox_polygon_firstY->setDecimals(1);
-        doubleSpinBox_polygon_firstY->setMaximum(500.000000000000000);
+        doubleSpinBox_polygon_firstY->setMaximum(500);
 
         horizontalLayout_21->addWidget(doubleSpinBox_polygon_firstY);
 
@@ -935,7 +935,7 @@ public:
         horizontalLayout_36->addLayout(verticalLayout_9);
 
         line_8 = new QFrame(layoutWidget3);
-        line_8->setObjectName(QString::fromUtf8("line_8"));
+        line_8->setObjectName(QStringLiteral("line_8"));
         line_8->setFrameShape(QFrame::VLine);
         line_8->setFrameShadow(QFrame::Sunken);
 
@@ -943,24 +943,24 @@ public:
 
         verticalLayout_10 = new QVBoxLayout();
         verticalLayout_10->setSpacing(2);
-        verticalLayout_10->setObjectName(QString::fromUtf8("verticalLayout_10"));
+        verticalLayout_10->setObjectName(QStringLiteral("verticalLayout_10"));
         label_30 = new QLabel(layoutWidget3);
-        label_30->setObjectName(QString::fromUtf8("label_30"));
+        label_30->setObjectName(QStringLiteral("label_30"));
 
         verticalLayout_10->addWidget(label_30);
 
         horizontalLayout_22 = new QHBoxLayout();
         horizontalLayout_22->setSpacing(6);
-        horizontalLayout_22->setObjectName(QString::fromUtf8("horizontalLayout_22"));
+        horizontalLayout_22->setObjectName(QStringLiteral("horizontalLayout_22"));
         label_31 = new QLabel(layoutWidget3);
-        label_31->setObjectName(QString::fromUtf8("label_31"));
+        label_31->setObjectName(QStringLiteral("label_31"));
 
         horizontalLayout_22->addWidget(label_31);
 
         doubleSpinBox_polygon_secondX = new QDoubleSpinBox(layoutWidget3);
-        doubleSpinBox_polygon_secondX->setObjectName(QString::fromUtf8("doubleSpinBox_polygon_secondX"));
+        doubleSpinBox_polygon_secondX->setObjectName(QStringLiteral("doubleSpinBox_polygon_secondX"));
         doubleSpinBox_polygon_secondX->setDecimals(1);
-        doubleSpinBox_polygon_secondX->setMaximum(1000.000000000000000);
+        doubleSpinBox_polygon_secondX->setMaximum(1000);
 
         horizontalLayout_22->addWidget(doubleSpinBox_polygon_secondX);
 
@@ -969,16 +969,16 @@ public:
 
         horizontalLayout_23 = new QHBoxLayout();
         horizontalLayout_23->setSpacing(6);
-        horizontalLayout_23->setObjectName(QString::fromUtf8("horizontalLayout_23"));
+        horizontalLayout_23->setObjectName(QStringLiteral("horizontalLayout_23"));
         label_32 = new QLabel(layoutWidget3);
-        label_32->setObjectName(QString::fromUtf8("label_32"));
+        label_32->setObjectName(QStringLiteral("label_32"));
 
         horizontalLayout_23->addWidget(label_32);
 
         doubleSpinBox_polygon_secondY = new QDoubleSpinBox(layoutWidget3);
-        doubleSpinBox_polygon_secondY->setObjectName(QString::fromUtf8("doubleSpinBox_polygon_secondY"));
+        doubleSpinBox_polygon_secondY->setObjectName(QStringLiteral("doubleSpinBox_polygon_secondY"));
         doubleSpinBox_polygon_secondY->setDecimals(1);
-        doubleSpinBox_polygon_secondY->setMaximum(500.000000000000000);
+        doubleSpinBox_polygon_secondY->setMaximum(500);
 
         horizontalLayout_23->addWidget(doubleSpinBox_polygon_secondY);
 
@@ -989,7 +989,7 @@ public:
         horizontalLayout_36->addLayout(verticalLayout_10);
 
         line_10 = new QFrame(layoutWidget3);
-        line_10->setObjectName(QString::fromUtf8("line_10"));
+        line_10->setObjectName(QStringLiteral("line_10"));
         line_10->setFrameShape(QFrame::VLine);
         line_10->setFrameShadow(QFrame::Sunken);
 
@@ -997,24 +997,24 @@ public:
 
         verticalLayout_11 = new QVBoxLayout();
         verticalLayout_11->setSpacing(2);
-        verticalLayout_11->setObjectName(QString::fromUtf8("verticalLayout_11"));
+        verticalLayout_11->setObjectName(QStringLiteral("verticalLayout_11"));
         label_33 = new QLabel(layoutWidget3);
-        label_33->setObjectName(QString::fromUtf8("label_33"));
+        label_33->setObjectName(QStringLiteral("label_33"));
 
         verticalLayout_11->addWidget(label_33);
 
         horizontalLayout_24 = new QHBoxLayout();
         horizontalLayout_24->setSpacing(6);
-        horizontalLayout_24->setObjectName(QString::fromUtf8("horizontalLayout_24"));
+        horizontalLayout_24->setObjectName(QStringLiteral("horizontalLayout_24"));
         label_34 = new QLabel(layoutWidget3);
-        label_34->setObjectName(QString::fromUtf8("label_34"));
+        label_34->setObjectName(QStringLiteral("label_34"));
 
         horizontalLayout_24->addWidget(label_34);
 
         doubleSpinBox_polygon_thirdX = new QDoubleSpinBox(layoutWidget3);
-        doubleSpinBox_polygon_thirdX->setObjectName(QString::fromUtf8("doubleSpinBox_polygon_thirdX"));
+        doubleSpinBox_polygon_thirdX->setObjectName(QStringLiteral("doubleSpinBox_polygon_thirdX"));
         doubleSpinBox_polygon_thirdX->setDecimals(1);
-        doubleSpinBox_polygon_thirdX->setMaximum(1000.000000000000000);
+        doubleSpinBox_polygon_thirdX->setMaximum(1000);
 
         horizontalLayout_24->addWidget(doubleSpinBox_polygon_thirdX);
 
@@ -1023,16 +1023,16 @@ public:
 
         horizontalLayout_25 = new QHBoxLayout();
         horizontalLayout_25->setSpacing(6);
-        horizontalLayout_25->setObjectName(QString::fromUtf8("horizontalLayout_25"));
+        horizontalLayout_25->setObjectName(QStringLiteral("horizontalLayout_25"));
         label_35 = new QLabel(layoutWidget3);
-        label_35->setObjectName(QString::fromUtf8("label_35"));
+        label_35->setObjectName(QStringLiteral("label_35"));
 
         horizontalLayout_25->addWidget(label_35);
 
         doubleSpinBox_polygon_thirdY = new QDoubleSpinBox(layoutWidget3);
-        doubleSpinBox_polygon_thirdY->setObjectName(QString::fromUtf8("doubleSpinBox_polygon_thirdY"));
+        doubleSpinBox_polygon_thirdY->setObjectName(QStringLiteral("doubleSpinBox_polygon_thirdY"));
         doubleSpinBox_polygon_thirdY->setDecimals(1);
-        doubleSpinBox_polygon_thirdY->setMaximum(500.000000000000000);
+        doubleSpinBox_polygon_thirdY->setMaximum(500);
 
         horizontalLayout_25->addWidget(doubleSpinBox_polygon_thirdY);
 
@@ -1043,7 +1043,7 @@ public:
         horizontalLayout_36->addLayout(verticalLayout_11);
 
         line_12 = new QFrame(layoutWidget3);
-        line_12->setObjectName(QString::fromUtf8("line_12"));
+        line_12->setObjectName(QStringLiteral("line_12"));
         line_12->setFrameShape(QFrame::VLine);
         line_12->setFrameShadow(QFrame::Sunken);
 
@@ -1051,24 +1051,24 @@ public:
 
         verticalLayout_12 = new QVBoxLayout();
         verticalLayout_12->setSpacing(2);
-        verticalLayout_12->setObjectName(QString::fromUtf8("verticalLayout_12"));
+        verticalLayout_12->setObjectName(QStringLiteral("verticalLayout_12"));
         label_36 = new QLabel(layoutWidget3);
-        label_36->setObjectName(QString::fromUtf8("label_36"));
+        label_36->setObjectName(QStringLiteral("label_36"));
 
         verticalLayout_12->addWidget(label_36);
 
         horizontalLayout_26 = new QHBoxLayout();
         horizontalLayout_26->setSpacing(6);
-        horizontalLayout_26->setObjectName(QString::fromUtf8("horizontalLayout_26"));
+        horizontalLayout_26->setObjectName(QStringLiteral("horizontalLayout_26"));
         label_37 = new QLabel(layoutWidget3);
-        label_37->setObjectName(QString::fromUtf8("label_37"));
+        label_37->setObjectName(QStringLiteral("label_37"));
 
         horizontalLayout_26->addWidget(label_37);
 
         doubleSpinBox_polygon_fourthX = new QDoubleSpinBox(layoutWidget3);
-        doubleSpinBox_polygon_fourthX->setObjectName(QString::fromUtf8("doubleSpinBox_polygon_fourthX"));
+        doubleSpinBox_polygon_fourthX->setObjectName(QStringLiteral("doubleSpinBox_polygon_fourthX"));
         doubleSpinBox_polygon_fourthX->setDecimals(1);
-        doubleSpinBox_polygon_fourthX->setMaximum(1000.000000000000000);
+        doubleSpinBox_polygon_fourthX->setMaximum(1000);
 
         horizontalLayout_26->addWidget(doubleSpinBox_polygon_fourthX);
 
@@ -1077,16 +1077,16 @@ public:
 
         horizontalLayout_27 = new QHBoxLayout();
         horizontalLayout_27->setSpacing(6);
-        horizontalLayout_27->setObjectName(QString::fromUtf8("horizontalLayout_27"));
+        horizontalLayout_27->setObjectName(QStringLiteral("horizontalLayout_27"));
         label_38 = new QLabel(layoutWidget3);
-        label_38->setObjectName(QString::fromUtf8("label_38"));
+        label_38->setObjectName(QStringLiteral("label_38"));
 
         horizontalLayout_27->addWidget(label_38);
 
         doubleSpinBox_polygon_fourthY = new QDoubleSpinBox(layoutWidget3);
-        doubleSpinBox_polygon_fourthY->setObjectName(QString::fromUtf8("doubleSpinBox_polygon_fourthY"));
+        doubleSpinBox_polygon_fourthY->setObjectName(QStringLiteral("doubleSpinBox_polygon_fourthY"));
         doubleSpinBox_polygon_fourthY->setDecimals(1);
-        doubleSpinBox_polygon_fourthY->setMaximum(500.000000000000000);
+        doubleSpinBox_polygon_fourthY->setMaximum(500);
 
         horizontalLayout_27->addWidget(doubleSpinBox_polygon_fourthY);
 
@@ -1100,7 +1100,7 @@ public:
         verticalLayout_17->addLayout(horizontalLayout_36);
 
         line_7 = new QFrame(layoutWidget3);
-        line_7->setObjectName(QString::fromUtf8("line_7"));
+        line_7->setObjectName(QStringLiteral("line_7"));
         line_7->setFrameShape(QFrame::HLine);
         line_7->setFrameShadow(QFrame::Sunken);
 
@@ -1108,27 +1108,27 @@ public:
 
         horizontalLayout_37 = new QHBoxLayout();
         horizontalLayout_37->setSpacing(6);
-        horizontalLayout_37->setObjectName(QString::fromUtf8("horizontalLayout_37"));
+        horizontalLayout_37->setObjectName(QStringLiteral("horizontalLayout_37"));
         verticalLayout_13 = new QVBoxLayout();
         verticalLayout_13->setSpacing(2);
-        verticalLayout_13->setObjectName(QString::fromUtf8("verticalLayout_13"));
+        verticalLayout_13->setObjectName(QStringLiteral("verticalLayout_13"));
         label_39 = new QLabel(layoutWidget3);
-        label_39->setObjectName(QString::fromUtf8("label_39"));
+        label_39->setObjectName(QStringLiteral("label_39"));
 
         verticalLayout_13->addWidget(label_39);
 
         horizontalLayout_28 = new QHBoxLayout();
         horizontalLayout_28->setSpacing(6);
-        horizontalLayout_28->setObjectName(QString::fromUtf8("horizontalLayout_28"));
+        horizontalLayout_28->setObjectName(QStringLiteral("horizontalLayout_28"));
         label_40 = new QLabel(layoutWidget3);
-        label_40->setObjectName(QString::fromUtf8("label_40"));
+        label_40->setObjectName(QStringLiteral("label_40"));
 
         horizontalLayout_28->addWidget(label_40);
 
         doubleSpinBox_polygon_fifthX = new QDoubleSpinBox(layoutWidget3);
-        doubleSpinBox_polygon_fifthX->setObjectName(QString::fromUtf8("doubleSpinBox_polygon_fifthX"));
+        doubleSpinBox_polygon_fifthX->setObjectName(QStringLiteral("doubleSpinBox_polygon_fifthX"));
         doubleSpinBox_polygon_fifthX->setDecimals(1);
-        doubleSpinBox_polygon_fifthX->setMaximum(1000.000000000000000);
+        doubleSpinBox_polygon_fifthX->setMaximum(1000);
 
         horizontalLayout_28->addWidget(doubleSpinBox_polygon_fifthX);
 
@@ -1137,16 +1137,16 @@ public:
 
         horizontalLayout_29 = new QHBoxLayout();
         horizontalLayout_29->setSpacing(6);
-        horizontalLayout_29->setObjectName(QString::fromUtf8("horizontalLayout_29"));
+        horizontalLayout_29->setObjectName(QStringLiteral("horizontalLayout_29"));
         label_41 = new QLabel(layoutWidget3);
-        label_41->setObjectName(QString::fromUtf8("label_41"));
+        label_41->setObjectName(QStringLiteral("label_41"));
 
         horizontalLayout_29->addWidget(label_41);
 
         doubleSpinBox_polygon_fifthY = new QDoubleSpinBox(layoutWidget3);
-        doubleSpinBox_polygon_fifthY->setObjectName(QString::fromUtf8("doubleSpinBox_polygon_fifthY"));
+        doubleSpinBox_polygon_fifthY->setObjectName(QStringLiteral("doubleSpinBox_polygon_fifthY"));
         doubleSpinBox_polygon_fifthY->setDecimals(1);
-        doubleSpinBox_polygon_fifthY->setMaximum(500.000000000000000);
+        doubleSpinBox_polygon_fifthY->setMaximum(500);
 
         horizontalLayout_29->addWidget(doubleSpinBox_polygon_fifthY);
 
@@ -1157,7 +1157,7 @@ public:
         horizontalLayout_37->addLayout(verticalLayout_13);
 
         line_9 = new QFrame(layoutWidget3);
-        line_9->setObjectName(QString::fromUtf8("line_9"));
+        line_9->setObjectName(QStringLiteral("line_9"));
         line_9->setFrameShape(QFrame::VLine);
         line_9->setFrameShadow(QFrame::Sunken);
 
@@ -1165,24 +1165,24 @@ public:
 
         verticalLayout_14 = new QVBoxLayout();
         verticalLayout_14->setSpacing(2);
-        verticalLayout_14->setObjectName(QString::fromUtf8("verticalLayout_14"));
+        verticalLayout_14->setObjectName(QStringLiteral("verticalLayout_14"));
         label_42 = new QLabel(layoutWidget3);
-        label_42->setObjectName(QString::fromUtf8("label_42"));
+        label_42->setObjectName(QStringLiteral("label_42"));
 
         verticalLayout_14->addWidget(label_42);
 
         horizontalLayout_30 = new QHBoxLayout();
         horizontalLayout_30->setSpacing(6);
-        horizontalLayout_30->setObjectName(QString::fromUtf8("horizontalLayout_30"));
+        horizontalLayout_30->setObjectName(QStringLiteral("horizontalLayout_30"));
         label_43 = new QLabel(layoutWidget3);
-        label_43->setObjectName(QString::fromUtf8("label_43"));
+        label_43->setObjectName(QStringLiteral("label_43"));
 
         horizontalLayout_30->addWidget(label_43);
 
         doubleSpinBox_polygon_sixthX = new QDoubleSpinBox(layoutWidget3);
-        doubleSpinBox_polygon_sixthX->setObjectName(QString::fromUtf8("doubleSpinBox_polygon_sixthX"));
+        doubleSpinBox_polygon_sixthX->setObjectName(QStringLiteral("doubleSpinBox_polygon_sixthX"));
         doubleSpinBox_polygon_sixthX->setDecimals(1);
-        doubleSpinBox_polygon_sixthX->setMaximum(1000.000000000000000);
+        doubleSpinBox_polygon_sixthX->setMaximum(1000);
 
         horizontalLayout_30->addWidget(doubleSpinBox_polygon_sixthX);
 
@@ -1191,16 +1191,16 @@ public:
 
         horizontalLayout_31 = new QHBoxLayout();
         horizontalLayout_31->setSpacing(6);
-        horizontalLayout_31->setObjectName(QString::fromUtf8("horizontalLayout_31"));
+        horizontalLayout_31->setObjectName(QStringLiteral("horizontalLayout_31"));
         label_44 = new QLabel(layoutWidget3);
-        label_44->setObjectName(QString::fromUtf8("label_44"));
+        label_44->setObjectName(QStringLiteral("label_44"));
 
         horizontalLayout_31->addWidget(label_44);
 
         doubleSpinBox_polygon_sixthY = new QDoubleSpinBox(layoutWidget3);
-        doubleSpinBox_polygon_sixthY->setObjectName(QString::fromUtf8("doubleSpinBox_polygon_sixthY"));
+        doubleSpinBox_polygon_sixthY->setObjectName(QStringLiteral("doubleSpinBox_polygon_sixthY"));
         doubleSpinBox_polygon_sixthY->setDecimals(1);
-        doubleSpinBox_polygon_sixthY->setMaximum(500.000000000000000);
+        doubleSpinBox_polygon_sixthY->setMaximum(500);
 
         horizontalLayout_31->addWidget(doubleSpinBox_polygon_sixthY);
 
@@ -1211,7 +1211,7 @@ public:
         horizontalLayout_37->addLayout(verticalLayout_14);
 
         line_11 = new QFrame(layoutWidget3);
-        line_11->setObjectName(QString::fromUtf8("line_11"));
+        line_11->setObjectName(QStringLiteral("line_11"));
         line_11->setFrameShape(QFrame::VLine);
         line_11->setFrameShadow(QFrame::Sunken);
 
@@ -1219,24 +1219,24 @@ public:
 
         verticalLayout_15 = new QVBoxLayout();
         verticalLayout_15->setSpacing(2);
-        verticalLayout_15->setObjectName(QString::fromUtf8("verticalLayout_15"));
+        verticalLayout_15->setObjectName(QStringLiteral("verticalLayout_15"));
         label_45 = new QLabel(layoutWidget3);
-        label_45->setObjectName(QString::fromUtf8("label_45"));
+        label_45->setObjectName(QStringLiteral("label_45"));
 
         verticalLayout_15->addWidget(label_45);
 
         horizontalLayout_32 = new QHBoxLayout();
         horizontalLayout_32->setSpacing(6);
-        horizontalLayout_32->setObjectName(QString::fromUtf8("horizontalLayout_32"));
+        horizontalLayout_32->setObjectName(QStringLiteral("horizontalLayout_32"));
         label_46 = new QLabel(layoutWidget3);
-        label_46->setObjectName(QString::fromUtf8("label_46"));
+        label_46->setObjectName(QStringLiteral("label_46"));
 
         horizontalLayout_32->addWidget(label_46);
 
         doubleSpinBox_polygon_seventhX = new QDoubleSpinBox(layoutWidget3);
-        doubleSpinBox_polygon_seventhX->setObjectName(QString::fromUtf8("doubleSpinBox_polygon_seventhX"));
+        doubleSpinBox_polygon_seventhX->setObjectName(QStringLiteral("doubleSpinBox_polygon_seventhX"));
         doubleSpinBox_polygon_seventhX->setDecimals(1);
-        doubleSpinBox_polygon_seventhX->setMaximum(1000.000000000000000);
+        doubleSpinBox_polygon_seventhX->setMaximum(1000);
 
         horizontalLayout_32->addWidget(doubleSpinBox_polygon_seventhX);
 
@@ -1245,16 +1245,16 @@ public:
 
         horizontalLayout_33 = new QHBoxLayout();
         horizontalLayout_33->setSpacing(6);
-        horizontalLayout_33->setObjectName(QString::fromUtf8("horizontalLayout_33"));
+        horizontalLayout_33->setObjectName(QStringLiteral("horizontalLayout_33"));
         label_47 = new QLabel(layoutWidget3);
-        label_47->setObjectName(QString::fromUtf8("label_47"));
+        label_47->setObjectName(QStringLiteral("label_47"));
 
         horizontalLayout_33->addWidget(label_47);
 
         doubleSpinBox_polygon_seventhY = new QDoubleSpinBox(layoutWidget3);
-        doubleSpinBox_polygon_seventhY->setObjectName(QString::fromUtf8("doubleSpinBox_polygon_seventhY"));
+        doubleSpinBox_polygon_seventhY->setObjectName(QStringLiteral("doubleSpinBox_polygon_seventhY"));
         doubleSpinBox_polygon_seventhY->setDecimals(1);
-        doubleSpinBox_polygon_seventhY->setMaximum(500.000000000000000);
+        doubleSpinBox_polygon_seventhY->setMaximum(500);
 
         horizontalLayout_33->addWidget(doubleSpinBox_polygon_seventhY);
 
@@ -1265,7 +1265,7 @@ public:
         horizontalLayout_37->addLayout(verticalLayout_15);
 
         line_13 = new QFrame(layoutWidget3);
-        line_13->setObjectName(QString::fromUtf8("line_13"));
+        line_13->setObjectName(QStringLiteral("line_13"));
         line_13->setFrameShape(QFrame::VLine);
         line_13->setFrameShadow(QFrame::Sunken);
 
@@ -1273,24 +1273,24 @@ public:
 
         verticalLayout_16 = new QVBoxLayout();
         verticalLayout_16->setSpacing(2);
-        verticalLayout_16->setObjectName(QString::fromUtf8("verticalLayout_16"));
+        verticalLayout_16->setObjectName(QStringLiteral("verticalLayout_16"));
         label_48 = new QLabel(layoutWidget3);
-        label_48->setObjectName(QString::fromUtf8("label_48"));
+        label_48->setObjectName(QStringLiteral("label_48"));
 
         verticalLayout_16->addWidget(label_48);
 
         horizontalLayout_34 = new QHBoxLayout();
         horizontalLayout_34->setSpacing(6);
-        horizontalLayout_34->setObjectName(QString::fromUtf8("horizontalLayout_34"));
+        horizontalLayout_34->setObjectName(QStringLiteral("horizontalLayout_34"));
         label_49 = new QLabel(layoutWidget3);
-        label_49->setObjectName(QString::fromUtf8("label_49"));
+        label_49->setObjectName(QStringLiteral("label_49"));
 
         horizontalLayout_34->addWidget(label_49);
 
         doubleSpinBox_polygon_eighthX = new QDoubleSpinBox(layoutWidget3);
-        doubleSpinBox_polygon_eighthX->setObjectName(QString::fromUtf8("doubleSpinBox_polygon_eighthX"));
+        doubleSpinBox_polygon_eighthX->setObjectName(QStringLiteral("doubleSpinBox_polygon_eighthX"));
         doubleSpinBox_polygon_eighthX->setDecimals(1);
-        doubleSpinBox_polygon_eighthX->setMaximum(1000.000000000000000);
+        doubleSpinBox_polygon_eighthX->setMaximum(1000);
 
         horizontalLayout_34->addWidget(doubleSpinBox_polygon_eighthX);
 
@@ -1299,16 +1299,16 @@ public:
 
         horizontalLayout_35 = new QHBoxLayout();
         horizontalLayout_35->setSpacing(6);
-        horizontalLayout_35->setObjectName(QString::fromUtf8("horizontalLayout_35"));
+        horizontalLayout_35->setObjectName(QStringLiteral("horizontalLayout_35"));
         label_50 = new QLabel(layoutWidget3);
-        label_50->setObjectName(QString::fromUtf8("label_50"));
+        label_50->setObjectName(QStringLiteral("label_50"));
 
         horizontalLayout_35->addWidget(label_50);
 
         doubleSpinBox_polygon_eighthY = new QDoubleSpinBox(layoutWidget3);
-        doubleSpinBox_polygon_eighthY->setObjectName(QString::fromUtf8("doubleSpinBox_polygon_eighthY"));
+        doubleSpinBox_polygon_eighthY->setObjectName(QStringLiteral("doubleSpinBox_polygon_eighthY"));
         doubleSpinBox_polygon_eighthY->setDecimals(1);
-        doubleSpinBox_polygon_eighthY->setMaximum(500.000000000000000);
+        doubleSpinBox_polygon_eighthY->setMaximum(500);
 
         horizontalLayout_35->addWidget(doubleSpinBox_polygon_eighthY);
 
@@ -1323,32 +1323,32 @@ public:
 
         tabWidget_addShape->addTab(tab_Polygon, QString());
         tab_Rectangle = new QWidget();
-        tab_Rectangle->setObjectName(QString::fromUtf8("tab_Rectangle"));
+        tab_Rectangle->setObjectName(QStringLiteral("tab_Rectangle"));
         layoutWidget_16 = new QWidget(tab_Rectangle);
-        layoutWidget_16->setObjectName(QString::fromUtf8("layoutWidget_16"));
+        layoutWidget_16->setObjectName(QStringLiteral("layoutWidget_16"));
         layoutWidget_16->setGeometry(QRect(280, 20, 159, 82));
         verticalLayout_18 = new QVBoxLayout(layoutWidget_16);
         verticalLayout_18->setSpacing(6);
         verticalLayout_18->setContentsMargins(11, 11, 11, 11);
-        verticalLayout_18->setObjectName(QString::fromUtf8("verticalLayout_18"));
+        verticalLayout_18->setObjectName(QStringLiteral("verticalLayout_18"));
         verticalLayout_18->setContentsMargins(0, 0, 0, 0);
         label_60 = new QLabel(layoutWidget_16);
-        label_60->setObjectName(QString::fromUtf8("label_60"));
+        label_60->setObjectName(QStringLiteral("label_60"));
 
         verticalLayout_18->addWidget(label_60);
 
         horizontalLayout_48 = new QHBoxLayout();
         horizontalLayout_48->setSpacing(6);
-        horizontalLayout_48->setObjectName(QString::fromUtf8("horizontalLayout_48"));
+        horizontalLayout_48->setObjectName(QStringLiteral("horizontalLayout_48"));
         label_61 = new QLabel(layoutWidget_16);
-        label_61->setObjectName(QString::fromUtf8("label_61"));
+        label_61->setObjectName(QStringLiteral("label_61"));
 
         horizontalLayout_48->addWidget(label_61);
 
         doubleSpinBox_rect_firstX = new QDoubleSpinBox(layoutWidget_16);
-        doubleSpinBox_rect_firstX->setObjectName(QString::fromUtf8("doubleSpinBox_rect_firstX"));
+        doubleSpinBox_rect_firstX->setObjectName(QStringLiteral("doubleSpinBox_rect_firstX"));
         doubleSpinBox_rect_firstX->setDecimals(1);
-        doubleSpinBox_rect_firstX->setMaximum(1000.000000000000000);
+        doubleSpinBox_rect_firstX->setMaximum(1000);
 
         horizontalLayout_48->addWidget(doubleSpinBox_rect_firstX);
 
@@ -1357,16 +1357,16 @@ public:
 
         horizontalLayout_49 = new QHBoxLayout();
         horizontalLayout_49->setSpacing(6);
-        horizontalLayout_49->setObjectName(QString::fromUtf8("horizontalLayout_49"));
+        horizontalLayout_49->setObjectName(QStringLiteral("horizontalLayout_49"));
         label_62 = new QLabel(layoutWidget_16);
-        label_62->setObjectName(QString::fromUtf8("label_62"));
+        label_62->setObjectName(QStringLiteral("label_62"));
 
         horizontalLayout_49->addWidget(label_62);
 
         doubleSpinBox_rect_firstY = new QDoubleSpinBox(layoutWidget_16);
-        doubleSpinBox_rect_firstY->setObjectName(QString::fromUtf8("doubleSpinBox_rect_firstY"));
+        doubleSpinBox_rect_firstY->setObjectName(QStringLiteral("doubleSpinBox_rect_firstY"));
         doubleSpinBox_rect_firstY->setDecimals(1);
-        doubleSpinBox_rect_firstY->setMaximum(500.000000000000000);
+        doubleSpinBox_rect_firstY->setMaximum(500);
 
         horizontalLayout_49->addWidget(doubleSpinBox_rect_firstY);
 
@@ -1374,24 +1374,24 @@ public:
         verticalLayout_18->addLayout(horizontalLayout_49);
 
         layoutWidget4 = new QWidget(tab_Rectangle);
-        layoutWidget4->setObjectName(QString::fromUtf8("layoutWidget4"));
+        layoutWidget4->setObjectName(QStringLiteral("layoutWidget4"));
         layoutWidget4->setGeometry(QRect(480, 30, 129, 73));
         verticalLayout_19 = new QVBoxLayout(layoutWidget4);
         verticalLayout_19->setSpacing(6);
         verticalLayout_19->setContentsMargins(11, 11, 11, 11);
-        verticalLayout_19->setObjectName(QString::fromUtf8("verticalLayout_19"));
+        verticalLayout_19->setObjectName(QStringLiteral("verticalLayout_19"));
         verticalLayout_19->setContentsMargins(0, 0, 0, 0);
         horizontalLayout_51 = new QHBoxLayout();
         horizontalLayout_51->setSpacing(6);
-        horizontalLayout_51->setObjectName(QString::fromUtf8("horizontalLayout_51"));
+        horizontalLayout_51->setObjectName(QStringLiteral("horizontalLayout_51"));
         label_63 = new QLabel(layoutWidget4);
-        label_63->setObjectName(QString::fromUtf8("label_63"));
+        label_63->setObjectName(QStringLiteral("label_63"));
 
         horizontalLayout_51->addWidget(label_63);
 
         doubleSpinBox_rect_length = new QDoubleSpinBox(layoutWidget4);
-        doubleSpinBox_rect_length->setObjectName(QString::fromUtf8("doubleSpinBox_rect_length"));
-        doubleSpinBox_rect_length->setMaximum(100.000000000000000);
+        doubleSpinBox_rect_length->setObjectName(QStringLiteral("doubleSpinBox_rect_length"));
+        doubleSpinBox_rect_length->setMaximum(100);
 
         horizontalLayout_51->addWidget(doubleSpinBox_rect_length);
 
@@ -1399,7 +1399,7 @@ public:
         verticalLayout_19->addLayout(horizontalLayout_51);
 
         line_19 = new QFrame(layoutWidget4);
-        line_19->setObjectName(QString::fromUtf8("line_19"));
+        line_19->setObjectName(QStringLiteral("line_19"));
         line_19->setFrameShape(QFrame::HLine);
         line_19->setFrameShadow(QFrame::Sunken);
 
@@ -1407,15 +1407,15 @@ public:
 
         horizontalLayout_50 = new QHBoxLayout();
         horizontalLayout_50->setSpacing(6);
-        horizontalLayout_50->setObjectName(QString::fromUtf8("horizontalLayout_50"));
+        horizontalLayout_50->setObjectName(QStringLiteral("horizontalLayout_50"));
         label_64 = new QLabel(layoutWidget4);
-        label_64->setObjectName(QString::fromUtf8("label_64"));
+        label_64->setObjectName(QStringLiteral("label_64"));
 
         horizontalLayout_50->addWidget(label_64);
 
         doubleSpinBox_rect_width = new QDoubleSpinBox(layoutWidget4);
-        doubleSpinBox_rect_width->setObjectName(QString::fromUtf8("doubleSpinBox_rect_width"));
-        doubleSpinBox_rect_width->setMaximum(100.000000000000000);
+        doubleSpinBox_rect_width->setObjectName(QStringLiteral("doubleSpinBox_rect_width"));
+        doubleSpinBox_rect_width->setMaximum(100);
 
         horizontalLayout_50->addWidget(doubleSpinBox_rect_width);
 
@@ -1424,33 +1424,33 @@ public:
 
         tabWidget_addShape->addTab(tab_Rectangle, QString());
         tab_Ellipse = new QWidget();
-        tab_Ellipse->setObjectName(QString::fromUtf8("tab_Ellipse"));
+        tab_Ellipse->setObjectName(QStringLiteral("tab_Ellipse"));
         tab_Ellipse->setEnabled(true);
         layoutWidget_17 = new QWidget(tab_Ellipse);
-        layoutWidget_17->setObjectName(QString::fromUtf8("layoutWidget_17"));
+        layoutWidget_17->setObjectName(QStringLiteral("layoutWidget_17"));
         layoutWidget_17->setGeometry(QRect(260, 30, 159, 82));
         verticalLayout_20 = new QVBoxLayout(layoutWidget_17);
         verticalLayout_20->setSpacing(6);
         verticalLayout_20->setContentsMargins(11, 11, 11, 11);
-        verticalLayout_20->setObjectName(QString::fromUtf8("verticalLayout_20"));
+        verticalLayout_20->setObjectName(QStringLiteral("verticalLayout_20"));
         verticalLayout_20->setContentsMargins(0, 0, 0, 0);
         label_65 = new QLabel(layoutWidget_17);
-        label_65->setObjectName(QString::fromUtf8("label_65"));
+        label_65->setObjectName(QStringLiteral("label_65"));
 
         verticalLayout_20->addWidget(label_65);
 
         horizontalLayout_52 = new QHBoxLayout();
         horizontalLayout_52->setSpacing(6);
-        horizontalLayout_52->setObjectName(QString::fromUtf8("horizontalLayout_52"));
+        horizontalLayout_52->setObjectName(QStringLiteral("horizontalLayout_52"));
         label_66 = new QLabel(layoutWidget_17);
-        label_66->setObjectName(QString::fromUtf8("label_66"));
+        label_66->setObjectName(QStringLiteral("label_66"));
 
         horizontalLayout_52->addWidget(label_66);
 
         doubleSpinBox_ellipse_firstX = new QDoubleSpinBox(layoutWidget_17);
-        doubleSpinBox_ellipse_firstX->setObjectName(QString::fromUtf8("doubleSpinBox_ellipse_firstX"));
+        doubleSpinBox_ellipse_firstX->setObjectName(QStringLiteral("doubleSpinBox_ellipse_firstX"));
         doubleSpinBox_ellipse_firstX->setDecimals(1);
-        doubleSpinBox_ellipse_firstX->setMaximum(1000.000000000000000);
+        doubleSpinBox_ellipse_firstX->setMaximum(1000);
 
         horizontalLayout_52->addWidget(doubleSpinBox_ellipse_firstX);
 
@@ -1459,16 +1459,16 @@ public:
 
         horizontalLayout_53 = new QHBoxLayout();
         horizontalLayout_53->setSpacing(6);
-        horizontalLayout_53->setObjectName(QString::fromUtf8("horizontalLayout_53"));
+        horizontalLayout_53->setObjectName(QStringLiteral("horizontalLayout_53"));
         label_67 = new QLabel(layoutWidget_17);
-        label_67->setObjectName(QString::fromUtf8("label_67"));
+        label_67->setObjectName(QStringLiteral("label_67"));
 
         horizontalLayout_53->addWidget(label_67);
 
         doubleSpinBox_ellipse_firstY = new QDoubleSpinBox(layoutWidget_17);
-        doubleSpinBox_ellipse_firstY->setObjectName(QString::fromUtf8("doubleSpinBox_ellipse_firstY"));
+        doubleSpinBox_ellipse_firstY->setObjectName(QStringLiteral("doubleSpinBox_ellipse_firstY"));
         doubleSpinBox_ellipse_firstY->setDecimals(1);
-        doubleSpinBox_ellipse_firstY->setMaximum(500.000000000000000);
+        doubleSpinBox_ellipse_firstY->setMaximum(500);
 
         horizontalLayout_53->addWidget(doubleSpinBox_ellipse_firstY);
 
@@ -1476,24 +1476,24 @@ public:
         verticalLayout_20->addLayout(horizontalLayout_53);
 
         layoutWidget_18 = new QWidget(tab_Ellipse);
-        layoutWidget_18->setObjectName(QString::fromUtf8("layoutWidget_18"));
+        layoutWidget_18->setObjectName(QStringLiteral("layoutWidget_18"));
         layoutWidget_18->setGeometry(QRect(470, 40, 170, 73));
         verticalLayout_21 = new QVBoxLayout(layoutWidget_18);
         verticalLayout_21->setSpacing(6);
         verticalLayout_21->setContentsMargins(11, 11, 11, 11);
-        verticalLayout_21->setObjectName(QString::fromUtf8("verticalLayout_21"));
+        verticalLayout_21->setObjectName(QStringLiteral("verticalLayout_21"));
         verticalLayout_21->setContentsMargins(0, 0, 0, 0);
         horizontalLayout_54 = new QHBoxLayout();
         horizontalLayout_54->setSpacing(6);
-        horizontalLayout_54->setObjectName(QString::fromUtf8("horizontalLayout_54"));
+        horizontalLayout_54->setObjectName(QStringLiteral("horizontalLayout_54"));
         label_68 = new QLabel(layoutWidget_18);
-        label_68->setObjectName(QString::fromUtf8("label_68"));
+        label_68->setObjectName(QStringLiteral("label_68"));
 
         horizontalLayout_54->addWidget(label_68);
 
         doubleSpinBox_ellipse_axisX = new QDoubleSpinBox(layoutWidget_18);
-        doubleSpinBox_ellipse_axisX->setObjectName(QString::fromUtf8("doubleSpinBox_ellipse_axisX"));
-        doubleSpinBox_ellipse_axisX->setMaximum(100.000000000000000);
+        doubleSpinBox_ellipse_axisX->setObjectName(QStringLiteral("doubleSpinBox_ellipse_axisX"));
+        doubleSpinBox_ellipse_axisX->setMaximum(100);
 
         horizontalLayout_54->addWidget(doubleSpinBox_ellipse_axisX);
 
@@ -1501,7 +1501,7 @@ public:
         verticalLayout_21->addLayout(horizontalLayout_54);
 
         line_20 = new QFrame(layoutWidget_18);
-        line_20->setObjectName(QString::fromUtf8("line_20"));
+        line_20->setObjectName(QStringLiteral("line_20"));
         line_20->setFrameShape(QFrame::HLine);
         line_20->setFrameShadow(QFrame::Sunken);
 
@@ -1509,15 +1509,15 @@ public:
 
         horizontalLayout_55 = new QHBoxLayout();
         horizontalLayout_55->setSpacing(6);
-        horizontalLayout_55->setObjectName(QString::fromUtf8("horizontalLayout_55"));
+        horizontalLayout_55->setObjectName(QStringLiteral("horizontalLayout_55"));
         label_69 = new QLabel(layoutWidget_18);
-        label_69->setObjectName(QString::fromUtf8("label_69"));
+        label_69->setObjectName(QStringLiteral("label_69"));
 
         horizontalLayout_55->addWidget(label_69);
 
         doubleSpinBox_ellipse_axisY = new QDoubleSpinBox(layoutWidget_18);
-        doubleSpinBox_ellipse_axisY->setObjectName(QString::fromUtf8("doubleSpinBox_ellipse_axisY"));
-        doubleSpinBox_ellipse_axisY->setMaximum(100.000000000000000);
+        doubleSpinBox_ellipse_axisY->setObjectName(QStringLiteral("doubleSpinBox_ellipse_axisY"));
+        doubleSpinBox_ellipse_axisY->setMaximum(100);
 
         horizontalLayout_55->addWidget(doubleSpinBox_ellipse_axisY);
 
@@ -1526,21 +1526,21 @@ public:
 
         tabWidget_addShape->addTab(tab_Ellipse, QString());
         tab_text = new QWidget();
-        tab_text->setObjectName(QString::fromUtf8("tab_text"));
+        tab_text->setObjectName(QStringLiteral("tab_text"));
         textEdit = new QTextEdit(tab_text);
-        textEdit->setObjectName(QString::fromUtf8("textEdit"));
+        textEdit->setObjectName(QStringLiteral("textEdit"));
         textEdit->setGeometry(QRect(10, 0, 210, 80));
         textEdit->setMaximumSize(QSize(210, 80));
         layoutWidget5 = new QWidget(tab_text);
-        layoutWidget5->setObjectName(QString::fromUtf8("layoutWidget5"));
+        layoutWidget5->setObjectName(QStringLiteral("layoutWidget5"));
         layoutWidget5->setGeometry(QRect(510, 90, 170, 32));
         horizontalLayout_56 = new QHBoxLayout(layoutWidget5);
         horizontalLayout_56->setSpacing(6);
         horizontalLayout_56->setContentsMargins(11, 11, 11, 11);
-        horizontalLayout_56->setObjectName(QString::fromUtf8("horizontalLayout_56"));
+        horizontalLayout_56->setObjectName(QStringLiteral("horizontalLayout_56"));
         horizontalLayout_56->setContentsMargins(0, 0, 0, 0);
         label_71 = new QLabel(layoutWidget5);
-        label_71->setObjectName(QString::fromUtf8("label_71"));
+        label_71->setObjectName(QStringLiteral("label_71"));
 
         horizontalLayout_56->addWidget(label_71);
 
@@ -1554,20 +1554,20 @@ public:
         comboBox_textColor->addItem(QString());
         comboBox_textColor->addItem(QString());
         comboBox_textColor->addItem(QString());
-        comboBox_textColor->setObjectName(QString::fromUtf8("comboBox_textColor"));
+        comboBox_textColor->setObjectName(QStringLiteral("comboBox_textColor"));
 
         horizontalLayout_56->addWidget(comboBox_textColor);
 
         layoutWidget6 = new QWidget(tab_text);
-        layoutWidget6->setObjectName(QString::fromUtf8("layoutWidget6"));
+        layoutWidget6->setObjectName(QStringLiteral("layoutWidget6"));
         layoutWidget6->setGeometry(QRect(250, 130, 206, 32));
         horizontalLayout_57 = new QHBoxLayout(layoutWidget6);
         horizontalLayout_57->setSpacing(6);
         horizontalLayout_57->setContentsMargins(11, 11, 11, 11);
-        horizontalLayout_57->setObjectName(QString::fromUtf8("horizontalLayout_57"));
+        horizontalLayout_57->setObjectName(QStringLiteral("horizontalLayout_57"));
         horizontalLayout_57->setContentsMargins(0, 0, 0, 0);
         label_72 = new QLabel(layoutWidget6);
-        label_72->setObjectName(QString::fromUtf8("label_72"));
+        label_72->setObjectName(QStringLiteral("label_72"));
 
         horizontalLayout_57->addWidget(label_72);
 
@@ -1577,25 +1577,25 @@ public:
         comboBox_text_alignment->addItem(QString());
         comboBox_text_alignment->addItem(QString());
         comboBox_text_alignment->addItem(QString());
-        comboBox_text_alignment->setObjectName(QString::fromUtf8("comboBox_text_alignment"));
+        comboBox_text_alignment->setObjectName(QStringLiteral("comboBox_text_alignment"));
 
         horizontalLayout_57->addWidget(comboBox_text_alignment);
 
         layoutWidget7 = new QWidget(tab_text);
-        layoutWidget7->setObjectName(QString::fromUtf8("layoutWidget7"));
+        layoutWidget7->setObjectName(QStringLiteral("layoutWidget7"));
         layoutWidget7->setGeometry(QRect(250, 90, 211, 32));
         horizontalLayout_58 = new QHBoxLayout(layoutWidget7);
         horizontalLayout_58->setSpacing(6);
         horizontalLayout_58->setContentsMargins(11, 11, 11, 11);
-        horizontalLayout_58->setObjectName(QString::fromUtf8("horizontalLayout_58"));
+        horizontalLayout_58->setObjectName(QStringLiteral("horizontalLayout_58"));
         horizontalLayout_58->setContentsMargins(0, 0, 0, 0);
         label_73 = new QLabel(layoutWidget7);
-        label_73->setObjectName(QString::fromUtf8("label_73"));
+        label_73->setObjectName(QStringLiteral("label_73"));
 
         horizontalLayout_58->addWidget(label_73);
 
         spinBox_text_point_size = new QSpinBox(layoutWidget7);
-        spinBox_text_point_size->setObjectName(QString::fromUtf8("spinBox_text_point_size"));
+        spinBox_text_point_size->setObjectName(QStringLiteral("spinBox_text_point_size"));
         spinBox_text_point_size->setMinimum(-1);
         spinBox_text_point_size->setMaximum(50);
         spinBox_text_point_size->setValue(1);
@@ -1603,15 +1603,15 @@ public:
         horizontalLayout_58->addWidget(spinBox_text_point_size);
 
         layoutWidget8 = new QWidget(tab_text);
-        layoutWidget8->setObjectName(QString::fromUtf8("layoutWidget8"));
+        layoutWidget8->setObjectName(QStringLiteral("layoutWidget8"));
         layoutWidget8->setGeometry(QRect(510, 0, 271, 38));
         horizontalLayout_59 = new QHBoxLayout(layoutWidget8);
         horizontalLayout_59->setSpacing(6);
         horizontalLayout_59->setContentsMargins(11, 11, 11, 11);
-        horizontalLayout_59->setObjectName(QString::fromUtf8("horizontalLayout_59"));
+        horizontalLayout_59->setObjectName(QStringLiteral("horizontalLayout_59"));
         horizontalLayout_59->setContentsMargins(0, 0, 0, 0);
         label_75 = new QLabel(layoutWidget8);
-        label_75->setObjectName(QString::fromUtf8("label_75"));
+        label_75->setObjectName(QStringLiteral("label_75"));
 
         horizontalLayout_59->addWidget(label_75);
 
@@ -1620,20 +1620,20 @@ public:
         comboBox_textFontFamily->addItem(QString());
         comboBox_textFontFamily->addItem(QString());
         comboBox_textFontFamily->addItem(QString());
-        comboBox_textFontFamily->setObjectName(QString::fromUtf8("comboBox_textFontFamily"));
+        comboBox_textFontFamily->setObjectName(QStringLiteral("comboBox_textFontFamily"));
 
         horizontalLayout_59->addWidget(comboBox_textFontFamily);
 
         layoutWidget9 = new QWidget(tab_text);
-        layoutWidget9->setObjectName(QString::fromUtf8("layoutWidget9"));
+        layoutWidget9->setObjectName(QStringLiteral("layoutWidget9"));
         layoutWidget9->setGeometry(QRect(510, 50, 258, 32));
         horizontalLayout_60 = new QHBoxLayout(layoutWidget9);
         horizontalLayout_60->setSpacing(6);
         horizontalLayout_60->setContentsMargins(11, 11, 11, 11);
-        horizontalLayout_60->setObjectName(QString::fromUtf8("horizontalLayout_60"));
+        horizontalLayout_60->setObjectName(QStringLiteral("horizontalLayout_60"));
         horizontalLayout_60->setContentsMargins(0, 0, 0, 0);
         label_76 = new QLabel(layoutWidget9);
-        label_76->setObjectName(QString::fromUtf8("label_76"));
+        label_76->setObjectName(QStringLiteral("label_76"));
 
         horizontalLayout_60->addWidget(label_76);
 
@@ -1642,20 +1642,20 @@ public:
         comboBox_fontWeight->addItem(QString());
         comboBox_fontWeight->addItem(QString());
         comboBox_fontWeight->addItem(QString());
-        comboBox_fontWeight->setObjectName(QString::fromUtf8("comboBox_fontWeight"));
+        comboBox_fontWeight->setObjectName(QStringLiteral("comboBox_fontWeight"));
 
         horizontalLayout_60->addWidget(comboBox_fontWeight);
 
         layoutWidget10 = new QWidget(tab_text);
-        layoutWidget10->setObjectName(QString::fromUtf8("layoutWidget10"));
+        layoutWidget10->setObjectName(QStringLiteral("layoutWidget10"));
         layoutWidget10->setGeometry(QRect(510, 130, 241, 32));
         horizontalLayout_61 = new QHBoxLayout(layoutWidget10);
         horizontalLayout_61->setSpacing(6);
         horizontalLayout_61->setContentsMargins(11, 11, 11, 11);
-        horizontalLayout_61->setObjectName(QString::fromUtf8("horizontalLayout_61"));
+        horizontalLayout_61->setObjectName(QStringLiteral("horizontalLayout_61"));
         horizontalLayout_61->setContentsMargins(0, 0, 0, 0);
         label_87 = new QLabel(layoutWidget10);
-        label_87->setObjectName(QString::fromUtf8("label_87"));
+        label_87->setObjectName(QStringLiteral("label_87"));
 
         horizontalLayout_61->addWidget(label_87);
 
@@ -1663,33 +1663,33 @@ public:
         comboBox_textFontStyles->addItem(QString());
         comboBox_textFontStyles->addItem(QString());
         comboBox_textFontStyles->addItem(QString());
-        comboBox_textFontStyles->setObjectName(QString::fromUtf8("comboBox_textFontStyles"));
+        comboBox_textFontStyles->setObjectName(QStringLiteral("comboBox_textFontStyles"));
 
         horizontalLayout_61->addWidget(comboBox_textFontStyles);
 
         layoutWidget_2 = new QWidget(tab_text);
-        layoutWidget_2->setObjectName(QString::fromUtf8("layoutWidget_2"));
+        layoutWidget_2->setObjectName(QStringLiteral("layoutWidget_2"));
         layoutWidget_2->setGeometry(QRect(250, 0, 144, 82));
         verticalLayout_22 = new QVBoxLayout(layoutWidget_2);
         verticalLayout_22->setSpacing(6);
         verticalLayout_22->setContentsMargins(11, 11, 11, 11);
-        verticalLayout_22->setObjectName(QString::fromUtf8("verticalLayout_22"));
+        verticalLayout_22->setObjectName(QStringLiteral("verticalLayout_22"));
         verticalLayout_22->setContentsMargins(0, 0, 0, 0);
         label_77 = new QLabel(layoutWidget_2);
-        label_77->setObjectName(QString::fromUtf8("label_77"));
+        label_77->setObjectName(QStringLiteral("label_77"));
 
         verticalLayout_22->addWidget(label_77);
 
         horizontalLayout_62 = new QHBoxLayout();
         horizontalLayout_62->setSpacing(6);
-        horizontalLayout_62->setObjectName(QString::fromUtf8("horizontalLayout_62"));
+        horizontalLayout_62->setObjectName(QStringLiteral("horizontalLayout_62"));
         label_78 = new QLabel(layoutWidget_2);
-        label_78->setObjectName(QString::fromUtf8("label_78"));
+        label_78->setObjectName(QStringLiteral("label_78"));
 
         horizontalLayout_62->addWidget(label_78);
 
         spinBox_text_X = new QSpinBox(layoutWidget_2);
-        spinBox_text_X->setObjectName(QString::fromUtf8("spinBox_text_X"));
+        spinBox_text_X->setObjectName(QStringLiteral("spinBox_text_X"));
         spinBox_text_X->setMaximum(1000);
 
         horizontalLayout_62->addWidget(spinBox_text_X);
@@ -1699,14 +1699,14 @@ public:
 
         horizontalLayout_63 = new QHBoxLayout();
         horizontalLayout_63->setSpacing(6);
-        horizontalLayout_63->setObjectName(QString::fromUtf8("horizontalLayout_63"));
+        horizontalLayout_63->setObjectName(QStringLiteral("horizontalLayout_63"));
         label_79 = new QLabel(layoutWidget_2);
-        label_79->setObjectName(QString::fromUtf8("label_79"));
+        label_79->setObjectName(QStringLiteral("label_79"));
 
         horizontalLayout_63->addWidget(label_79);
 
         spinBox_text_Y = new QSpinBox(layoutWidget_2);
-        spinBox_text_Y->setObjectName(QString::fromUtf8("spinBox_text_Y"));
+        spinBox_text_Y->setObjectName(QStringLiteral("spinBox_text_Y"));
         spinBox_text_Y->setMaximum(500);
 
         horizontalLayout_63->addWidget(spinBox_text_Y);
@@ -1715,28 +1715,28 @@ public:
         verticalLayout_22->addLayout(horizontalLayout_63);
 
         layoutWidget_3 = new QWidget(tab_text);
-        layoutWidget_3->setObjectName(QString::fromUtf8("layoutWidget_3"));
+        layoutWidget_3->setObjectName(QStringLiteral("layoutWidget_3"));
         layoutWidget_3->setGeometry(QRect(30, 90, 144, 82));
         verticalLayout_23 = new QVBoxLayout(layoutWidget_3);
         verticalLayout_23->setSpacing(6);
         verticalLayout_23->setContentsMargins(11, 11, 11, 11);
-        verticalLayout_23->setObjectName(QString::fromUtf8("verticalLayout_23"));
+        verticalLayout_23->setObjectName(QStringLiteral("verticalLayout_23"));
         verticalLayout_23->setContentsMargins(0, 0, 0, 0);
         label_80 = new QLabel(layoutWidget_3);
-        label_80->setObjectName(QString::fromUtf8("label_80"));
+        label_80->setObjectName(QStringLiteral("label_80"));
 
         verticalLayout_23->addWidget(label_80);
 
         horizontalLayout_64 = new QHBoxLayout();
         horizontalLayout_64->setSpacing(6);
-        horizontalLayout_64->setObjectName(QString::fromUtf8("horizontalLayout_64"));
+        horizontalLayout_64->setObjectName(QStringLiteral("horizontalLayout_64"));
         label_81 = new QLabel(layoutWidget_3);
-        label_81->setObjectName(QString::fromUtf8("label_81"));
+        label_81->setObjectName(QStringLiteral("label_81"));
 
         horizontalLayout_64->addWidget(label_81);
 
         spinBox_text_box_width = new QSpinBox(layoutWidget_3);
-        spinBox_text_box_width->setObjectName(QString::fromUtf8("spinBox_text_box_width"));
+        spinBox_text_box_width->setObjectName(QStringLiteral("spinBox_text_box_width"));
         spinBox_text_box_width->setMaximum(1000);
 
         horizontalLayout_64->addWidget(spinBox_text_box_width);
@@ -1746,14 +1746,14 @@ public:
 
         horizontalLayout_65 = new QHBoxLayout();
         horizontalLayout_65->setSpacing(6);
-        horizontalLayout_65->setObjectName(QString::fromUtf8("horizontalLayout_65"));
+        horizontalLayout_65->setObjectName(QStringLiteral("horizontalLayout_65"));
         label_82 = new QLabel(layoutWidget_3);
-        label_82->setObjectName(QString::fromUtf8("label_82"));
+        label_82->setObjectName(QStringLiteral("label_82"));
 
         horizontalLayout_65->addWidget(label_82);
 
         spinBox_text_box_hight = new QSpinBox(layoutWidget_3);
-        spinBox_text_box_hight->setObjectName(QString::fromUtf8("spinBox_text_box_hight"));
+        spinBox_text_box_hight->setObjectName(QStringLiteral("spinBox_text_box_hight"));
         spinBox_text_box_hight->setMaximum(500);
 
         horizontalLayout_65->addWidget(spinBox_text_box_hight);
@@ -1763,27 +1763,27 @@ public:
 
         tabWidget_addShape->addTab(tab_text, QString());
         pushButton = new QPushButton(Tab_Shape);
-        pushButton->setObjectName(QString::fromUtf8("pushButton"));
+        pushButton->setObjectName(QStringLiteral("pushButton"));
         pushButton->setGeometry(QRect(860, 70, 114, 71));
         tabWidget->addTab(Tab_Shape, QString());
         tab_setProperties = new QWidget();
-        tab_setProperties->setObjectName(QString::fromUtf8("tab_setProperties"));
+        tab_setProperties->setObjectName(QStringLiteral("tab_setProperties"));
         label_52 = new QLabel(tab_setProperties);
-        label_52->setObjectName(QString::fromUtf8("label_52"));
+        label_52->setObjectName(QStringLiteral("label_52"));
         label_52->setGeometry(QRect(420, 20, 231, 16));
         layoutWidget11 = new QWidget(tab_setProperties);
-        layoutWidget11->setObjectName(QString::fromUtf8("layoutWidget11"));
+        layoutWidget11->setObjectName(QStringLiteral("layoutWidget11"));
         layoutWidget11->setGeometry(QRect(90, 50, 819, 34));
         horizontalLayout_46 = new QHBoxLayout(layoutWidget11);
         horizontalLayout_46->setSpacing(6);
         horizontalLayout_46->setContentsMargins(11, 11, 11, 11);
-        horizontalLayout_46->setObjectName(QString::fromUtf8("horizontalLayout_46"));
+        horizontalLayout_46->setObjectName(QStringLiteral("horizontalLayout_46"));
         horizontalLayout_46->setContentsMargins(0, 0, 0, 0);
         horizontalLayout_42 = new QHBoxLayout();
         horizontalLayout_42->setSpacing(6);
-        horizontalLayout_42->setObjectName(QString::fromUtf8("horizontalLayout_42"));
+        horizontalLayout_42->setObjectName(QStringLiteral("horizontalLayout_42"));
         label_56 = new QLabel(layoutWidget11);
-        label_56->setObjectName(QString::fromUtf8("label_56"));
+        label_56->setObjectName(QStringLiteral("label_56"));
         label_56->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
 
         horizontalLayout_42->addWidget(label_56);
@@ -1792,7 +1792,7 @@ public:
         comboBox_setPenCapStyle->addItem(QString());
         comboBox_setPenCapStyle->addItem(QString());
         comboBox_setPenCapStyle->addItem(QString());
-        comboBox_setPenCapStyle->setObjectName(QString::fromUtf8("comboBox_setPenCapStyle"));
+        comboBox_setPenCapStyle->setObjectName(QStringLiteral("comboBox_setPenCapStyle"));
 
         horizontalLayout_42->addWidget(comboBox_setPenCapStyle);
 
@@ -1800,7 +1800,7 @@ public:
         horizontalLayout_46->addLayout(horizontalLayout_42);
 
         line_14 = new QFrame(layoutWidget11);
-        line_14->setObjectName(QString::fromUtf8("line_14"));
+        line_14->setObjectName(QStringLiteral("line_14"));
         line_14->setFrameShape(QFrame::VLine);
         line_14->setFrameShadow(QFrame::Sunken);
 
@@ -1808,9 +1808,9 @@ public:
 
         horizontalLayout_41 = new QHBoxLayout();
         horizontalLayout_41->setSpacing(6);
-        horizontalLayout_41->setObjectName(QString::fromUtf8("horizontalLayout_41"));
+        horizontalLayout_41->setObjectName(QStringLiteral("horizontalLayout_41"));
         label_55 = new QLabel(layoutWidget11);
-        label_55->setObjectName(QString::fromUtf8("label_55"));
+        label_55->setObjectName(QStringLiteral("label_55"));
         label_55->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
 
         horizontalLayout_41->addWidget(label_55);
@@ -1822,7 +1822,7 @@ public:
         comboBox_setPenStyle->addItem(QString());
         comboBox_setPenStyle->addItem(QString());
         comboBox_setPenStyle->addItem(QString());
-        comboBox_setPenStyle->setObjectName(QString::fromUtf8("comboBox_setPenStyle"));
+        comboBox_setPenStyle->setObjectName(QStringLiteral("comboBox_setPenStyle"));
 
         horizontalLayout_41->addWidget(comboBox_setPenStyle);
 
@@ -1830,7 +1830,7 @@ public:
         horizontalLayout_46->addLayout(horizontalLayout_41);
 
         line_15 = new QFrame(layoutWidget11);
-        line_15->setObjectName(QString::fromUtf8("line_15"));
+        line_15->setObjectName(QStringLiteral("line_15"));
         line_15->setFrameShape(QFrame::VLine);
         line_15->setFrameShadow(QFrame::Sunken);
 
@@ -1838,15 +1838,15 @@ public:
 
         horizontalLayout_40 = new QHBoxLayout();
         horizontalLayout_40->setSpacing(6);
-        horizontalLayout_40->setObjectName(QString::fromUtf8("horizontalLayout_40"));
+        horizontalLayout_40->setObjectName(QStringLiteral("horizontalLayout_40"));
         label_54 = new QLabel(layoutWidget11);
-        label_54->setObjectName(QString::fromUtf8("label_54"));
+        label_54->setObjectName(QStringLiteral("label_54"));
         label_54->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
 
         horizontalLayout_40->addWidget(label_54);
 
         spinBox_setPenWidth = new QSpinBox(layoutWidget11);
-        spinBox_setPenWidth->setObjectName(QString::fromUtf8("spinBox_setPenWidth"));
+        spinBox_setPenWidth->setObjectName(QStringLiteral("spinBox_setPenWidth"));
         spinBox_setPenWidth->setMinimum(1);
         spinBox_setPenWidth->setMaximum(20);
 
@@ -1856,7 +1856,7 @@ public:
         horizontalLayout_46->addLayout(horizontalLayout_40);
 
         line_16 = new QFrame(layoutWidget11);
-        line_16->setObjectName(QString::fromUtf8("line_16"));
+        line_16->setObjectName(QStringLiteral("line_16"));
         line_16->setFrameShape(QFrame::VLine);
         line_16->setFrameShadow(QFrame::Sunken);
 
@@ -1864,9 +1864,9 @@ public:
 
         horizontalLayout_39 = new QHBoxLayout();
         horizontalLayout_39->setSpacing(6);
-        horizontalLayout_39->setObjectName(QString::fromUtf8("horizontalLayout_39"));
+        horizontalLayout_39->setObjectName(QStringLiteral("horizontalLayout_39"));
         label_53 = new QLabel(layoutWidget11);
-        label_53->setObjectName(QString::fromUtf8("label_53"));
+        label_53->setObjectName(QStringLiteral("label_53"));
         label_53->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
 
         horizontalLayout_39->addWidget(label_53);
@@ -1881,7 +1881,7 @@ public:
         comboBox_setPenColor->addItem(QString());
         comboBox_setPenColor->addItem(QString());
         comboBox_setPenColor->addItem(QString());
-        comboBox_setPenColor->setObjectName(QString::fromUtf8("comboBox_setPenColor"));
+        comboBox_setPenColor->setObjectName(QStringLiteral("comboBox_setPenColor"));
 
         horizontalLayout_39->addWidget(comboBox_setPenColor);
 
@@ -1889,18 +1889,18 @@ public:
         horizontalLayout_46->addLayout(horizontalLayout_39);
 
         layoutWidget12 = new QWidget(tab_setProperties);
-        layoutWidget12->setObjectName(QString::fromUtf8("layoutWidget12"));
+        layoutWidget12->setObjectName(QStringLiteral("layoutWidget12"));
         layoutWidget12->setGeometry(QRect(220, 110, 607, 34));
         horizontalLayout_47 = new QHBoxLayout(layoutWidget12);
         horizontalLayout_47->setSpacing(6);
         horizontalLayout_47->setContentsMargins(11, 11, 11, 11);
-        horizontalLayout_47->setObjectName(QString::fromUtf8("horizontalLayout_47"));
+        horizontalLayout_47->setObjectName(QStringLiteral("horizontalLayout_47"));
         horizontalLayout_47->setContentsMargins(0, 0, 0, 0);
         horizontalLayout_43 = new QHBoxLayout();
         horizontalLayout_43->setSpacing(6);
-        horizontalLayout_43->setObjectName(QString::fromUtf8("horizontalLayout_43"));
+        horizontalLayout_43->setObjectName(QStringLiteral("horizontalLayout_43"));
         label_57 = new QLabel(layoutWidget12);
-        label_57->setObjectName(QString::fromUtf8("label_57"));
+        label_57->setObjectName(QStringLiteral("label_57"));
         label_57->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
 
         horizontalLayout_43->addWidget(label_57);
@@ -1909,7 +1909,7 @@ public:
         comboBox_setPenJoinStyle->addItem(QString());
         comboBox_setPenJoinStyle->addItem(QString());
         comboBox_setPenJoinStyle->addItem(QString());
-        comboBox_setPenJoinStyle->setObjectName(QString::fromUtf8("comboBox_setPenJoinStyle"));
+        comboBox_setPenJoinStyle->setObjectName(QStringLiteral("comboBox_setPenJoinStyle"));
 
         horizontalLayout_43->addWidget(comboBox_setPenJoinStyle);
 
@@ -1917,7 +1917,7 @@ public:
         horizontalLayout_47->addLayout(horizontalLayout_43);
 
         line_17 = new QFrame(layoutWidget12);
-        line_17->setObjectName(QString::fromUtf8("line_17"));
+        line_17->setObjectName(QStringLiteral("line_17"));
         line_17->setFrameShape(QFrame::VLine);
         line_17->setFrameShadow(QFrame::Sunken);
 
@@ -1925,9 +1925,9 @@ public:
 
         horizontalLayout_44 = new QHBoxLayout();
         horizontalLayout_44->setSpacing(6);
-        horizontalLayout_44->setObjectName(QString::fromUtf8("horizontalLayout_44"));
+        horizontalLayout_44->setObjectName(QStringLiteral("horizontalLayout_44"));
         label_58 = new QLabel(layoutWidget12);
-        label_58->setObjectName(QString::fromUtf8("label_58"));
+        label_58->setObjectName(QStringLiteral("label_58"));
         label_58->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
 
         horizontalLayout_44->addWidget(label_58);
@@ -1942,7 +1942,7 @@ public:
         comboBox_setBrushColor->addItem(QString());
         comboBox_setBrushColor->addItem(QString());
         comboBox_setBrushColor->addItem(QString());
-        comboBox_setBrushColor->setObjectName(QString::fromUtf8("comboBox_setBrushColor"));
+        comboBox_setBrushColor->setObjectName(QStringLiteral("comboBox_setBrushColor"));
 
         horizontalLayout_44->addWidget(comboBox_setBrushColor);
 
@@ -1951,16 +1951,16 @@ public:
 
         horizontalLayout_45 = new QHBoxLayout();
         horizontalLayout_45->setSpacing(6);
-        horizontalLayout_45->setObjectName(QString::fromUtf8("horizontalLayout_45"));
+        horizontalLayout_45->setObjectName(QStringLiteral("horizontalLayout_45"));
         line_18 = new QFrame(layoutWidget12);
-        line_18->setObjectName(QString::fromUtf8("line_18"));
+        line_18->setObjectName(QStringLiteral("line_18"));
         line_18->setFrameShape(QFrame::VLine);
         line_18->setFrameShadow(QFrame::Sunken);
 
         horizontalLayout_45->addWidget(line_18);
 
         label_59 = new QLabel(layoutWidget12);
-        label_59->setObjectName(QString::fromUtf8("label_59"));
+        label_59->setObjectName(QStringLiteral("label_59"));
         label_59->setAlignment(Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter);
 
         horizontalLayout_45->addWidget(label_59);
@@ -1970,7 +1970,7 @@ public:
         comboBox_setBrushStyle->addItem(QString());
         comboBox_setBrushStyle->addItem(QString());
         comboBox_setBrushStyle->addItem(QString());
-        comboBox_setBrushStyle->setObjectName(QString::fromUtf8("comboBox_setBrushStyle"));
+        comboBox_setBrushStyle->setObjectName(QStringLiteral("comboBox_setBrushStyle"));
 
         horizontalLayout_45->addWidget(comboBox_setBrushStyle);
 
@@ -1979,26 +1979,26 @@ public:
 
         tabWidget->addTab(tab_setProperties, QString());
         Tab_Move = new QWidget();
-        Tab_Move->setObjectName(QString::fromUtf8("Tab_Move"));
+        Tab_Move->setObjectName(QStringLiteral("Tab_Move"));
         Tab_Move->setEnabled(true);
         layoutWidget13 = new QWidget(Tab_Move);
-        layoutWidget13->setObjectName(QString::fromUtf8("layoutWidget13"));
+        layoutWidget13->setObjectName(QStringLiteral("layoutWidget13"));
         layoutWidget13->setGeometry(QRect(290, 30, 258, 101));
         verticalLayout_25 = new QVBoxLayout(layoutWidget13);
         verticalLayout_25->setSpacing(6);
         verticalLayout_25->setContentsMargins(11, 11, 11, 11);
-        verticalLayout_25->setObjectName(QString::fromUtf8("verticalLayout_25"));
+        verticalLayout_25->setObjectName(QStringLiteral("verticalLayout_25"));
         verticalLayout_25->setContentsMargins(0, 0, 0, 0);
         horizontalLayout_67 = new QHBoxLayout();
         horizontalLayout_67->setSpacing(6);
-        horizontalLayout_67->setObjectName(QString::fromUtf8("horizontalLayout_67"));
+        horizontalLayout_67->setObjectName(QStringLiteral("horizontalLayout_67"));
         label_74 = new QLabel(layoutWidget13);
-        label_74->setObjectName(QString::fromUtf8("label_74"));
+        label_74->setObjectName(QStringLiteral("label_74"));
 
         horizontalLayout_67->addWidget(label_74);
 
         spinBox_move_id = new QSpinBox(layoutWidget13);
-        spinBox_move_id->setObjectName(QString::fromUtf8("spinBox_move_id"));
+        spinBox_move_id->setObjectName(QStringLiteral("spinBox_move_id"));
         spinBox_move_id->setMinimum(0);
         spinBox_move_id->setMaximum(100);
 
@@ -2009,17 +2009,17 @@ public:
 
         horizontalLayout_70 = new QHBoxLayout();
         horizontalLayout_70->setSpacing(6);
-        horizontalLayout_70->setObjectName(QString::fromUtf8("horizontalLayout_70"));
+        horizontalLayout_70->setObjectName(QStringLiteral("horizontalLayout_70"));
         horizontalLayout_69 = new QHBoxLayout();
         horizontalLayout_69->setSpacing(6);
-        horizontalLayout_69->setObjectName(QString::fromUtf8("horizontalLayout_69"));
+        horizontalLayout_69->setObjectName(QStringLiteral("horizontalLayout_69"));
         label_83 = new QLabel(layoutWidget13);
-        label_83->setObjectName(QString::fromUtf8("label_83"));
+        label_83->setObjectName(QStringLiteral("label_83"));
 
         horizontalLayout_69->addWidget(label_83);
 
         spinBox_moveX = new QSpinBox(layoutWidget13);
-        spinBox_moveX->setObjectName(QString::fromUtf8("spinBox_moveX"));
+        spinBox_moveX->setObjectName(QStringLiteral("spinBox_moveX"));
         spinBox_moveX->setMaximum(1000);
 
         horizontalLayout_69->addWidget(spinBox_moveX);
@@ -2029,14 +2029,14 @@ public:
 
         horizontalLayout_68 = new QHBoxLayout();
         horizontalLayout_68->setSpacing(6);
-        horizontalLayout_68->setObjectName(QString::fromUtf8("horizontalLayout_68"));
+        horizontalLayout_68->setObjectName(QStringLiteral("horizontalLayout_68"));
         label_84 = new QLabel(layoutWidget13);
-        label_84->setObjectName(QString::fromUtf8("label_84"));
+        label_84->setObjectName(QStringLiteral("label_84"));
 
         horizontalLayout_68->addWidget(label_84);
 
         spinBox_moveY = new QSpinBox(layoutWidget13);
-        spinBox_moveY->setObjectName(QString::fromUtf8("spinBox_moveY"));
+        spinBox_moveY->setObjectName(QStringLiteral("spinBox_moveY"));
         spinBox_moveY->setMaximum(500);
 
         horizontalLayout_68->addWidget(spinBox_moveY);
@@ -2048,33 +2048,33 @@ public:
         verticalLayout_25->addLayout(horizontalLayout_70);
 
         pushButton_move = new QPushButton(layoutWidget13);
-        pushButton_move->setObjectName(QString::fromUtf8("pushButton_move"));
+        pushButton_move->setObjectName(QStringLiteral("pushButton_move"));
 
         verticalLayout_25->addWidget(pushButton_move);
 
         layoutWidget14 = new QWidget(Tab_Move);
-        layoutWidget14->setObjectName(QString::fromUtf8("layoutWidget14"));
+        layoutWidget14->setObjectName(QStringLiteral("layoutWidget14"));
         layoutWidget14->setGeometry(QRect(250, 140, 331, 42));
         verticalLayout_26 = new QVBoxLayout(layoutWidget14);
         verticalLayout_26->setSpacing(1);
         verticalLayout_26->setContentsMargins(11, 11, 11, 11);
-        verticalLayout_26->setObjectName(QString::fromUtf8("verticalLayout_26"));
+        verticalLayout_26->setObjectName(QStringLiteral("verticalLayout_26"));
         verticalLayout_26->setContentsMargins(0, 0, 0, 0);
         label_85 = new QLabel(layoutWidget14);
-        label_85->setObjectName(QString::fromUtf8("label_85"));
+        label_85->setObjectName(QStringLiteral("label_85"));
 
         verticalLayout_26->addWidget(label_85);
 
         horizontalLayout_71 = new QHBoxLayout();
         horizontalLayout_71->setSpacing(6);
-        horizontalLayout_71->setObjectName(QString::fromUtf8("horizontalLayout_71"));
+        horizontalLayout_71->setObjectName(QStringLiteral("horizontalLayout_71"));
         label_86 = new QLabel(layoutWidget14);
-        label_86->setObjectName(QString::fromUtf8("label_86"));
+        label_86->setObjectName(QStringLiteral("label_86"));
 
         horizontalLayout_71->addWidget(label_86);
 
         spinBox_moveCoordinate = new QSpinBox(layoutWidget14);
-        spinBox_moveCoordinate->setObjectName(QString::fromUtf8("spinBox_moveCoordinate"));
+        spinBox_moveCoordinate->setObjectName(QStringLiteral("spinBox_moveCoordinate"));
         spinBox_moveCoordinate->setMinimum(1);
         spinBox_moveCoordinate->setMaximum(8);
 
@@ -2085,27 +2085,27 @@ public:
 
         tabWidget->addTab(Tab_Move, QString());
         tab_delete = new QWidget();
-        tab_delete->setObjectName(QString::fromUtf8("tab_delete"));
+        tab_delete->setObjectName(QStringLiteral("tab_delete"));
         layoutWidget15 = new QWidget(tab_delete);
-        layoutWidget15->setObjectName(QString::fromUtf8("layoutWidget15"));
+        layoutWidget15->setObjectName(QStringLiteral("layoutWidget15"));
         layoutWidget15->setGeometry(QRect(310, 30, 336, 81));
         verticalLayout_24 = new QVBoxLayout(layoutWidget15);
         verticalLayout_24->setSpacing(6);
         verticalLayout_24->setContentsMargins(11, 11, 11, 11);
-        verticalLayout_24->setObjectName(QString::fromUtf8("verticalLayout_24"));
+        verticalLayout_24->setObjectName(QStringLiteral("verticalLayout_24"));
         verticalLayout_24->setContentsMargins(0, 0, 0, 0);
         horizontalLayout_66 = new QHBoxLayout();
         horizontalLayout_66->setSpacing(6);
-        horizontalLayout_66->setObjectName(QString::fromUtf8("horizontalLayout_66"));
+        horizontalLayout_66->setObjectName(QStringLiteral("horizontalLayout_66"));
         label_70 = new QLabel(layoutWidget15);
-        label_70->setObjectName(QString::fromUtf8("label_70"));
+        label_70->setObjectName(QStringLiteral("label_70"));
 
         horizontalLayout_66->addWidget(label_70);
 
         spinBox_delete_id = new QSpinBox(layoutWidget15);
-        spinBox_delete_id->setObjectName(QString::fromUtf8("spinBox_delete_id"));
-        spinBox_delete_id->setMinimum(0);
-        spinBox_delete_id->setMaximum(100);
+        spinBox_delete_id->setObjectName(QStringLiteral("spinBox_delete_id"));
+        spinBox_delete_id->setMinimum(1000);
+        spinBox_delete_id->setMaximum(6999);
 
         horizontalLayout_66->addWidget(spinBox_delete_id);
 
@@ -2113,29 +2113,29 @@ public:
         verticalLayout_24->addLayout(horizontalLayout_66);
 
         pushButton_deleteShape = new QPushButton(layoutWidget15);
-        pushButton_deleteShape->setObjectName(QString::fromUtf8("pushButton_deleteShape"));
+        pushButton_deleteShape->setObjectName(QStringLiteral("pushButton_deleteShape"));
 
         verticalLayout_24->addWidget(pushButton_deleteShape);
 
         tabWidget->addTab(tab_delete, QString());
         MainWindow->setCentralWidget(centralWidget);
         menuBar = new QMenuBar(MainWindow);
-        menuBar->setObjectName(QString::fromUtf8("menuBar"));
-        menuBar->setGeometry(QRect(0, 0, 1019, 22));
+        menuBar->setObjectName(QStringLiteral("menuBar"));
+        menuBar->setGeometry(QRect(0, 0, 1019, 21));
         menuFile = new QMenu(menuBar);
-        menuFile->setObjectName(QString::fromUtf8("menuFile"));
+        menuFile->setObjectName(QStringLiteral("menuFile"));
         menuAdmin = new QMenu(menuBar);
-        menuAdmin->setObjectName(QString::fromUtf8("menuAdmin"));
+        menuAdmin->setObjectName(QStringLiteral("menuAdmin"));
         menuHelp = new QMenu(menuBar);
-        menuHelp->setObjectName(QString::fromUtf8("menuHelp"));
+        menuHelp->setObjectName(QStringLiteral("menuHelp"));
         menuContact = new QMenu(menuBar);
-        menuContact->setObjectName(QString::fromUtf8("menuContact"));
+        menuContact->setObjectName(QStringLiteral("menuContact"));
         MainWindow->setMenuBar(menuBar);
         mainToolBar = new QToolBar(MainWindow);
-        mainToolBar->setObjectName(QString::fromUtf8("mainToolBar"));
+        mainToolBar->setObjectName(QStringLiteral("mainToolBar"));
         MainWindow->addToolBar(Qt::TopToolBarArea, mainToolBar);
         statusBar = new QStatusBar(MainWindow);
-        statusBar->setObjectName(QString::fromUtf8("statusBar"));
+        statusBar->setObjectName(QStringLiteral("statusBar"));
         MainWindow->setStatusBar(statusBar);
 
         menuBar->addAction(menuFile->menuAction());
@@ -2149,7 +2149,7 @@ public:
 
         retranslateUi(MainWindow);
 
-        tabWidget->setCurrentIndex(1);
+        tabWidget->setCurrentIndex(4);
         tabWidget_addShape->setCurrentIndex(5);
 
 

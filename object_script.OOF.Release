@@ -1,0 +1,12 @@
+INPUT(
+./release\main.o
+./release\mainwindow.o
+./release\adminlogin.o
+./release\shape.o
+./release\canvas.o
+./release\contact.o
+./release\qrc_images.o
+./release\moc_mainwindow.o
+./release\moc_adminlogin.o
+./release\moc_contact.o
+);
