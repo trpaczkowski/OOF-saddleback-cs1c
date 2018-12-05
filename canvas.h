@@ -22,7 +22,6 @@ class Canvas:public QWidget
 
         void shapeAdd(Shape* shapeIn)
         {
-            fileRead.readShapeFile();
             shapeList.push_back(shapeIn);
             IDCount++;
 
@@ -76,7 +75,7 @@ class Canvas:public QWidget
    private:
         vector<Shape*> shapeList; //Keeps track of shapes
         int IDCount{0};
-        ReadFile fileRead;
+        //ReadFile fileRead;
 
 
 };

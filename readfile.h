@@ -33,9 +33,67 @@ public:
             fin >> shapeIDNum;
 
             //Read shape type
-            fin >> identifierTrash;
             std::string shapeTypeStr;
+            ShapeType shapeTypeEnum;
+
+            fin >> identifierTrash;
             fin >> shapeTypeStr;
+
+            //Find correct enum
+            shapeTypeEnum = stringToShapeType(shapeTypeStr);
+
+            //Seperate to different shape types
+            switch(shapeTypeEnum)
+            {
+                //Line
+            case ShapeType::LineType:
+            {
+
+                break;
+            }
+                //PolyLine
+            case ShapeType::PolylineType:
+            {
+                break;
+            }
+
+                //Polygon
+            case ShapeType::PolygonType:
+            {
+                break;
+            }
+                //Rectangle
+            case ShapeType::RectangleType:
+            {
+                break;
+            }
+                //Square
+            case ShapeType::SquareType:
+            {
+                break;
+            }
+                //Ellipse
+            case ShapeType::EllipseType:
+            {
+                break;
+            }
+                //Circle
+            case ShapeType::CircleType:
+            {
+                break;
+            }
+                //Text
+            case ShapeType::NoShape:
+            {
+                break;
+            }
+
+            case ShapeType::TextType:
+            {
+                break;
+            }
+            default:{}
+            }
         }
         fin.close();
 

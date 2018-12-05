@@ -77,7 +77,7 @@ void MainWindow::on_pushButton_clicked()
             Line *addLine = new Line(this, 0);
 
             addLine->setShape(ShapeType::LineType);
-            addLine->setId(ui->widget->getRealID());
+            addLine->setId(ui->widget->getRealID() + 1000);
             addLine->setPen(getPenColor(), getPenWidth(), getPenStyle(), getPenCapStyle(), getPenJoinStyle());
             addLine->setBrush(getBrushColor(), getBrushStyle());
             //Set Point
@@ -96,7 +96,7 @@ void MainWindow::on_pushButton_clicked()
             Polyline *addPolyLine = new Polyline(this, 0);
 
             addPolyLine->setShape(ShapeType::PolylineType);
-            addPolyLine->setId(ui->widget->getRealID());
+            addPolyLine->setId(ui->widget->getRealID() + 2000);
             addPolyLine->setPen(getPenColor(), getPenWidth(), getPenStyle(), getPenCapStyle(), getPenJoinStyle());
             addPolyLine->setBrush(getBrushColor(), getBrushStyle());
 
@@ -141,7 +141,7 @@ void MainWindow::on_pushButton_clicked()
             Polygon *addPolygon = new Polygon(this, 0);
 
             addPolygon->setShape(ShapeType::PolygonType);
-            addPolygon->setId(ui->widget->getRealID());
+            addPolygon->setId(ui->widget->getRealID() + 3000);
             addPolygon->setPen(getPenColor(), getPenWidth(), getPenStyle(), getPenCapStyle(), getPenJoinStyle());
             addPolygon->setBrush(getBrushColor(), getBrushStyle());
 
@@ -192,7 +192,7 @@ void MainWindow::on_pushButton_clicked()
             Rectangle *addRect = new Rectangle(this, 0);
 
             addRect->setShape(ShapeType::RectangleType);
-            addRect->setId(ui->widget->getRealID());
+            addRect->setId(ui->widget->getRealID() + 4000);
             addRect->setPen(getPenColor(), getPenWidth(), getPenStyle(), getPenCapStyle(), getPenJoinStyle());
             addRect->setBrush(getBrushColor(), getBrushStyle());
 
@@ -213,7 +213,7 @@ void MainWindow::on_pushButton_clicked()
             Ellipse *addEllipse = new Ellipse(this, 0);
 
             addEllipse->setShape(ShapeType::EllipseType);
-            addEllipse->setId(ui->widget->getRealID());
+            addEllipse->setId(ui->widget->getRealID() + 5000);
             addEllipse->setPen(getPenColor(), getPenWidth(), getPenStyle(), getPenCapStyle(), getPenJoinStyle());
             addEllipse->setBrush(getBrushColor(), getBrushStyle());
 
@@ -232,7 +232,7 @@ void MainWindow::on_pushButton_clicked()
             Text *addText = new Text(this,0);
 
             addText->setShape(ShapeType::TextType);
-            addText->setId(ui->widget->getRealID() );
+            addText->setId(ui->widget->getRealID() + 6000);
 
             addText->setAlignment(getAlign());
             addText->setText(ui->textEdit->toPlainText());
