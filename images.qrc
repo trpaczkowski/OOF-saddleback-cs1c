@@ -1,0 +1,5 @@
+<RCC>
+    <qresource prefix="/img">
+        <file>img/oof_logo.jpg</file>
+    </qresource>
+</RCC>
