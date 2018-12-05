@@ -105,6 +105,7 @@ class Line : public Shape
 
             painter.begin(device);
             painter.drawLine(begin,end);
+            painter.drawText(begin,QString::number(getId()));
             painter.end();
         }
 
@@ -152,6 +153,7 @@ class Polyline : public Shape
                 polyLinePointsAr[i] = points[i];
             }
             painter.drawPolyline(polyLinePointsAr, numPoints);
+            painter.drawText(points[0],QString::number(getId()));
             painter.end();
         }
 
@@ -198,6 +200,7 @@ class Polygon : public Shape
                 polygonPointsAr[i] = points[i];
             }
             painter.drawPolygon(polygonPointsAr, numPoints);
+            painter.drawText(points[0],QString::number(getId()));
             painter.end();
         }
 
@@ -240,6 +243,7 @@ class Rectangle : public Shape
         {
             painter.begin(device);
             painter.drawRect(position.x(),position.y(), width,height);
+            painter.drawText(position,QString::number(getId()));
             painter.end();
         }
 
@@ -285,6 +289,7 @@ class Ellipse : public Shape
         {
             painter.begin(device);
             painter.drawEllipse(position.x(), position.y(),width,height);
+            painter.drawText(position,QString::number(getId()));
             painter.end();
         }
 
@@ -330,6 +335,7 @@ class Text: public Shape
         {
             painter.begin(device);
             painter.drawText(position.x(), position.y(), width, height, alignmentFlags, text);
+            painter.drawText(position,QString::number(getId()));
             painter.end();
         }
 

@@ -78,7 +78,7 @@ void MainWindow::on_pushButton_clicked()
             Line *addLine = new Line(this, 0);
 
             addLine->setShape(ShapeType::LineType);
-            addLine->setId(ui->widget->getSizing());
+            addLine->setId(ui->widget->getRealID());
             addLine->setPen(getPenColor(), getPenWidth(), getPenStyle(), getPenCapStyle(), getPenJoinStyle());
             addLine->setBrush(getBrushColor(), getBrushStyle());
             //Set Point
@@ -101,7 +101,7 @@ void MainWindow::on_pushButton_clicked()
             Polyline *addPolyLine = new Polyline(this, 0);
 
             addPolyLine->setShape(ShapeType::PolylineType);
-            addPolyLine->setId(ui->widget->getSizing());
+            addPolyLine->setId(ui->widget->getRealID());
             addPolyLine->setPen(getPenColor(), getPenWidth(), getPenStyle(), getPenCapStyle(), getPenJoinStyle());
             addPolyLine->setBrush(getBrushColor(), getBrushStyle());
 
@@ -150,7 +150,7 @@ void MainWindow::on_pushButton_clicked()
             Polygon *addPolygon = new Polygon(this, 0);
 
             addPolygon->setShape(ShapeType::PolygonType);
-            addPolygon->setId(ui->widget->getSizing());
+            addPolygon->setId(ui->widget->getRealID());
             addPolygon->setPen(getPenColor(), getPenWidth(), getPenStyle(), getPenCapStyle(), getPenJoinStyle());
             addPolygon->setBrush(getBrushColor(), getBrushStyle());
 
@@ -206,7 +206,7 @@ qDebug ("Mainwindow about to add polygon pt2");
             Rectangle *addRect = new Rectangle(this, 0);
 
             addRect->setShape(ShapeType::RectangleType);
-            addRect->setId(ui->widget->getSizing());
+            addRect->setId(ui->widget->getRealID());
             addRect->setPen(getPenColor(), getPenWidth(), getPenStyle(), getPenCapStyle(), getPenJoinStyle());
             addRect->setBrush(getBrushColor(), getBrushStyle());
 
@@ -232,7 +232,7 @@ qDebug ("Mainwindow about to add polygon pt2");
             Ellipse *addEllipse = new Ellipse(this, 0);
 
             addEllipse->setShape(ShapeType::EllipseType);
-            addEllipse->setId(ui->widget->getSizing());
+            addEllipse->setId(ui->widget->getRealID());
             addEllipse->setPen(getPenColor(), getPenWidth(), getPenStyle(), getPenCapStyle(), getPenJoinStyle());
             addEllipse->setBrush(getBrushColor(), getBrushStyle());
 
@@ -255,7 +255,7 @@ qDebug ("Mainwindow about to add ellip pt 2");
             Text *addText = new Text(this,0);
 
             addText->setShape(ShapeType::TextType);
-            addText->setId(ui->widget->getSizing() );
+            addText->setId(ui->widget->getRealID() );
 
             addText->setAlignment(getAlign());
             addText->setText(ui->textEdit->toPlainText());

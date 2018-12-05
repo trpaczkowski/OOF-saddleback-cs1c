@@ -49,7 +49,7 @@
      <string notr="true"/>
     </property>
     <property name="currentIndex">
-     <number>3</number>
+     <number>1</number>
     </property>
     <property name="tabBarAutoHide">
      <bool>false</bool>
@@ -102,7 +102,7 @@
        </rect>
       </property>
       <property name="currentIndex">
-       <number>0</number>
+       <number>3</number>
       </property>
       <widget class="QWidget" name="tab_Line">
        <attribute name="title">
@@ -1507,7 +1507,7 @@
          <rect>
           <x>250</x>
           <y>130</y>
-          <width>200</width>
+          <width>206</width>
           <height>32</height>
          </rect>
         </property>
@@ -2114,7 +2114,7 @@
      <attribute name="title">
       <string>Move</string>
      </attribute>
-     <widget class="QWidget" name="">
+     <widget class="QWidget" name="layoutWidget">
       <property name="geometry">
        <rect>
         <x>290</x>
@@ -2136,7 +2136,7 @@
          <item>
           <widget class="QSpinBox" name="spinBox_move_id">
            <property name="minimum">
-            <number>1</number>
+            <number>0</number>
            </property>
            <property name="maximum">
             <number>100</number>
@@ -2194,7 +2194,7 @@
        </item>
       </layout>
      </widget>
-     <widget class="QWidget" name="">
+     <widget class="QWidget" name="layoutWidget">
       <property name="geometry">
        <rect>
         <x>560</x>
@@ -2242,7 +2242,7 @@
      <attribute name="title">
       <string>Delete Shape</string>
      </attribute>
-     <widget class="QWidget" name="">
+     <widget class="QWidget" name="layoutWidget">
       <property name="geometry">
        <rect>
         <x>310</x>

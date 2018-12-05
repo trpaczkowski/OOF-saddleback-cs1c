@@ -18,9 +18,15 @@ class Canvas:public QWidget
         QSize sizeHint() const override;
         QSize minimumSizeHint() const override;
 
+        int getRealID()
+        {
+            return IDCount;
+        }
+
         void shapeAdd(Shape* shapeIn)
         {
             shapeList.push_back(shapeIn);
+            IDCount++;
 
         }
 
@@ -31,32 +37,55 @@ class Canvas:public QWidget
 
         void shapeRemove(int indexRemove)
         {
-            //indexRemove--;// Will get to correct index
-
-            qDebug ("In process of removing");
             int vecCount = 0;
             bool found = false;
             //Delete operator
             vector<Shape*>::iterator delIt = shapeList.begin();
-            qDebug ("In process of removing 41");
             while (found == false && vecCount < shapeList.size())
-            {qDebug ("In process of removing 43");
-                if (/*(*delIt)->getId() == indexRemove*/indexRemove == vecCount)
-                {qDebug ("In process of removing 45");
+            {
+                if ((*delIt)->getId() == indexRemove /*indexRemove == vecCount*/)
+                {
                     shapeList.erase(delIt);
-                    qDebug ("In process of removing 46");
                     found = true;
-                    qDebug ("Shape deleted %d, says: %s",indexRemove,"DELETED");
-
                 }
-           qDebug ("In process of removing 51A"); ++delIt; qDebug ("In process of removing 51B");
             vecCount++;
+            delIt++;
             }
+
+            //Change ID numbers of each shape after delete
+
+//           int currentID;
+
+//           if(indexRemove != shapeList.size() - 1)
+//           {
+
+//                for(currentID = shapeList[indexRemove]->getId(); currentID < shapeList.size(); currentID++)
+//                {
+
+//                    shapeList[currentID]->setId(shapeList[currentID]->getId() - 1);
+
+//                }
+
+//           }
         }//END ShapeRemove
 
         void shapeMove(int indexMove, int x, int y)
         {
-            shapeList[indexMove]->move(x, y, indexMove);
+            int vecCount = 0;
+            bool found = false;
+            //Delete operator
+            vector<Shape*>::iterator delIt = shapeList.begin();
+            while (found == false && vecCount < shapeList.size())
+            {
+                if ((*delIt)->getId() == indexMove /*indexRemove == vecCount*/)
+                {
+                    (*delIt)->move(x, y, indexMove);
+                    found = true;
+                }
+            vecCount++;
+            delIt++;
+            }
+
         }
 
         public:
@@ -64,6 +93,7 @@ class Canvas:public QWidget
 
    private:
         vector<Shape*> shapeList; //Keeps track of shapes
+        int IDCount{0};
 
 
 };
