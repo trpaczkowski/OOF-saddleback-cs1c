@@ -75,31 +75,24 @@ void Line::draw(const int x, const int y)
 
 }
 
-void Line::move(const int x, const int y)
+
+void Line::move(const int x, const int y, int coordNum)
 {
-    save();
-
-    remove();
-
-    translate(x,y);
-
-    drawLine(begin, end);
-
-    restore();
+    QPoint tempPoint(x, y);
+    switch(coordNum)
+    {
+    //Change first coordinate
+    case 1:{begin = tempPoint;}
+        break;
+    //Change second coordinate
+    case 2:{end = tempPoint;}
+        break;
+    //Did not choose correct Coordinate Number
+    default: {}
+    }
 
 }
 
-void Line::remove()
-{
-    save();
-
-    QRect rect(begin, end);
-
-    eraseRect(rect);
-
-    restore();
-
-}
 
 /*************************************************************************
 
@@ -110,7 +103,6 @@ Polyline Methods
 void Polyline::addPoint(const QPointF &point)
 {
     points.push_back(point);
-
 }
 
 void Polyline::draw(const int x, const int y)
@@ -132,84 +124,36 @@ void Polyline::draw(const int x, const int y)
 
 }
 
-void Polyline::move(const int x, const int y)
+void Polyline::move(const int x, const int y, int coordNum)
 {
-    QPointF line_points[points.size()];
-
-    for (int i = 0; i < points.size(); i++)
+    QPoint tempPoint(x, y);
+    switch(coordNum)
     {
-        line_points[i] = points[i];
+    //Change first coordinate
+    case 1:{points[0] = tempPoint;}
+        break;
+    //Change second coordinate
+    case 2:{points[1] = tempPoint;}
+        break;
+    //Change third coordinate
+    case 3:{points[2] = tempPoint;}
+        break;
+    //Change fourth coordinate
+    case 4:{points[3] = tempPoint;}
+        break;
+    //Change fifth coordinate
+    case 5:{points[4] = tempPoint;}
+        break;
+    //Change sixth coordinate
+    case 6:{points[5] = tempPoint;}
+        break;
+    //Did not choose correct Coordinate Number
+    default: {}
     }
-
-    save();
-
-    remove();
-
-    translate(x,y);
-
-    drawPolyline(line_points, points.size());
-
-    restore();
 
 }
 
-void Polyline::remove()
-{
-    //we have to craft a rectangle that will enclose only this shape and delete it
 
-    save();
-
-    QPointF topPoint(0,0);
-
-    QPointF leftPoint(0,0);
-
-    QPointF rightPoint(0,0);
-
-    QPointF bottomPoint(0,0);
-
-    for (int i = 0; i < points.size(); i++)
-    {
-        //grab the highest point
-
-       if (points[i].y() <= topPoint.y())
-       {
-           topPoint = points[i];
-       }
-
-       //grab the rightmost point
-
-       if (points[i].x() >= rightPoint.x())
-       {
-           rightPoint = points[i];
-       }
-
-       //grab the leftmost point
-
-       if (points[i].x() <= leftPoint.x())
-       {
-           leftPoint = points[i];
-       }
-
-       //grab the bottom point
-
-       if (points[i].y() >= bottomPoint.y())
-       {
-           bottomPoint = points[i];
-       }
-
-    }
-
-    double width = rightPoint.x() - leftPoint.x();
-
-    double height = bottomPoint.y() - topPoint.y();
-
-    QRect rect((int)leftPoint.x(), (int)topPoint.y(), width, height);
-
-    eraseRect(rect);
-
-    restore();
-
-}
 
 /*************************************************************************
 
@@ -282,81 +226,42 @@ double Polygon::perimeter()
 
 }
 
-void Polygon::move(const int x, const int y)
+void Polygon::move(const int x, const int y, int coordNum)
 {
-    save();
-
-    remove();
-
-    translate(x,y);
-
-    QPointF line_points[points.size()];
-
-    for (int i = 0; i < points.size(); i++)
+    QPoint tempPoint(x, y);
+    switch(coordNum)
     {
-        line_points[i] = points[i];
-
+    //Change first coordinate
+    case 1:{points[0] = tempPoint;}
+        break;
+    //Change second coordinate
+    case 2:{points[1] = tempPoint;}
+        break;
+    //Change third coordinate
+    case 3:{points[2] = tempPoint;}
+        break;
+    //Change fourth coordinate
+    case 4:{points[3] = tempPoint;}
+        break;
+    //Change fifth coordinate
+    case 5:{points[4] = tempPoint;}
+        break;
+    //Change sixth coordinate
+    case 6:{points[5] = tempPoint;}
+        break;
+    //Change seventh coordinate
+    case 7:{points[6] = tempPoint;}
+        break;
+    //Change eigth coordinate
+    case 8:{points[7] = tempPoint;}
+        break;
+    //Did not choose correct Coordinate Number
+    default: {}
     }
-
-    drawPolygon(line_points, points.size());
-
-    restore();
 
 }
 
-void Polygon::remove()
-{
-    //we have to craft a rectangle that will enclose only this shape and delete it
 
-    save();
-
-    QPointF topPoint(0,0);
-
-    QPointF leftPoint(0,0);
-
-    QPointF rightPoint(0,0);
-
-    QPointF bottomPoint(0,0);
-
-    for (int i = 0; i < points.size(); i++)
-    {
-        //grab the highest point
-       if (points[i].y() <= topPoint.y())
-       {
-           topPoint = points[i];
-       }
-
-       //grab the rightmost point
-       if (points[i].x() >= rightPoint.x())
-       {
-           rightPoint = points[i];
-       }
-
-       //grab the leftmost point
-       if (points[i].x() <= leftPoint.x())
-       {
-           leftPoint = points[i];
-       }
-
-       //grab the bottom point
-       if (points[i].y() >= bottomPoint.y())
-       {
-           bottomPoint = points[i];
-       }
-
-    }
-
-    double width = rightPoint.x() - leftPoint.x();
-
-    double height = bottomPoint.y() - topPoint.y();
-
-    QRect rect((int)leftPoint.x(), (int)topPoint.y(), width, height);
-
-    eraseRect(rect);
-
-    restore();
-
-}
 
 /*************************************************************************
 
@@ -371,6 +276,7 @@ void Rectangle::setDimensions(int width, int height)
     this->height = height;
 
 }
+
 
 void Rectangle::draw(const int x, const int y)
 {
@@ -398,31 +304,13 @@ double Rectangle::perimeter()
 
 }
 
-void Rectangle::move(const int x, const int y)
+void Rectangle::move(const int x, const int y, int coordNum)
 {
-    save();
-
-    remove();
-
-    translate(x,y);
-
-    drawRect(x, y, width, height);
-
-    restore();
-
+    QPoint tempPoint(x, y);
+    position = tempPoint;
 }
 
-void Rectangle::remove()
-{
-    save();
 
-    QRect rect(position.x(), position.y(), width, height);
-
-    eraseRect(rect);
-
-    restore();
-
-}
 
 /*************************************************************************
 
@@ -455,90 +343,107 @@ double Ellipse::perimeter()
 
 }
 
-void Ellipse::move(const int x, const int y)
+void Ellipse::move(const int x, const int y, int coordNum)
 {
-    save();
-
-    remove();
-
-    translate(x,y);
-
-    drawEllipse(x, y, width, height);
-
-    restore();
+    QPoint tempPoint(x, y);
+    position = tempPoint;
 
 }
 
-void Ellipse::remove()
+
+
+double Text::area()
 {
-    save();
-
-    QRect rect(position.x(), position.y(), width, height);
-
-    eraseRect(rect);
-
-    restore();
-
+    return double(width * height);
 }
 
-/*************************************************************************
+vector<QString> Text::dimensionLabels()
+{
+    vector<QString> ret;
+    ret.push_back("Position:");
+    ret.push_back("(" + QString::number(position.x()) + ", " + QString::number(position.y()) + ")");
+    ret.push_back("Width:");
+    ret.push_back(QString::number(width));
+    ret.push_back("Height:");
+    ret.push_back(QString::number(height));
 
-Circle Methods
+    return ret;
+}
 
-**************************************************************************/
-
-void Circle::draw(const int x, const int y)
+void Text::draw(const int x, const int y)
 {
     save();
 
     translate(x,y);
 
-    drawEllipse(position, radius, radius);
+    painter.drawText(position.x(), position.y(), width, height, alignmentFlags, text);
 
     restore();
-
 }
 
-double Circle::area()
+vector<int> Text::getDimensions()
 {
-    return(radius * radius * M_PI);
+    vector<int> dimension;
+    dimension.push_back(position.x());
+    dimension.push_back(position.y());
+    dimension.push_back(width);
+    dimension.push_back(height);
 
+    return dimension;
 }
 
-double Circle::perimeter()
+QFont& Text::getFont()
 {
-    return(2 * M_PI * radius);
-
+    return font;
 }
 
-void Circle::move(const int x, const int y)
+Qt::AlignmentFlag Text::getAlignment() const
 {
-    save();
-
-    remove();
-
-    translate(x,y);
-
-    drawEllipse(x, y, radius, radius);
-
-    restore();
-
+    return alignmentFlags;
 }
 
-void Circle::remove()
+QString Text::getText() const
 {
-    save();
-
-    QRect rect(position.x(), position.y(), radius, radius);
-
-    eraseRect(rect);
-
-    restore();
-
+    return text;
 }
 
-void Circle::setDimensions(double radius)
+void Text::move(const int x, const int y, int coordNum)
 {
-    this->radius = radius;
-
+    QPoint tempPoint(x, y);
+    position = tempPoint;
 }
+
+double Text::perimeter()
+{
+    return 2.0 * (width + height);
+}
+
+void Text::setAlignment(Qt::AlignmentFlag flags)
+{
+    alignmentFlags = flags;
+}
+
+void Text::setDimensions(int w, int h)
+{
+    width = w;
+    height = h;
+}
+
+void Text::setFont(bool boldIn, bool italicIn, int pointSizeIn, int weightIn)
+{
+    font.setBold(boldIn);
+    font.setItalic(italicIn);
+    font.setPointSize(pointSizeIn);
+    font.setWeight(weightIn);
+}
+
+void Text::setPosition(int x, int y)
+{
+    position = { x, y };
+}
+
+void Text::setText(const QString& textIn)
+{
+    text = textIn;
+}
+

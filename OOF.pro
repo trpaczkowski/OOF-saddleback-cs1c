@@ -27,13 +27,15 @@ SOURCES += \
         main.cpp \
         mainwindow.cpp \
     adminlogin.cpp \
-    shape.cpp
+    shape.cpp \
+    canvas.cpp
 
 HEADERS += \
         mainwindow.h \
     adminlogin.h \
     shape.h \
-    vector.h
+    vector.h \
+    canvas.h
 
 FORMS += \
         mainwindow.ui \
