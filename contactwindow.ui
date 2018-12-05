@@ -37,7 +37,7 @@
    </font>
   </property>
   <property name="windowTitle">
-   <string>Dialog</string>
+   <string>ooF</string>
   </property>
   <property name="sizeGripEnabled">
    <bool>true</bool>
@@ -70,8 +70,8 @@
    </property>
    <property name="geometry">
     <rect>
-     <x>20</x>
-     <y>180</y>
+     <x>60</x>
+     <y>200</y>
      <width>300</width>
      <height>30</height>
     </rect>
@@ -133,7 +133,7 @@
     <string>Jeffery Adams</string>
    </property>
   </widget>
-  <widget class="QLabel" name="jess_email">
+  <widget class="QLabel" name="jeff_email">
    <property name="geometry">
     <rect>
      <x>300</x>
@@ -276,6 +276,42 @@
     <string>iestrada5@saddleback.edu</string>
    </property>
   </widget>
+  <widget class="QLabel" name="blanque">
+   <property name="geometry">
+    <rect>
+     <x>-4</x>
+     <y>-8</y>
+     <width>811</width>
+     <height>341</height>
+    </rect>
+   </property>
+   <property name="text">
+    <string/>
+   </property>
+   <property name="pixmap">
+    <pixmap>blanque.jpg</pixmap>
+   </property>
+   <property name="scaledContents">
+    <bool>true</bool>
+   </property>
+  </widget>
+  <zorder>blanque</zorder>
+  <zorder>logo</zorder>
+  <zorder>teamName</zorder>
+  <zorder>taylor</zorder>
+  <zorder>taylor_email</zorder>
+  <zorder>jeff</zorder>
+  <zorder>jeff_email</zorder>
+  <zorder>travis</zorder>
+  <zorder>travis_email</zorder>
+  <zorder>caroline</zorder>
+  <zorder>caroline_email</zorder>
+  <zorder>utkarsh</zorder>
+  <zorder>utkarsh_email</zorder>
+  <zorder>oscar</zorder>
+  <zorder>oscar_email</zorder>
+  <zorder>isaac</zorder>
+  <zorder>isaac_email</zorder>
  </widget>
  <resources/>
  <connections/>

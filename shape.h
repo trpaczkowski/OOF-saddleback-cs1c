@@ -37,41 +37,16 @@ class Shape : public QPainter
         void defaultStyle();
 
         virtual ~Shape() {}
-        /**
-         * @brief Draws and renders the shape in the rendering area.
-         * @param x
-         * @param y
-         */
-
-        virtual void draw(const int x, const int y) = 0;
-        /**
-         * @brief Moves the shape to the specified coordinates.
-         * @param x
-         * @param y
-         */
 
         virtual void draw() =0;
 
         virtual void draw(QPaintDevice *device)= 0;
 
         virtual void move(const int x, const int y, int coordNum) = 0;
-        /**
-         * @brief Calculates the perimeter.
-         * @return the perimeter
-         */
 
         virtual double perimeter() = 0;
-        /**
-         * @brief Calculates the area.
-         * @return the area
-         */
 
         virtual double area() = 0;
-        /**
-         * @brief deletes the shape from the render screen
-         */
-
-        //virtual void remove() = 0;
 
     private:
         int shape_ID;
@@ -88,21 +63,10 @@ class Line : public Shape
 
         void setPoints(const QPoint& begin, const QPoint& end);
 
-        void draw(const int x, const int y) override;
-
-        void draw() override
-        {
-
-        }
+        void draw() override{}
 
         virtual void draw(QPaintDevice *device) override
         {
-//            QPen myPen;
-//            myPen.setColor(Qt::GlobalColor::blue);
-//            painter.setPen(myPen);
-//            if(painter.pen().color() == Qt::GlobalColor::blue)
-//            qDebug ("message %d, says: %s",5,"hello2");
-
             painter.begin(device);
             painter.drawLine(begin,end);
             painter.drawText(begin,QString::number(getId()));
@@ -110,8 +74,6 @@ class Line : public Shape
         }
 
         void move(const int x, const int y, int coordNum) override;
-
-        //void remove() override;
 
         double perimeter() override {return 0;}
 
@@ -138,12 +100,7 @@ class Polyline : public Shape
 
         void addNumPoints(int numIn){ numPoints = numIn;}
 
-        void draw(const int x, const int y)  override;
-
-        virtual void draw() override
-        {
-
-        }
+        virtual void draw() override{}
 
         virtual void draw(QPaintDevice *device) override
         {
@@ -158,8 +115,6 @@ class Polyline : public Shape
         }
 
         void move(const int x, const int y, int coordNum) override;
-
-        //void remove() override;
 
         double perimeter() override {return 0;}
 
@@ -185,12 +140,7 @@ class Polygon : public Shape
 
         void addNumPoints(int numIn){ numPoints = numIn;}
 
-        void draw(const int x, const int y)  override;
-
-        virtual void draw() override
-        {
-
-        }
+        virtual void draw() override{}
 
         virtual void draw(QPaintDevice *device) override
         {
@@ -205,8 +155,6 @@ class Polygon : public Shape
         }
 
         void move(const int x, const int y, int coordNum) override;
-
-        //void remove() override;
 
         double perimeter() override;
 
@@ -232,12 +180,7 @@ class Rectangle : public Shape
 
         void setDimensions(int width, int height);
 
-        void draw(const int x, const int y)  override;
-
-        virtual void draw() override
-        {
-
-        }
+        virtual void draw() override{}
 
         void draw(QPaintDevice* device) override
         {
@@ -252,8 +195,6 @@ class Rectangle : public Shape
         double area() override;
 
         void move(const int x, const int y, int coordNum) override;
-
-        //void remove() override;
 
         QPoint& getPosition() {return position;}
 
@@ -278,12 +219,7 @@ class Ellipse : public Shape
 
         void setDimensions(float width, float height) {this->width = width; this->height = height;}
 
-        void draw(const int x, const int y)  override;
-
-        virtual void draw() override
-        {
-
-        }
+        virtual void draw() override{}
 
         void draw(QPaintDevice *device) override
         {
@@ -298,8 +234,6 @@ class Ellipse : public Shape
         double area() override;
 
         void move(const int x, const int y, int coordNum) override;
-
-        //void remove() override;
 
         QPointF& getPosition() {return position;}
 
@@ -324,12 +258,7 @@ class Text: public Shape
 
         void setDimensions(int w, int h);
 
-        void draw(const int x, const int y) override;
-
-        virtual void draw() override
-        {
-
-        }
+        virtual void draw() override{}
 
         void draw(QPaintDevice* device) override
         {
@@ -340,8 +269,6 @@ class Text: public Shape
         }
 
         void move(const int x, const int y, int coordNum) override;
-
-        //void remove() override{}
 
         double area() override;
 

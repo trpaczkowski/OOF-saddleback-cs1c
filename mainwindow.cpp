@@ -1,6 +1,6 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
-
+//12/4/18 6:25
 
 MainWindow::MainWindow(QWidget *parent) :
     QMainWindow(parent),
@@ -12,7 +12,7 @@ MainWindow::MainWindow(QWidget *parent) :
     ui->Tab_Move->setEnabled(true);
     ui->Tab_Shape->setEnabled(true);
     ui->tab_setProperties->setEnabled(true);
-    //ui->tab_delete->setEnabled(true);
+    ui->tab_delete->setEnabled(true);
 
 }
 
@@ -46,7 +46,7 @@ void MainWindow::on_actionEnable_Disable_Privledges_triggered()
     ui->Tab_Move->setEnabled(adminPrivW);
     ui->Tab_Shape->setEnabled(adminPrivW);
     ui->tab_setProperties->setEnabled(adminPrivW);
-    //ui->tab_delete->setEnabled(adminPrivW);
+    ui->tab_delete->setEnabled(adminPrivW);
 
     if( ui->Tab_Move->isEnabled())
     {
@@ -74,7 +74,6 @@ void MainWindow::on_pushButton_clicked()
         case 0:
         {
             //Line
-            qDebug ("Mainwindow about to add line");
             Line *addLine = new Line(this, 0);
 
             addLine->setShape(ShapeType::LineType);
@@ -86,10 +85,7 @@ void MainWindow::on_pushButton_clicked()
             QPoint secondCoordinate(ui->spinBox_line_secondX->value(), ui->spinBox_line_secondY->value());
             addLine->setPoints(firstCoordinate, secondCoordinate);
 
-            //canvasUi.shapeAdd(addLine);
-            qDebug ("Mainwindow about to add line pt 2");
             ui->widget->shapeAdd(addLine);
-            qDebug ("Mainwindow finished adding line");
 
             break;
          }
@@ -97,7 +93,6 @@ void MainWindow::on_pushButton_clicked()
         //Polyline
         case 1:
         {
-            qDebug ("Mainwindow about to add polyline");
             Polyline *addPolyLine = new Polyline(this, 0);
 
             addPolyLine->setShape(ShapeType::PolylineType);
@@ -135,11 +130,7 @@ void MainWindow::on_pushButton_clicked()
                 }
             }
 
-            //canvasUi.shapeAdd(addPolyLine);
-
-            qDebug ("Mainwindow about to add polyline pt 2");
             ui->widget->shapeAdd(addPolyLine);
-                    qDebug ("Mainwindow finished adding polyline");
             break;
         }
 
@@ -191,18 +182,13 @@ void MainWindow::on_pushButton_clicked()
                     }
                 }
             }
-
-            //canvasUi.shapeAdd(addPolygon);
-qDebug ("Mainwindow about to add polygon pt2");
             ui->widget->shapeAdd(addPolygon);
-            qDebug ("Mainwindow polygon added");
             break;
         }
 
         //Rectangle
         case 3:
         {
-        qDebug ("Mainwindow about to add rect");
             Rectangle *addRect = new Rectangle(this, 0);
 
             addRect->setShape(ShapeType::RectangleType);
@@ -216,11 +202,7 @@ qDebug ("Mainwindow about to add polygon pt2");
             addRect->setDimensions(ui->doubleSpinBox_rect_width->value(), ui->doubleSpinBox_rect_length->value());
             addRect->setPosition(center);
 
-            //canvasUi.shapeAdd(addRect);
-
-            qDebug ("Mainwindow about to add rect pt2");
             ui->widget->shapeAdd(addRect);
-            qDebug ("Mainwindow rect added");
 
             break;
         }
@@ -228,7 +210,6 @@ qDebug ("Mainwindow about to add polygon pt2");
         //Ellipse
         case 4:
         {
-        qDebug ("Mainwindow about to add ellip");
             Ellipse *addEllipse = new Ellipse(this, 0);
 
             addEllipse->setShape(ShapeType::EllipseType);
@@ -241,17 +222,13 @@ qDebug ("Mainwindow about to add polygon pt2");
             addEllipse->setPosition(center);
             addEllipse->setDimensions(ui->doubleSpinBox_ellipse_axisX->value(), ui->doubleSpinBox_ellipse_axisY->value());
 
-            //canvasUi.shapeAdd(addEllipse);
-qDebug ("Mainwindow about to add ellip pt 2");
             ui->widget->shapeAdd(addEllipse);
-            qDebug ("Mainwindow ellipse added");
             break;
         }
 
         //Text
         case 5:
         {
-        qDebug ("Mainwindow about to add text");
             Text *addText = new Text(this,0);
 
             addText->setShape(ShapeType::TextType);
@@ -267,10 +244,7 @@ qDebug ("Mainwindow about to add ellip pt 2");
             addText->setPosition(center);
             addText->setDimensions(ui->spinBox_text_box_width->value(), ui->spinBox_text_box_hight->value());
 
-            //canvasUi.shapeAdd(addText);
-qDebug ("Mainwindow about to add text pts");
             ui->widget->shapeAdd(addText);
-            qDebug ("Mainwindow text added");
             break;
         }
 
@@ -282,10 +256,9 @@ qDebug ("Mainwindow about to add text pts");
 void MainWindow::on_pushButton_deleteShape_clicked()
 {
     QMessageBox::information(this, "Deleting Shape", "Shape Deleted!");
-    //canvasUi.shapeRemove(ui->spinBox_delete_id->value());
-    qDebug ("Mainwindow about to delete");
+
     ui->widget->shapeRemove(ui->spinBox_delete_id->value());
-    qDebug ("Mainwindow finished delete");
+
 }
 
 void MainWindow::on_pushButton_move_clicked()
@@ -449,4 +422,8 @@ Qt::GlobalColor MainWindow::getTextColor()
     }
 }
 
-
+void MainWindow::on_actionContact_List_triggered()
+{
+    uiContact = new contactwindow(this);
+    uiContact->show();
+}

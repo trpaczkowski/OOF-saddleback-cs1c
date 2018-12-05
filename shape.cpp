@@ -63,18 +63,6 @@ void Line::setPoints(const QPoint &begin, const QPoint &end)
 
 }
 
-void Line::draw(const int x, const int y)
-{
-    save();
-
-    translate(x,y);
-
-    drawLine(begin, end);
-
-    restore();
-
-}
-
 
 void Line::move(const int x, const int y, int coordNum)
 {
@@ -105,24 +93,6 @@ void Polyline::addPoint(const QPointF &point)
     points.push_back(point);
 }
 
-void Polyline::draw(const int x, const int y)
-{
-    QPointF line_points[points.size()];
-
-    for (int i = 0; i < points.size(); i++)
-    {
-        line_points[i] = points[i];
-    }
-
-    save();
-
-    translate(x,y);
-
-    drawPolyline(line_points, points.size());
-
-    restore();
-
-}
 
 void Polyline::move(const int x, const int y, int coordNum)
 {
@@ -166,24 +136,6 @@ void Polygon::addPoint(const QPointF &point)
     points.push_back(point);
 }
 
-void Polygon::draw(const int x, const int y)
-{
-    QPointF line_points[points.size()];
-
-    for (int i = 0; i < points.size(); i++)
-    {
-        line_points[i] = points[i];
-    }
-
-    save();
-
-    translate(x,y);
-
-    drawPolygon(line_points, points.size());
-
-    restore();
-
-}
 
 double Polygon::area()
 {
@@ -278,17 +230,6 @@ void Rectangle::setDimensions(int width, int height)
 }
 
 
-void Rectangle::draw(const int x, const int y)
-{
-    save();
-
-    translate(x,y);
-
-    drawRect(position.x(), position.y(), width, height);
-
-    restore();
-
-}
 
 double Rectangle::area()
 {
@@ -318,17 +259,7 @@ Ellipse Methods
 
 **************************************************************************/
 
-void Ellipse::draw(const int x, const int y)
-{
-    save();
 
-    translate(x,y);
-
-    drawEllipse(position, width, height);
-
-    restore();
-
-}
 
 double Ellipse::area()
 {
@@ -352,6 +283,12 @@ void Ellipse::move(const int x, const int y, int coordNum)
 
 
 
+/*************************************************************************
+
+Text Methods
+
+**************************************************************************/
+
 double Text::area()
 {
     return double(width * height);
@@ -370,16 +307,7 @@ vector<QString> Text::dimensionLabels()
     return ret;
 }
 
-void Text::draw(const int x, const int y)
-{
-    save();
 
-    translate(x,y);
-
-    painter.drawText(position.x(), position.y(), width, height, alignmentFlags, text);
-
-    restore();
-}
 
 vector<int> Text::getDimensions()
 {

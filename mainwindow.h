@@ -4,6 +4,7 @@
 #include <QMainWindow>
 #include "adminlogin.h"
 #include "canvas.h"
+#include "contactwindow.h"
 
 namespace Ui {
 class MainWindow;
@@ -50,12 +51,14 @@ private slots:
 
     void on_pushButton_move_clicked();
 
+    void on_actionContact_List_triggered();
+
 private:
     Ui::MainWindow *ui;
     AdminLogin *uiLogin;
     bool adminPrivW{false};
     //Canvas canvasUi;
-
+    contactwindow *uiContact;
 };
 
 #endif // MAINWINDOW_H
