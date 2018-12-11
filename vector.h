@@ -1,3 +1,27 @@
+/*
+ *  2D Graphics Modeler
+ *  December 2018
+ *
+ *  Oscar Lopez <olopez23@saddleback.edu>
+ *  Jeff Adams <jadams62@saddleback.edu>
+ *  Isaac Estrada <iestrada5@saddleback.edu>
+ *  Caroline Ta <tta24@saddleback.edu>
+ *  Travis Nguyen <tnguyen603@saddleback.edu>
+ *  Taylor Paczkowski <tpaczkowski0@saddleback.edu>
+ *  
+ *  Descr: 2D Graphics Modeler for CS1C Fall 2018
+ *  Teacher: John Kath
+ *
+ *  Draws shapes using QPainter. Shapes can be loaded from a file, added
+ *  to a vector, manipulated and later saved. A login is required to access
+ *  the program.
+ *
+ **/
+/*
+    File: shape.h
+    Base class of all renderable objects
+*/
+
 #ifndef VECTOR_H_
 #define VECTOR_H_
 
