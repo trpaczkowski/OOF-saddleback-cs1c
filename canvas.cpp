@@ -76,9 +76,9 @@ void Canvas::shapeMove(int indexMove, int coordMove, int x, int y)
 
 void Canvas::writeShapeFile()
 {
-    QDir myDir;
-    QFile myFile(myDir.absoluteFilePath("shape.txt"));
-       QMessageBox::critical(this, "hi", myDir.absoluteFilePath("shape.txt"));
+
+    QFile myFile("shapes.txt");
+
     if(!myFile.open( QIODevice::WriteOnly | QIODevice::Text))
     {
         qDebug("could not open file\n");
@@ -223,7 +223,7 @@ void Canvas::readShapeFile()
 {
     vector<Shape*> shapeVec;
 
-    QFile myFile(":/shapeIO/img/shape.txt");
+    QFile myFile("shapes.txt");
 
     //Opening file
     if(!myFile.open( QIODevice::ReadOnly | QIODevice::Text))
