@@ -18,7 +18,7 @@
  *
  **/
 /*
-    File: shape.h
+    File: canvas.h
     Base class of all renderable objects
 */
 
