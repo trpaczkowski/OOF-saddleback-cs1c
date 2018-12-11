@@ -39,14 +39,17 @@ const QString shapeTypeStr[7] ={"No Shape", "Line", "Polyline", "Polygon", "Rect
 //Shape ENUM
 enum class ShapeType {NoShape, LineType, PolylineType, PolygonType, RectangleType, EllipseType, TextType, SquareType, CircleType};
 
+/**shape class
+@brief - shape class that is base
+*/
 class Shape : public QPainter
 {
     public:
-        QPainter painter;
+        QPainter painter; /**<painter variable*/
 
-        QPen penType;
+        QPen penType;/**<pen variable*/
 
-        QBrush brushType;
+        QBrush brushType; /**<brush variable*/
 
         ShapeType getShape() const {return shapeType;}
 
@@ -86,11 +89,14 @@ class Shape : public QPainter
         virtual double area() = 0;
 
     private:
-        int shape_ID;
-        ShapeType shapeType;
+        int shape_ID; /**<shape ID*/
+        ShapeType shapeType; /**<shape type enum*/
 
 };
 
+/**line class
+@brief - line class that derived from shape base
+*/
 class Line : public Shape
 {
     public:
@@ -121,11 +127,14 @@ class Line : public Shape
         QPoint& getEndPoint() {return end;}
 
     private:
-        QPoint begin;
-        QPoint end;
+        QPoint begin;/**<begin coord*/
+        QPoint end;/**<begin coord*/
 
 };
 
+/**polyline class
+@brief - polyline class that derived from shape base
+*/
 class Polyline : public Shape
 {
     public:
@@ -162,12 +171,15 @@ class Polyline : public Shape
         int getNumPoints() {return numPoints;}
 
     private:
-        vector<QPointF> points;
-        int numPoints;
-        QPointF polyLinePointsAr[8];
+        vector<QPointF> points;/**<coordinate points*/
+        int numPoints; /**<number of coord*/
+        QPointF polyLinePointsAr[8]; /**<coordinate points as array*/
 
 };
 
+/**polygon class
+@brief - polygon class that derived from shape base
+*/
 class Polygon : public Shape
 {
     public:
@@ -204,12 +216,15 @@ class Polygon : public Shape
         int getNumPoints() {return numPoints;}
 
     private:
-        vector<QPointF> points;
-        int numPoints;
-        QPointF polygonPointsAr[8];
+        vector<QPointF> points; /**<coordinate points*/
+        int numPoints; /**<number coordinate points*/
+        QPointF polygonPointsAr[8]; /**<coordinate points as array*/
 
 };
 
+/**rectangle class
+@brief - rectangle class that derived from shape base
+*/
 class Rectangle : public Shape
 {
     public:
@@ -244,11 +259,14 @@ class Rectangle : public Shape
         int getHeight() {return height;}
 
     private:
-        QPoint position;
-        int width, height;
+        QPoint position; /**<position*/
+        int width/**<width*/, height; /**<height*/
 
 };
 
+/**ellipse class
+@brief - ellipse class that derived from shape base
+*/
 class Ellipse : public Shape
 {
     public:
@@ -283,11 +301,14 @@ class Ellipse : public Shape
         double getHeight() {return height;}
 
     private:
-        QPointF position;
-        double width, height;
+        QPointF position; /**<position*/
+        double width/**<width*/, height;/**<height*/
 
 };
 
+/**text class
+@brief - text class that derived from shape base
+*/
 class Text: public Shape
 {
     public:
@@ -338,12 +359,12 @@ class Text: public Shape
         int getHeight() {return height;}
 
     private:
-        QPoint            position;
-        int               width;
-        int               height;
-        QFont             font;
-        QString           text;
-        Qt::AlignmentFlag alignmentFlags;
+        QPoint            position; /**<position*/
+        int               width; /**<width*/
+        int               height; /**<height*/
+        QFont             font; /**<font*/
+        QString           text; /**<text*/
+        Qt::AlignmentFlag alignmentFlags; /**<alignment flags*/
 
 
 };
