@@ -57,26 +57,25 @@ class Shape : public QPainter
         Shape(QPaintDevice* device = nullptr, int id = -1, ShapeType shape = ShapeType::NoShape) :
 
              QPainter(device), shape_ID(id), shapeType(shape){}
-
+             
+        /** Sets the shape type */
         void setShape(ShapeType s) {shapeType = s;}
-
+        /** Sets the ID */
         void setId(int _id) {shape_ID = _id;}
-
+        /** Sets the Pen */
         void setPen(Qt::GlobalColor color);
-
+        /** Sets the Pen */
         void setPen(QPen pen){penType = pen;}
-
+        /** Sets the Pen */
         void setPen(Qt::GlobalColor, int width, Qt::PenStyle, Qt::PenCapStyle, Qt::PenJoinStyle);
-
+        /** Sets the Brush */
         void setBrush(Qt::GlobalColor, Qt::BrushStyle);
-
+        /** Sets the Brush */
         void setBrush(QBrush brush){brushType = brush;}
-
+        /** Returns the brush type. */
         QBrush getBrush() {return brushType;}
-
+        /** Destructor */
         virtual ~Shape() {}
-
-        //virtual void draw() =0;
 
         virtual void draw(QPaintDevice *device)= 0;
 
