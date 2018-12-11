@@ -29,6 +29,10 @@ class Canvas:public QWidget
         QSize sizeHint() const override;
         QSize minimumSizeHint() const override;
 
+        vector <Shape *> GetList()
+        {
+            return shapeList;
+        }
         int getRealID()
         {
             return IDCount;

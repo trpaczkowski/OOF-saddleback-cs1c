@@ -49,7 +49,7 @@
      <string notr="true"/>
     </property>
     <property name="currentIndex">
-     <number>4</number>
+     <number>0</number>
     </property>
     <property name="tabBarAutoHide">
      <bool>false</bool>
@@ -84,6 +84,330 @@
        <string>General User</string>
       </property>
      </widget>
+     <widget class="QPushButton" name="pushButton_2">
+      <property name="geometry">
+       <rect>
+        <x>120</x>
+        <y>10</y>
+        <width>75</width>
+        <height>23</height>
+       </rect>
+      </property>
+      <property name="text">
+       <string>Refresh</string>
+      </property>
+     </widget>
+     <widget class="QTabWidget" name="Sort">
+      <property name="geometry">
+       <rect>
+        <x>10</x>
+        <y>40</y>
+        <width>511</width>
+        <height>151</height>
+       </rect>
+      </property>
+      <property name="currentIndex">
+       <number>2</number>
+      </property>
+      <widget class="QWidget" name="ID">
+       <property name="accessibleName">
+        <string/>
+       </property>
+       <attribute name="title">
+        <string>ID</string>
+       </attribute>
+       <widget class="QLabel" name="ShapeI">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>0</y>
+          <width>81</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Shape</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="ShapeI_">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>81</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>---------------</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="Id">
+        <property name="geometry">
+         <rect>
+          <x>140</x>
+          <y>0</y>
+          <width>47</width>
+          <height>13</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>ID</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="Id_">
+        <property name="geometry">
+         <rect>
+          <x>140</x>
+          <y>10</y>
+          <width>101</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>---------</string>
+        </property>
+       </widget>
+       <widget class="QScrollArea" name="scrollArea">
+        <property name="geometry">
+         <rect>
+          <x>0</x>
+          <y>20</y>
+          <width>271</width>
+          <height>101</height>
+         </rect>
+        </property>
+        <property name="widgetResizable">
+         <bool>true</bool>
+        </property>
+        <widget class="QWidget" name="scrollAreaWidgetContents">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>269</width>
+           <height>99</height>
+          </rect>
+         </property>
+         <layout class="QGridLayout" name="gridLayoutID"/>
+        </widget>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="Area">
+       <attribute name="title">
+        <string>AREA</string>
+       </attribute>
+       <widget class="QLabel" name="ShapeA">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>0</y>
+          <width>81</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Shape</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="ShapeA_">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>81</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>---------------</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="IdA">
+        <property name="geometry">
+         <rect>
+          <x>110</x>
+          <y>0</y>
+          <width>47</width>
+          <height>13</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>ID</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="IdA_">
+        <property name="geometry">
+         <rect>
+          <x>110</x>
+          <y>10</y>
+          <width>101</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>---------</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="AREA">
+        <property name="geometry">
+         <rect>
+          <x>210</x>
+          <y>0</y>
+          <width>47</width>
+          <height>13</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Area</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="AREA_">
+        <property name="geometry">
+         <rect>
+          <x>210</x>
+          <y>10</y>
+          <width>101</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>--------------</string>
+        </property>
+       </widget>
+       <widget class="QScrollArea" name="scrollArea_2">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>20</y>
+          <width>301</width>
+          <height>101</height>
+         </rect>
+        </property>
+        <property name="widgetResizable">
+         <bool>true</bool>
+        </property>
+        <widget class="QWidget" name="scrollAreaWidgetContents_2">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>299</width>
+           <height>99</height>
+          </rect>
+         </property>
+         <layout class="QGridLayout" name="gridLayoutAREA"/>
+        </widget>
+       </widget>
+      </widget>
+      <widget class="QWidget" name="Perimeter">
+       <attribute name="title">
+        <string>PERIMETER</string>
+       </attribute>
+       <widget class="QLabel" name="ShapeA_2">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>0</y>
+          <width>81</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Shape</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="ShapeA_1">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>10</y>
+          <width>81</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>---------------</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="IdA_2">
+        <property name="geometry">
+         <rect>
+          <x>110</x>
+          <y>0</y>
+          <width>47</width>
+          <height>13</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>ID</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="IdA_1">
+        <property name="geometry">
+         <rect>
+          <x>110</x>
+          <y>10</y>
+          <width>101</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>---------</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_88">
+        <property name="geometry">
+         <rect>
+          <x>210</x>
+          <y>0</y>
+          <width>51</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>Perimeter</string>
+        </property>
+       </widget>
+       <widget class="QLabel" name="label_89">
+        <property name="geometry">
+         <rect>
+          <x>210</x>
+          <y>10</y>
+          <width>81</width>
+          <height>16</height>
+         </rect>
+        </property>
+        <property name="text">
+         <string>---------------</string>
+        </property>
+       </widget>
+       <widget class="QScrollArea" name="scrollArea_3">
+        <property name="geometry">
+         <rect>
+          <x>10</x>
+          <y>20</y>
+          <width>291</width>
+          <height>101</height>
+         </rect>
+        </property>
+        <property name="widgetResizable">
+         <bool>true</bool>
+        </property>
+        <widget class="QWidget" name="scrollAreaWidgetContents_3">
+         <property name="geometry">
+          <rect>
+           <x>0</x>
+           <y>0</y>
+           <width>289</width>
+           <height>99</height>
+          </rect>
+         </property>
+         <layout class="QGridLayout" name="gridLayoutPERIM"/>
+        </widget>
+       </widget>
+      </widget>
+     </widget>
     </widget>
     <widget class="QWidget" name="Tab_Shape">
      <property name="enabled">
@@ -102,7 +426,7 @@
        </rect>
       </property>
       <property name="currentIndex">
-       <number>5</number>
+       <number>0</number>
       </property>
       <widget class="QWidget" name="tab_Line">
        <attribute name="title">
@@ -2410,7 +2734,7 @@
      <x>0</x>
      <y>0</y>
      <width>1019</width>
-     <height>22</height>
+     <height>21</height>
     </rect>
    </property>
    <widget class="QMenu" name="menuFile">

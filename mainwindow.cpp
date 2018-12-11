@@ -1,5 +1,7 @@
 #include "mainwindow.h"
 #include "ui_mainwindow.h"
+#include <QDebug>
+
 //12/4/18 6:25
 
 MainWindow::MainWindow(QWidget *parent) :
@@ -70,10 +72,9 @@ void MainWindow::on_pushButton_clicked()
     qDebug ("Mainwindow about to add");
     switch(shapeInput)
     {
-
+        //Line
         case 0:
         {
-            //Line
             Line *addLine = new Line(this, 0);
 
             addLine->setShape(ShapeType::LineType);
@@ -86,6 +87,7 @@ void MainWindow::on_pushButton_clicked()
             addLine->setPoints(firstCoordinate, secondCoordinate);
 
             ui->widget->shapeAdd(addLine);
+
 
             break;
          }
@@ -487,3 +489,106 @@ QString MainWindow::getFontFamily()
     }
 }
 
+
+void MainWindow::on_pushButton_2_clicked()
+{
+    vector <Shape *> copyVector;
+    QWidget *shapeName;
+    QWidget *idNum;
+    QWidget *areaNum;
+    QWidget *perim;
+
+    copyVector = ui->widget->GetList();
+
+    switch(ui->Sort->currentIndex())
+    {
+        case 0: //ID SMALL -> LARGE
+
+                qSort(copyVector.begin(), copyVector.end(), [=](Shape* sp1, Shape* sp2)->bool{return (sp1->getId() < sp2->getId() );} );
+
+                while(ui->gridLayoutID->count())
+                {
+                    QWidget *widget = ui->gridLayoutID->itemAt(0)->widget();
+                    if(widget)
+                    {
+                        layout()->removeWidget(widget);
+                        delete widget;
+                    }
+                }
+
+                for (int index = 0; index < copyVector.size(); index++)
+                {
+                    shapeName = new QLabel (shapeTypeStr[(int)(copyVector[index]->getShape())]);
+                    idNum = new QLabel (QString::number(copyVector[index]->getId()));
+
+                    ui->gridLayoutID->addWidget(shapeName, index, 0);
+                    ui->gridLayoutID->addWidget(idNum, index, 1);
+                }
+                break;
+
+        case 1: //AREA LARGE -> SMALL
+                qSort(copyVector.begin(), copyVector.end(), [=](Shape* sp1, Shape* sp2)->bool{return (sp1->area() > sp2->area() );} );
+
+                while(ui->gridLayoutAREA->count())
+                {
+                    QWidget *widget = ui->gridLayoutAREA->itemAt(0)->widget();
+                    if(widget)
+                    {
+                        layout()->removeWidget(widget);
+                        delete widget;
+                    }
+                }
+
+                for (int index = 0; index < copyVector.size(); index++)
+                {
+                    shapeName = new QLabel (shapeTypeStr[(int)(copyVector[index]->getShape())]);
+                    idNum = new QLabel (QString::number(copyVector[index]->getId()));
+
+                    if (copyVector[index]->area() == 0)
+                    {
+                        areaNum = new QLabel(QString("No Area"));
+                    }
+                    else
+                    {
+                        areaNum = new QLabel (QString::number(copyVector[index]->area()));
+                    }
+                    ui->gridLayoutAREA->addWidget(shapeName, index, 0);
+                    ui->gridLayoutAREA->addWidget(idNum, index, 1);
+                    ui->gridLayoutAREA->addWidget(areaNum, index, 2);
+                }
+                break;
+
+        case 2: //PERIMETER LARGE -> SMALL
+                qSort(copyVector.begin(), copyVector.end(), [=](Shape* sp1, Shape* sp2)->bool{return (sp1->perimeter() > sp2->perimeter() );} );
+
+                while(ui->gridLayoutPERIM->count())
+                {
+                    QWidget *widget = ui->gridLayoutPERIM->itemAt(0)->widget();
+                    if(widget)
+                    {
+                        layout()->removeWidget(widget);
+                        delete widget;
+                    }
+                }
+
+                for (int index = 0; index < copyVector.size(); index++)
+                {
+                    shapeName = new QLabel (shapeTypeStr[(int)(copyVector[index]->getShape())]);
+                    idNum = new QLabel (QString::number(copyVector[index]->getId()));
+
+                    if (copyVector[index]->perimeter() == 0)
+                    {
+                        perim = new QLabel(QString("No Perimeter"));
+                    }
+                    else
+                    {
+                        perim = new QLabel (QString::number(copyVector[index]->perimeter()));
+                    }
+                    ui->gridLayoutPERIM->addWidget(shapeName, index, 0);
+                    ui->gridLayoutPERIM->addWidget(idNum, index, 1);
+                    ui->gridLayoutPERIM->addWidget(perim, index, 2);
+                }
+                break;
+
+    }
+}

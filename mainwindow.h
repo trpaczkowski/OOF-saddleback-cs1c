@@ -59,6 +59,8 @@ private slots:
 
     void on_actionContact_Info_triggered();
 
+    void on_pushButton_2_clicked();
+
 private:
     Ui::MainWindow *ui;
     AdminLogin *uiLogin;
