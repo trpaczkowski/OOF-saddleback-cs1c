@@ -32,12 +32,20 @@ using std::copy;
 namespace VecSTD
 {
 
+        /** Vector class
+        @brief vector class
+        */
     template<typename dataType>
     class vector
     {
     public:
+        /** Default contructor
+        */
         vector() : size_v{0}, elem(nullptr), reservedSize{0} {}
 
+        /** Constructor that initiallizes size
+        @param size - size of array
+        */
         explicit vector(int size) : size_v{size}, elem(new dataType[size]), reservedSize{size} // alternate constructor
         {
             for(int i = 0; i < size_v; ++i)
@@ -46,11 +54,19 @@ namespace VecSTD
             }
         }
 
+        /** Copy constructor
+        @param copiedVector - vector to copy
+        @return vector that is a deep copy
+        */
         vector(const vector<dataType> &copiedVector) : size_v{copiedVector.size_v}, elem{new dataType[copiedVector.size_v]}, reservedSize{copiedVector.reservedSize} // copy constructor
         {
             copy(copiedVector.elem, copiedVector.elem + size_v, elem); // copy elements - std::copy() algorithm
         }
 
+        /** Asignment operator overload
+        @param copiedVector - vector to copy
+        @return vector that is a deep copy
+        */
         vector &operator=(const vector &copiedVector) // copy assignment
         {
             dataType *p = new dataType[copiedVector.size_v];       // allocate new space
@@ -61,31 +77,48 @@ namespace VecSTD
             return *this;  // return a self-reference
         }
 
+        /** destructor
+        */
         ~vector()
         {
             delete[] elem; // deconstructor
         }
 
+       /** overload operator brackets
+        @param n - index of vector
+        */
         dataType &operator[](int n)
         {
             return elem[n]; // access: return reference
         }
 
+        /** overload operator brackets
+        @param n - index of vector
+        */
         const dataType &operator[](int n) const
         {
             return elem[n];
         }
 
+        /** size of vector
+        @return size of vector
+        */
         int size() const
         {
             return size_v;
         }
 
+        /** capacitu of vector
+        @return reserved size of vector
+        */
         int capacity() const
         {
             return reservedSize;
         }
 
+        /** resize vector
+        @param newsize - resize of vector
+        */
         void resize(int newsize) // growth
         // make the vector have newsize elements
         // initialize each new element with the default value 0.0
@@ -98,7 +131,10 @@ namespace VecSTD
 
             size_v = newsize;
         }
-
+        
+        /** add to vector
+        @param d - data to add to vector
+        */
         void push_back(const dataType& d)
         // increase vector size by one; initialize the new element with d
         {
@@ -115,6 +151,9 @@ namespace VecSTD
             ++size_v;               // increase the size (size_v is the number of elements)
         }
 
+        /** reserve size to vector
+        @param newalloc - data to reserve more size to vector
+        */
         void reserve(int newalloc)
         {
             if(newalloc <= reservedSize)
@@ -137,6 +176,8 @@ namespace VecSTD
         using iterator = dataType *;
         using const_iterator = const dataType *;
 
+        /** gets first element
+        */
         iterator begin() // points to first element
         {
             if(size_v == 0)
@@ -147,6 +188,8 @@ namespace VecSTD
             return &elem[0];
         }
 
+        /** gets const first element
+        */
         const_iterator begin() const
         {
             if(size_v == 0)
@@ -157,6 +200,8 @@ namespace VecSTD
             return &elem[0];
         }
 
+        /** gets end element
+        */
         iterator end() // points to one beyond the last element
         {
             if(size_v == 0)
@@ -167,6 +212,8 @@ namespace VecSTD
             return &elem[size_v];
         }
 
+        /** gets const end element
+        */
         const_iterator end() const
         {
             if(size_v == 0)
@@ -177,6 +224,10 @@ namespace VecSTD
             return &elem[size_v];
         }
 
+        /** inserts data vector
+        @param p - iterator
+        @param val - value to insert to vector
+        */
         iterator insert(iterator p, const dataType &val) // insert a new element val before p
         {
             int index = p - begin();
@@ -200,6 +251,10 @@ namespace VecSTD
             return pp;
         }
 
+        /** erase data vector
+        @param p - iterator
+        @param val - value to erase to vector
+        */
         iterator erase(iterator p) // remove element pointed to by p
         {
 
@@ -219,9 +274,9 @@ namespace VecSTD
 
     private:
 
-        int       size_v;        // Variable for vector size
-        dataType* elem;          // Pointer variable to the elements (or 0)
-        int       reservedSize;  // Variable for number of elements plus number of free slots
+        int       size_v;        /**< Variable for vector size*/
+        dataType* elem;          /**< Pointer variable to the elements (or 0)*/
+        int       reservedSize;  /**< Variable for number of elements plus number of free slots*/
 
     };
 
