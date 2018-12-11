@@ -1,13 +1,15 @@
 /*
  *  2D Graphics Modeler
- *  July 2018
+ *  December 2018
  *
- *  David Epstein <DavidE92@live.com>
- *  Greg Graffius <ggraffius0@saddleback.edu>
- *  Justis Ketcham <justis.ketcham@gmail.com>
- *  Brett Saiki <bsaiki0@saddleback.edu>
- *
- *  Descr:   Final project for CS1C at Saddleback College (Summer 2018)
+ *  Oscar Lopez <olopez23@saddleback.edu>
+ *  Jeff Adams <jadams62@saddleback.edu>
+ *  Isaac Estrada <iestrada5@saddleback.edu>
+ *  Caroline Ta <tta24@saddleback.edu>
+ *  Travis Nguyen <tnguyen603@saddleback.edu>
+ *  Taylor Paczkowski <tpaczkowski0@saddleback.edu>
+ *  
+ *  Descr: 2D Graphics Modeler for CS1C Fall 2018
  *  Teacher: John Kath
  *
  *  Draws shapes using QPainter. Shapes can be loaded from a file, added
