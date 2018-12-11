@@ -77,7 +77,7 @@ void Canvas::shapeMove(int indexMove, int coordMove, int x, int y)
 void Canvas::writeShapeFile()
 {
 
-    QFile myFile("shapes.txt");
+    QFile myFile("/shapes.txt");
 
     if(!myFile.open( QIODevice::WriteOnly | QIODevice::Text))
     {
@@ -223,7 +223,7 @@ void Canvas::readShapeFile()
 {
     vector<Shape*> shapeVec;
 
-    QFile myFile("shapes.txt");
+    QFile myFile(":shapeIO/img/shape.txt");
 
     //Opening file
     if(!myFile.open( QIODevice::ReadOnly | QIODevice::Text))
