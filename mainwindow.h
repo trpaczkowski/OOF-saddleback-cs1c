@@ -45,21 +45,21 @@ public:
     QString getFontFamily();
 
 private slots:
-    void on_actionLogin_triggered();
+    void on_actionLogin_triggered();//Shows admin login
 
-    void on_actionQuit_triggered();
+    void on_actionQuit_triggered();//Quits program
 
-    void on_actionEnable_Disable_Privledges_triggered();
+    void on_actionEnable_Disable_Privledges_triggered(); //Emable privledges
 
-    void on_pushButton_clicked();
+    void on_pushButton_clicked(); //Add shape
 
-    void on_pushButton_deleteShape_clicked();
+    void on_pushButton_deleteShape_clicked(); //Show delete shapes
 
-    void on_pushButton_move_clicked();
+    void on_pushButton_move_clicked(); //Show move shapes
 
-    void on_actionContact_Info_triggered();
+    void on_actionContact_Info_triggered(); //Show contact info
 
-    void on_pushButton_2_clicked();
+    void on_pushButton_2_clicked(); //Refreshes shapeTables
 
 private:
     Ui::MainWindow *ui;

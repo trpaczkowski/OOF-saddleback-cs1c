@@ -11,7 +11,6 @@ void Shape::setPen(Qt::GlobalColor color)
 
 {
     QPen pen;
-    pen.setColor(color);
 
     penType = pen;
 }
@@ -44,11 +43,6 @@ void Shape::setBrush(Qt::GlobalColor color, Qt::BrushStyle brush_style)
     brush.setStyle(brush_style);
 
     brushType = brush;
-
-}
-
-void Shape::defaultStyle()
-{
 
 }
 
@@ -295,32 +289,6 @@ Text Methods
 double Text::area()
 {
     return double(width * height);
-}
-
-vector<QString> Text::dimensionLabels()
-{
-    vector<QString> ret;
-    ret.push_back("Position:");
-    ret.push_back("(" + QString::number(position.x()) + ", " + QString::number(position.y()) + ")");
-    ret.push_back("Width:");
-    ret.push_back(QString::number(width));
-    ret.push_back("Height:");
-    ret.push_back(QString::number(height));
-
-    return ret;
-}
-
-
-
-vector<int> Text::getDimensions()
-{
-    vector<int> dimension;
-    dimension.push_back(position.x());
-    dimension.push_back(position.y());
-    dimension.push_back(width);
-    dimension.push_back(height);
-
-    return dimension;
 }
 
 QFont& Text::getFont()

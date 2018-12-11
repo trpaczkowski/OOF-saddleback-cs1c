@@ -10,7 +10,7 @@ MainWindow::MainWindow(QWidget *parent) :
 {
     ui->setupUi(this);
 
-    //Should set to false again
+    //Disabled until admin user
     ui->Tab_Move->setEnabled(false);
     ui->Tab_Shape->setEnabled(false);
     ui->tab_setProperties->setEnabled(false);
@@ -23,13 +23,13 @@ MainWindow::~MainWindow()
     delete ui;
 }
 
-void MainWindow::on_actionLogin_triggered()
+void MainWindow::on_actionLogin_triggered()//Shows admin login
 {
     uiLogin = new AdminLogin(this);
     uiLogin->show();
 }
 
-void MainWindow::on_actionQuit_triggered()
+void MainWindow::on_actionQuit_triggered() //Quits program
 {
     QApplication::quit();
 }
@@ -255,7 +255,7 @@ void MainWindow::on_pushButton_clicked()
     ui->widget->writeShapeFile();
 }
 
-void MainWindow::on_pushButton_deleteShape_clicked()
+void MainWindow::on_pushButton_deleteShape_clicked() //Show delete shapes
 {
     QMessageBox::information(this, "Deleting Shape", "Shape Deleted!");
 
@@ -264,14 +264,14 @@ void MainWindow::on_pushButton_deleteShape_clicked()
 
 }
 
-void MainWindow::on_pushButton_move_clicked()
+void MainWindow::on_pushButton_move_clicked() //Show  Move shapes
 {
     QMessageBox::information(this, "Moving Shape", "Shape Moved!");
     ui->widget->shapeMove(ui->spinBox_move_id->value(), ui->spinBox_moveCoordinate->value(), ui->spinBox_moveX->value(), ui->spinBox_moveY->value());
     ui->widget->writeShapeFile();
 }
 
-void MainWindow::on_actionContact_Info_triggered()
+void MainWindow::on_actionContact_Info_triggered() //Show contact info
 {
     uiContact = new Contact(this);
     uiContact->show();
@@ -490,7 +490,7 @@ QString MainWindow::getFontFamily()
 }
 
 
-void MainWindow::on_pushButton_2_clicked()
+void MainWindow::on_pushButton_2_clicked() //Refreshes shape tables
 {
     vector <Shape *> copyVector;
     QWidget *shapeName;

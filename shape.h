@@ -9,9 +9,12 @@
 
 using namespace VecSTD;
 
-//HELLo
+//ShapeString
 const QString shapeTypeStr[7] ={"No Shape", "Line", "Polyline", "Polygon", "Rectangle", "Ellipse", "Text"} ;
- enum class ShapeType {NoShape, LineType, PolylineType, PolygonType, RectangleType, EllipseType, TextType, SquareType, CircleType};
+
+//Shape ENUM
+enum class ShapeType {NoShape, LineType, PolylineType, PolygonType, RectangleType, EllipseType, TextType, SquareType, CircleType};
+
 class Shape : public QPainter
 {
     public:
@@ -47,11 +50,9 @@ class Shape : public QPainter
 
         QBrush getBrush() {return brushType;}
 
-        void defaultStyle();
-
         virtual ~Shape() {}
 
-        virtual void draw() =0;
+        //virtual void draw() =0;
 
         virtual void draw(QPaintDevice *device)= 0;
 
@@ -75,8 +76,6 @@ class Line : public Shape
         ~Line() override {}
 
         void setPoints(const QPoint& begin, const QPoint& end);
-
-        void draw() override{}
 
         virtual void draw(QPaintDevice *device) override
         {
@@ -114,8 +113,6 @@ class Polyline : public Shape
         void addPoint(const QPointF& point);
 
         void addNumPoints(int numIn){ numPoints = numIn;}
-
-        virtual void draw() override{}
 
         virtual void draw(QPaintDevice *device) override
         {
@@ -159,8 +156,6 @@ class Polygon : public Shape
 
         void addNumPoints(int numIn){ numPoints = numIn;}
 
-        virtual void draw() override{}
-
         virtual void draw(QPaintDevice *device) override
         {
             painter.begin(device);
@@ -203,8 +198,6 @@ class Rectangle : public Shape
 
         void setDimensions(int width, int height);
 
-        virtual void draw() override{}
-
         void draw(QPaintDevice* device) override
         {
             painter.begin(device);
@@ -243,8 +236,6 @@ class Ellipse : public Shape
         void setPosition(const QPointF& point) {position = point;}
 
         void setDimensions(float width, float height) {this->width = width; this->height = height;}
-
-        virtual void draw() override{}
 
         void draw(QPaintDevice *device) override
         {
@@ -285,8 +276,6 @@ class Text: public Shape
 
         void setDimensions(int w, int h);
 
-        virtual void draw() override{}
-
         void draw(QPaintDevice* device) override
         {
             painter.begin(device);
@@ -319,12 +308,10 @@ class Text: public Shape
 
         QString getText() const;
 
-        vector<QString> dimensionLabels();
-
-        vector<int> getDimensions();
-
         QPoint getPosition() {return position;}
+
         int getWidth() {return width;}
+
         int getHeight() {return height;}
 
     private:
