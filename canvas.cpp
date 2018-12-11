@@ -6,7 +6,7 @@ Canvas::Canvas(QWidget *parent)
     setBackgroundRole(QPalette::Base);
     setAutoFillBackground(true);
     setFixedSize(sizeHint());
-    //readShapeFile();
+    readShapeFile();
 }
 
 QSize Canvas::sizeHint() const

@@ -34,6 +34,8 @@ class Canvas:public QWidget
             return IDCount;
         }
 
+        vector<Shape*> GetList(){return shapeList;}
+
         void shapeAdd(Shape* shapeIn)
         {
             shapeList.push_back(shapeIn);
