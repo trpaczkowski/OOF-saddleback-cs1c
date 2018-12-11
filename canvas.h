@@ -65,7 +65,7 @@ class Canvas:public QWidget
 
    private:
         vector<Shape*> shapeList; //Keeps track of shapes
-        int IDCount{0};//Count of total amount of shapes added to canvas
+        int IDCount{1};//Count of total amount of shapes added to canvas
 
         void readShapeFile(); //Read Shape File
 

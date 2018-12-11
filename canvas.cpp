@@ -77,7 +77,7 @@ void Canvas::shapeMove(int indexMove, int coordMove, int x, int y)
 void Canvas::writeShapeFile()
 {
 
-    QFile myFile("/shapes.txt");
+    QFile myFile("C:/Users/Oscar/Desktop/OOF-saddleback-cs1c/img/shape.txt");
 
     if(!myFile.open( QIODevice::WriteOnly | QIODevice::Text))
     {
