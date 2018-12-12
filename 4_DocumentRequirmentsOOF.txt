@@ -1,0 +1,82 @@
+Steps to using program:
+Go to "admin" tab at top of program
+Click "login" 
+The username is: admin
+Password is: pass000
+Go to "admin" tab again
+Click "Enable Actions"
+Now can add and remove and move shapes
+
+EXTRA CREDIT: Completed Waffle.io proof in file 5_SCRUM and Agile
+EXTRA CREDIT: Custom selection sort algorithm found in mainwindow.cpp begin at line 503
+
+General Requirements:
+Inheritance found in shape.cpp and shape.h
+Rectangle, Ellipse, Text , etc inherit from base class shape
+
+Composition found in shape.h line at  48
+Composition of object from QPainter class
+
+Exception handlers are found in adminLogin.cpp at line 20
+Password for admin login to ensure correct password is input
+
+Virtual Function found in shape.h lines 128 and 135
+Shape has virtual draw and move virtual functions
+
+Two overloaded operators found in vector.h 70 & 90 & 98
+Overload = and [] operator (assignment and brackets)
+
+Use templates in vector.h
+Templates of vector
+
+Class with pointer in vector.h
+Pointer of dataType called elem at 278
+Copy constructor found in line 61 for vector.h
+
+
+Satisfy individual project requirements
+2. Contact us method
+Will be found in contact.h contact.cpp and contact.ui
+Line 274 in mainwindow.cpp to show contact window
+
+3. Display all graphics in rendering window
+Will be found in canvas.h canvas.cpp mainwindow.ui mainwindow.cpp
+Using draw to draw onto canvas at line 23 in canvas.cpp
+
+
+4. Read from shape file and shape properties
+Shape properties in canvas.h canvas.cpp
+Read from shape file implemented at 222 at canvas.cpp
+Unique shape ID is found in shape.cpp and shape.h as in shape base class as private data member
+
+5. Move shape
+Found in canvas.h mainwindow.cpp
+In mainwindow.cpp line 267 will have function to move shape by changing values
+In canvas.cpp line 59 to change values in vector to move
+Tab to move is enabled when admin is logged in
+
+6. Add and Remove Shape
+Found in mainwindow.cpp canvas.h canvas.cpp
+mainwindow.cpp at line 67 is function to add shape to canvas
+mainwindow.cpp at line 258 is function to remove shape from canvas
+canvas.h line 34 to add shape
+canvas.h line 41 to remove shape
+
+7. Shape listing report 
+mainwindow.cpp at line 505 for ID listing
+
+8. Listing report of only shapes by area 
+mainwindow.cpp at line 529 for area listing
+
+9. Listing report of only shapes by perimeter
+mainwindow.cpp at line 561 for perimeter listing
+
+10. Save all changes
+canvas.h and canvas.cpp
+In canvas.cpp there write to shape.txt at line 77 this will save
+
+
+
+
+
+

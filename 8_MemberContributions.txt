@@ -1,0 +1,55 @@
+OOF - Object Orientated Friends Member Contribution
+
+Travis Nguyen:
+	Shape Class
+	Add to Canvas
+	Remove from Canvas
+	Move on Canvas
+	Admin Login Screen
+	UI/Code in Qt
+	Read shape.txt
+	Write shape.txt
+
+Isaac Estrada:
+	Shape Class
+	Add to Canvas
+	Vector Class
+	UI/Code in Qt
+	Write shape.txt
+
+Caroline Ta:
+	UML Diagrams
+	Class Diagrams
+	3 Use Cases
+	State Diagrams
+	Basic UI/Code in Qt
+
+Jeff Adams:
+	Shape Class
+	Vector Class
+	Shape Parser
+	Basic UI/Code in Qt
+	Agile 
+	Scrum Meetings
+
+Utkarsh Karki:
+	Valgrind
+	Did not do anything else besides Valgrind
+	Did not make an attempt to go to team meeting or code anything
+
+
+Oscar Lopez:
+	Contact Page
+	Shape Tables
+	Sort Algorithm
+	Basic UI/Code in Qt
+	DOxygen
+
+Taylor Paczkowski
+	Contact Page
+	Shape Tables
+		Sort by area, perimeter, ID
+	Sort Algorithm
+	Basic UI/Code in Qt
+
+
