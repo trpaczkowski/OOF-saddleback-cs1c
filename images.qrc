@@ -1,8 +1,0 @@
-<RCC>
-    <qresource prefix="/img">
-        <file>img/oof_logo.jpg</file>
-    </qresource>
-    <qresource prefix="/shapeIO">
-        <file>img/shape.txt</file>
-    </qresource>
-</RCC>
