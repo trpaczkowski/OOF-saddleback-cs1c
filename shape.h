@@ -542,27 +542,59 @@ class Text: public Shape
         @return perimeter - returns perimeter
         */
         double perimeter() override;
-
+        
+        /** sets the alignment
+        @param flags - alignment
+        */
         void setAlignment(Qt::AlignmentFlag flags);
 
+        /** sets the font
+        @param fontFamIn - Times New Roman, etc.
+        @param fontStyleIn - Italic, Bold, etc.
+        @param pointSizeIn - how big the font is
+        @param weightIn - how thick the font is
+        @param colorIn - what color the text is
+        */
         void setFont(QString fontFamIn, QFont::Style fontStyleIn, int pointSizeIn, QFont::Weight weightIn, Qt::GlobalColor colorIn);
 
+        /** sets the font
+        @param fontIn - the font to be set
+        */
         void setFont(QFont fontIN){font = fontIN;}
 
+        /** sets the text
+        @param textIn - text to be set
+        */
         void setText(const QString& textIn);
 
+        /** sets the position of the text
+        @param x - x coordinate
+        @param y - y coordinate
+        */
         void setPosition(int x, int y);
 
+        /** gets the font */
         QFont& getFont();
 
+        /** gets the alignment */
         Qt::AlignmentFlag getAlignment() const;
 
+        /** gets the text */
         QString getText() const;
 
+        /** gets the position
+        @return position - returns the position
+        */
         QPoint getPosition() {return position;}
 
+        /** gets the width of the text
+        @return width - width of the text
+        */
         int getWidth() {return width;}
 
+        /** gets the height of the text
+        @return height - height of the text
+        */
         int getHeight() {return height;}
 
     private:
