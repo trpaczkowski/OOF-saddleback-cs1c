@@ -51,41 +51,93 @@ class Shape : public QPainter
 
         QBrush brushType; /**<brush variable*/
 
+        /** gets the shape
+        @return shapeType - returns the shape type
+        */
         ShapeType getShape() const {return shapeType;}
 
+        /** gets the ID
+        @return shape_ID - returns the shape ID
+        */
         int getId() const {return shape_ID;}
 
+        /** gets the pen
+        @return penType - returns the pen type
+        */
         QPen getPen() const {return penType;}
 
+        /** Constructor
+        @param device - set to null pointer
+        @param id - set to -1
+        @param shape - set to no shape
+        */
         Shape(QPaintDevice* device = nullptr, int id = -1, ShapeType shape = ShapeType::NoShape) :
 
              QPainter(device), shape_ID(id), shapeType(shape){}
              
-        /** Sets the shape type */
+        /** Sets the shape type
+        @param s - shape type
+        */
         void setShape(ShapeType s) {shapeType = s;}
-        /** Sets the ID */
+        
+        /** sets the ID
+        @param _id - ID
+        */
         void setId(int _id) {shape_ID = _id;}
-        /** Sets the Pen */
+        
+        /** Sets the Pen
+        @param color - color of the pen
+        */
         void setPen(Qt::GlobalColor color);
-        /** Sets the Pen */
+        
+        /** Sets the Pen
+        @param pen - pen type
+        */
         void setPen(QPen pen){penType = pen;}
-        /** Sets the Pen */
+        
+        /** Sets the Pen
+        @param GlobalColor - color
+        @param width - the width of the pen
+        @param PenStyle - the style of the pen
+        @param PenCapStyle - the style cap of the pen
+        @param PenJoinStyle - the join style of the pen
+        */
         void setPen(Qt::GlobalColor, int width, Qt::PenStyle, Qt::PenCapStyle, Qt::PenJoinStyle);
-        /** Sets the Brush */
+        
+        /** Sets the Brush
+        @param GlobalColor - color
+        @param BrushStyle - style of the brush*/
         void setBrush(Qt::GlobalColor, Qt::BrushStyle);
-        /** Sets the Brush */
+        
+        /** Sets the Brush
+        @param brush - brush object
+        */
         void setBrush(QBrush brush){brushType = brush;}
-        /** Returns the brush type. */
+        
+        /** Returns the brush type.
+        @return brushType - returns the brush type
+        */
         QBrush getBrush() {return brushType;}
+        
         /** Destructor */
         virtual ~Shape() {}
 
+        /** draws the device
+        @param device - the device to draw
+        */
         virtual void draw(QPaintDevice *device)= 0;
 
+        /** moves the shape
+        @param x - x coordinate
+        @param y - y coordinate
+        @param coordNum - coordinate number
+        */
         virtual void move(const int x, const int y, int coordNum) = 0;
 
+        /** sets the perimeter*/
         virtual double perimeter() = 0;
 
+        /** sets the area */
         virtual double area() = 0;
 
     private:
@@ -100,12 +152,24 @@ class Shape : public QPainter
 class Line : public Shape
 {
     public:
+        /** Copy constructor
+        @param device - the device set to nullptr
+        @param id - set to -1
+        */
         Line(QPaintDevice* device = nullptr, int id = -1) : Shape(device, id, ShapeType::LineType) {}
 
+        /** destructor */
         ~Line() override {}
 
+        /** sets the points
+        @param begin - the beginning
+        @param end - the end
+        */
         void setPoints(const QPoint& begin, const QPoint& end);
 
+        /** draws the shape
+        @param device - the device to draw
+        */
         virtual void draw(QPaintDevice *device) override
         {
             painter.begin(device);
@@ -115,15 +179,32 @@ class Line : public Shape
             painter.drawText(begin,QString::number(getId()));
             painter.end();
         }
-
+        
+        /** moves the object
+        @param x - x coordinate
+        @param y - y coordinate
+        @param coordNum - the coordinate number
+        */
         void move(const int x, const int y, int coordNum) override;
 
+        /** sets the perimeter
+        @return 0 - returns the perimeter as set to 0
+        */
         double perimeter() override {return 0;}
 
+        /** sets the area
+        @return 0 - returns the area as 0
+        */
         double area() override {return 0;}
 
+        /** gets the beginning point
+        @return begin - returns the beginning point
+        */
         QPoint& getBeginPoint() { return begin;}
 
+        /** gets the end point
+        @return end - returns the ending point
+        */
         QPoint& getEndPoint() {return end;}
 
     private:
@@ -138,14 +219,25 @@ class Line : public Shape
 class Polyline : public Shape
 {
     public:
+        /** constructor */
         Polyline(QPaintDevice* device = nullptr, int id = -1) : Shape(device, id, ShapeType::PolylineType) {}
-
+        
+        /** destructor */
         ~Polyline()  override {}
 
+        /** adds point
+        @param point - point being added
+        */
         void addPoint(const QPointF& point);
 
+        /** adds num points
+        @param numIn - number input
+        */
         void addNumPoints(int numIn){ numPoints = numIn;}
 
+        /** draws the object
+        @param device - device to draw
+        */
         virtual void draw(QPaintDevice *device) override
         {
             painter.begin(device);
@@ -160,14 +252,31 @@ class Polyline : public Shape
             painter.end();
         }
 
+        /** moves the object
+        @param x - x coordinate
+        @param y - y coordinate
+        @param coordNum - the coordinate number
+        */
         void move(const int x, const int y, int coordNum) override;
-
+        
+        /* gets perimeter
+        @return perimeter - returns perimeter
+        */
         double perimeter() override {return 0;}
-
+        
+        /* gets area
+        @return area - returns area
+        */
         double area() override {return 0;}
-
+        
+        /* gets points
+        @return points - returns vector type points
+        */
         vector<QPointF>& getPoints() {return points;}
 
+        /* gets the num points
+        @return numPoints - returns numPoints
+        */
         int getNumPoints() {return numPoints;}
 
     private:
@@ -183,14 +292,25 @@ class Polyline : public Shape
 class Polygon : public Shape
 {
     public:
+        /** constructor */
         Polygon(QPaintDevice* device = nullptr, int id = -1) : Shape(device, id, ShapeType::PolygonType) {}
 
+        /** destructor */
         ~Polygon() override {}
 
+        /** adds point
+        @param point - point that is being added
+        */
         void addPoint(const QPointF& point);
 
+        /** adds num points
+        @param numIn - number being set to numPoints
+        */
         void addNumPoints(int numIn){ numPoints = numIn;}
 
+        /** draws the shape
+        @param device - device to draw
+        */
         virtual void draw(QPaintDevice *device) override
         {
             painter.begin(device);
@@ -204,15 +324,31 @@ class Polygon : public Shape
             painter.drawText(points[0],QString::number(getId()));
             painter.end();
         }
-
+        /** moves the object
+        @param x - x coordinate
+        @param y - y coordinate
+        @param coordNum - the coordinate number
+        */
         void move(const int x, const int y, int coordNum) override;
-
+        
+        /* gets perimeter
+        @return perimeter - returns perimeter
+        */
         double perimeter() override;
-
+        
+        /* gets area
+        @return area - returns area
+        */
         double area() override;
-
+        
+        /* gets points
+        @return points - returns vector type points
+        */
         vector<QPointF>& getPoints() { return points;}
 
+        /* gets numPoints
+        @return numPoints - returns numPoints
+        */
         int getNumPoints() {return numPoints;}
 
     private:
@@ -228,14 +364,26 @@ class Polygon : public Shape
 class Rectangle : public Shape
 {
     public:
+        /** constructor */
         Rectangle(QPaintDevice* device = nullptr, int id = -1) : Shape(device, id, ShapeType::RectangleType) {}
 
+        /** destructor */
         ~Rectangle() override {}
 
+        /** sets the position
+        @param point - point to be set to position
+        */
         void setPosition(const QPoint& point) {position = point;}
 
+        /** sets the dimensions
+        @param width - width of the rectangle
+        @param height - height of the triangle
+        */
         void setDimensions(int width, int height);
 
+        /** draws the rectangle
+        @param device - the shape
+        */
         void draw(QPaintDevice* device) override
         {
             painter.begin(device);
@@ -245,17 +393,37 @@ class Rectangle : public Shape
             painter.drawText(position,QString::number(getId()));
             painter.end();
         }
-
+        
+        /* gets perimeter
+        @return perimeter - returns perimeter
+        */
         double perimeter() override;
-
+        
+        /* gets area
+        @return area - returns area
+        */
         double area() override;
-
+        
+        /** moves the object
+        @param x - x coordinate
+        @param y - y coordinate
+        @param coordNum - the coordinate number
+        */
         void move(const int x, const int y, int coordNum) override;
 
+        /** gets the position
+        @return - returns the position
+        */
         QPoint& getPosition() {return position;}
 
+        /** gets the width
+        @return width - width of the rectangle
+        */
         int getWidth() {return width;}
 
+        /** gets the height
+        @return height - height of the rectangle
+        */
         int getHeight() {return height;}
 
     private:
@@ -270,14 +438,24 @@ class Rectangle : public Shape
 class Ellipse : public Shape
 {
     public:
+        /** constructor*/
         Ellipse(QPaintDevice* device = nullptr, int id = -1) : Shape(device, id, ShapeType::EllipseType) {}
 
+        /** destructor */
         ~Ellipse() override {}
 
+        /** sets the position */
         void setPosition(const QPointF& point) {position = point;}
 
+        /** sets the dimensions
+        @param width - width of the ellipse
+        @param height - height of the ellipse
+        */
         void setDimensions(float width, float height) {this->width = width; this->height = height;}
 
+        /** draws the ellips
+        @param device - device being used
+        */
         void draw(QPaintDevice *device) override
         {
             painter.begin(device);
@@ -287,17 +465,36 @@ class Ellipse : public Shape
             painter.drawText(position,QString::number(getId()));
             painter.end();
         }
-
+        /* gets perimeter
+        @return perimeter - returns perimeter
+        */
         double perimeter() override;
-
+        
+        /* gets area
+        @return area - returns area
+        */
         double area() override;
-
+        
+        /** moves the object
+        @param x - x coordinate
+        @param y - y coordinate
+        @param coordNum - the coordinate number
+        */
         void move(const int x, const int y, int coordNum) override;
 
+        /** gets the position of the ellips
+        @return position - returns the position
+        */
         QPointF& getPosition() {return position;}
 
+        /** gets the width of the ellipse
+        @return width - returns the width
+        */
         double getWidth() {return width;}
 
+        /** gets the height
+        @return height - returns the height
+        */
         double getHeight() {return height;}
 
     private:
@@ -329,11 +526,21 @@ class Text: public Shape
             painter.drawText(position,QString::number(getId()));
             painter.end();
         }
-
+        /** moves the object
+        @param x - x coordinate
+        @param y - y coordinate
+        @param coordNum - the coordinate number
+        */
         void move(const int x, const int y, int coordNum) override;
-
+        
+        /* gets area
+        @return area - returns area
+        */
         double area() override;
 
+        /* gets perimeter
+        @return perimeter - returns perimeter
+        */
         double perimeter() override;
 
         void setAlignment(Qt::AlignmentFlag flags);
